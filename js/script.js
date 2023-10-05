@@ -1,39 +1,3 @@
-//!======Swiper=========
-// import Swiper, { Navigation, Pagination, EffectFade, Scrollbar } from "swiper";
-
-// new Swiper(".swiper", {
-//     modules: [Navigation, Pagination, EffectFade, Scrollbar],
-//     loop: false,
-//     speed: 800,
-//     effect: "fade",
-//     spaceBetween: 30,
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//         /*  type: "fraction", */
-//         //custom bullets
-//         /* renderBullet: function (index, className) {
-//             return '<span class="' + className + '">' + (index + 1) + "</span>";
-//         }, */
-
-//         /* type: "custom",
-//         renderCustom: function (swiper, current, total) {
-//             let indT = total >= 10 ? total : `0${total}`;
-//             let indC = current >= 10 ? current : `0${current}`;
-//             return `<b>${indC}</b> <span></span>${indT}`;
-//         }, */
-//     },
-//     scrollbar: {
-//         el: ".swiper-scrollbar",
-//         hide: false,
-//         draggable: true,
-//         dragSize: 100,
-//     },
-// });
 
 //!======Modal=========
 // import MicroModal from "micromodal";
@@ -112,3 +76,27 @@ function toggleMobilenav() {
         }
     };
 })();
+//======Swiper=========
+const fraction = document.getElementById("fraction");
+const slides = document.querySelectorAll(".swiper-slide");
+const slideCount = slides.length;
+fraction.textContent = `1 / ${slideCount}`;
+
+new Swiper(".benefits__slider", {
+    loop: false,
+    speed: 800,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".slider-next",
+        prevEl: ".slider-prev",
+    },
+    pagination: {
+        el: ".pagination-slider",
+        clickable: true,
+    },
+    on: {
+        slideChange: (swiper) => {
+            fraction.textContent = `${swiper.realIndex + 1} / ${slideCount}`;
+        }
+    }
+});

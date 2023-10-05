@@ -112,6 +112,9 @@ body {
 }
 
 .title {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #fff;
   font-feature-settings: "liga" off;
   font-size: 64px;
@@ -333,15 +336,74 @@ body {
     pointer-events: auto;
   }
 }
+.benefits {
+  padding-bottom: 80px;
+}
 .benefits__title {
   margin-bottom: 40px;
 }
+.benefits__inner {
+  position: relative;
+}
+.benefits__slide {
+  max-height: 600px;
+  min-height: 600px;
+  padding: 16px 40px 70px;
+  border-radius: 24px;
+  border: 2px solid #34c21c;
+  background: rgba(48, 50, 104, 0.3);
+  -webkit-backdrop-filter: blur(175px);
+          backdrop-filter: blur(175px);
+}
 .benefits__slide-title {
-  color: #FFF;
+  color: #fff;
   font-size: 40px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.benefits__slide-img {
+  max-width: 200px;
+  max-height: 245px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .benefits__slide-text {
-  color: #FFF;
+  color: #fff;
   font-size: 32px;
   letter-spacing: -1.6px;
+}
+.benefits__slide-text span {
+  color: #00ff38;
+}
+.benefits .pagination-slider .swiper-pagination-bullet {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+}
+.benefits .pagination-slider .swiper-pagination-bullet-active {
+  background-color: #00ff38;
+}
+.benefits .slider-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-fraction {
+  color: white;
+  position: absolute;
+  right: 200px;
+  bottom: 0;
+  z-index: 10;
+  padding: 10px 15px;
+  font-size: 24px;
+  font-weight: 700;
 }

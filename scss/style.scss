@@ -27,6 +27,8 @@ body {
 }
 
 .title {
+    margin: 0 auto;
+    width: fit-content;
     color: $primary;
     font-feature-settings: 'liga' off;
     font-size: 64px;
