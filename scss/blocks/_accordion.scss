@@ -1,0 +1,106 @@
+/*=== accordion vars ========*/
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$border-color: #848484;
+$border-active: #037e8c;
+$blue: #03b5d2;
+$color-text: #141312;
+$arrow-passive: #121214;
+
+/* ac */
+.accordion__item {
+    margin-bottom: 8px;
+    border: 0.5px solid $border-color;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+/* ac-trigger */
+.accordion__trigger {
+    background-color: transparent;
+    padding: 16px 10px 19px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.accordion__text {
+    margin: 0;
+    padding: 10px;
+    color: $color-text;
+    font-size: 14px;
+    line-height: 21px;
+}
+.ac {
+    .ac-header {
+        margin: 0;
+        padding: 0;
+    }
+    .ac-trigger {
+        text-align: left;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        transition: color 0.25s ease;
+        position: relative;
+        text-decoration: none;
+        margin: 0;
+        border: 0;
+
+        &::after {
+            position: absolute;
+            content: "\2715";
+            text-align: center;
+            width: 12px;
+            height: 22px;
+            transform: translate(0, -50%);
+            right: 10px;
+            top: 50%;
+        }
+        svg {
+        }
+
+        &:focus {
+            color: $color-text;
+        }
+    }
+
+    // Panel class
+    .ac-panel {
+        overflow: hidden;
+        transition-property: height, visibility;
+        transition-timing-function: ease;
+    }
+
+    // Hide content when Javascript is enabled
+    &.js-enabled {
+        .ac-panel {
+            visibility: hidden;
+        }
+    }
+
+    // Active class
+    &.is-active {
+        border: 0.5px solid $border-active;
+
+        .ac-panel {
+            visibility: visible;
+        }
+
+        & > .ac-header .ac-trigger {
+            &::after {
+                position: absolute;
+                content: "\2715";
+                text-align: center;
+                width: 12px;
+                height: 22px;
+                transform: translate(0, -50%);
+                right: 10px;
+                top: 50%;
+            }
+            svg {
+                // символ/ стрелочка, плюсик
+            }
+        }
+    }
+}
