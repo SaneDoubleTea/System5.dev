@@ -116,12 +116,11 @@
 
 .custom-radio--active {
     position: relative;
-    border-radius: 12px !important;
+    border-radius: 12px;
 
     &:active,
     &:focus,
     &:hover {
-        border-radius: 9999999px !important;
         background: transparent;
         border-image: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
         border-image-slice: 1;
