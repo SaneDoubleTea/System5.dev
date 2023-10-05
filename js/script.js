@@ -114,8 +114,8 @@ document.addEventListener('DOMContentLoaded', function cookies() {
     const cookiesPopup = document.querySelector('.cookies');
     const okButton = document.querySelector('#btn-ok');
     const yesButton = document.querySelector('#btn-yes');
-    
-	 const closeCookiesPopup = () => {
+
+    const closeCookiesPopup = () => {
         cookiesPopup.style.display = 'none';
     };
 
@@ -137,26 +137,26 @@ document.addEventListener('DOMContentLoaded', function cookies() {
     });
 });
 //======Swiper=========
-const fraction = document.getElementById("fraction");
-const slides = document.querySelectorAll(".swiper-slide");
+const fraction = document.getElementById('fraction');
+const slides = document.querySelectorAll('.swiper-slide');
 const slideCount = slides.length;
 fraction.textContent = `1 / ${slideCount}`;
 
-new Swiper(".benefits__slider", {
+new Swiper('.benefits__slider', {
     loop: false,
     speed: 800,
     spaceBetween: 30,
     navigation: {
-        nextEl: ".slider-next",
-        prevEl: ".slider-prev",
+        nextEl: '.slider-next',
+        prevEl: '.slider-prev',
     },
     pagination: {
-        el: ".pagination-slider",
+        el: '.pagination-slider',
         clickable: true,
     },
     on: {
         slideChange: (swiper) => {
             fraction.textContent = `${swiper.realIndex + 1} / ${slideCount}`;
-        }
-    }
+        },
+    },
 });
