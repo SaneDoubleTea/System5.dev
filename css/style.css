@@ -107,7 +107,7 @@ body {
   margin: 0 auto;
   max-width: 1172px;
   width: 100%;
-  padding: 16px;
+  padding: 0 16px;
 }
 
 .title {
@@ -165,4 +165,17 @@ body {
   opacity: 1;
   background-color: #fff;
   transition: all 0.4s ease-out;
+}
+
+.benefits__title {
+  margin-bottom: 40px;
+}
+.benefits__slide-title {
+  color: #FFF;
+  font-size: 40px;
+}
+.benefits__slide-text {
+  color: #FFF;
+  font-size: 32px;
+  letter-spacing: -1.6px;
 }

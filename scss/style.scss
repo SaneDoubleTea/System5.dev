@@ -22,7 +22,7 @@ body {
     margin: 0 auto;
     max-width: 1172px;
     width: 100%;
-    padding: 16px;
+    padding: 0 16px;
 }
 
 .title {
@@ -40,3 +40,4 @@ body {
 
 @import 'blocks/header';
 @import 'blocks/intro';
+@import 'blocks/benefits';
