@@ -1,17 +1,50 @@
+//!======Swiper=========
+// new Swiper(".swiper", {
+//     modules: [Navigation, Pagination, EffectFade, Scrollbar],
+//     loop: false,
+//     speed: 800,
+//     effect: "fade",
+//     spaceBetween: 30,
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//         /*  type: "fraction", */
+//         //custom bullets
+//         /* renderBullet: function (index, className) {
+//             return '<span class="' + className + '">' + (index + 1) + "</span>";
+//         }, */
+
+//         /* type: "custom",
+//         renderCustom: function (swiper, current, total) {
+//             let indT = total >= 10 ? total : `0${total}`;
+//             let indC = current >= 10 ? current : `0${current}`;
+//             return `<b>${indC}</b> <span></span>${indT}`;
+//         }, */
+//     },
+//     scrollbar: {
+//         el: ".swiper-scrollbar",
+//         hide: false,
+//         draggable: true,
+//         dragSize: 100,
+//     },
+// });
 
 //!======Modal=========
-// import MicroModal from "micromodal";
-// MicroModal.init({
-//     // onShow: modal => console.info(`${modal.id} is shown`), // [1]
-//     // onClose: modal => console.info(`${modal.id} is hidden`), // [2]
-//     openTrigger: 'data-micromodal-trigger', // [3]
-//     closeTrigger: 'data-custom-close', // [4]
-//     disableScroll: true, // [5]
-//     disableFocus: false, // [6]
-//     awaitOpenAnimation: false, // [7]
-//     awaitCloseAnimation: false, // [8]
-//     debugMode: true, // [9]
-// });
+MicroModal.init({
+    // onShow: modal => console.info(`${modal.id} is shown`), // [1]
+    // onClose: modal => console.info(`${modal.id} is hidden`), // [2]
+    openTrigger: 'data-micromodal-trigger', // [3]
+    closeTrigger: 'data-custom-close', // [4]
+    disableScroll: true, // [5]
+    disableFocus: false, // [6]
+    awaitOpenAnimation: false, // [7]
+    awaitCloseAnimation: false, // [8]
+    debugMode: true, // [9]
+});
 
 //!ACCORDION
 // import Accordion from "accordion-js";
@@ -76,6 +109,33 @@ function toggleMobilenav() {
         }
     };
 })();
+
+document.addEventListener('DOMContentLoaded', function cookies() {
+    const cookiesPopup = document.querySelector('.cookies');
+    const okButton = document.querySelector('#btn-ok');
+    const yesButton = document.querySelector('#btn-yes');
+    
+	 const closeCookiesPopup = () => {
+        cookiesPopup.style.display = 'none';
+    };
+
+    okButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeCookiesPopup();
+    });
+
+    yesButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeCookiesPopup();
+    });
+
+    // Также добавляем обработчик события для .cookies для случаев, когда пользователь кликает вне кнопок
+    cookiesPopup.addEventListener('click', (event) => {
+        if (event.target === cookiesPopup) {
+            closeCookiesPopup();
+        }
+    });
+});
 //======Swiper=========
 const fraction = document.getElementById("fraction");
 const slides = document.querySelectorAll(".swiper-slide");

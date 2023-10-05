@@ -28,10 +28,10 @@
               </ul>
             </nav>
 
-            <div class="header__btns">
-              <button class="header__btn btn-login">Log in</button>
-              <button class="header__btn btn-signup">Sign Up</button>
-            </div>
+					<div class="header__btns">
+						<button class="header__btn btn-transparent" data-micromodal-trigger="modal">Log in</button>
+						<button class="header__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
+					</div>
 
             <!-- NavBtn -->
             <button class="nav-btn">
@@ -48,12 +48,31 @@
         </div>
       </header>
 
-      <main>
-        <!-- intro -->
-        <section class="intro">
-          <div class="intro__container container"></div>
-        </section>
-        <!-- /intro -->
+		<main>
+			<!-- intro -->
+			<section class="intro">
+				<div class="intro__container container">
+					<div class="intro__row">
+						<div class="intro__left-block">
+							<h1 class="intro__title title"><span>System5.dev: </span>Architecture Copilot</h1>
+							<div class="intro__descr">
+								<p>Our mission is to elevate engineering of evolving complex multi-domain systems to achieve
+									a manyfold increase in development
+									<span>velocity</span>, newcomers <span>time-to-productivity</span>,
+									and make everyone able to <span>understand</span>
+									and <span>contribute</span> - even without programming background.
+								</p>
+							</div>
+							<button class="intro__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
+						</div>
+
+						<div class="intro__right-block">
+							<img src="img/intro/cube.gif" alt="animated gif cube">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /intro -->
 
         <!-- benefits -->
         <section class="benefits">
@@ -158,43 +177,83 @@
         </section>
         <!-- /benefits -->
 
-        <!-- features -->
-        <section class="features">
-          <div class="features__container container"></div>
-        </section>
-        <!-- /features -->
+			<!-- features -->
+			<section class="features">
+				<div class="features__container container"></div>
+			</section>
+			<!-- /features -->
 
-        <!-- howItWorks -->
-        <section class="howItWorks">
-          <div class="howItWork__container scontainer"></div>
-        </section>
-        <!-- howItWorks -->
+			<!-- howItWorks -->
+			<section class="howItWorks">
+				<div class="howItWork__container scontainer"></div>
+			</section>
+			<!-- howItWorks -->
 
-        <!-- team -->
-        <section class="team">
-          <div class="team__container container"></div>
-        </section>
-        <!-- team -->
+			<!-- team -->
+			<section class="team">
+				<div class="team__container container"></div>
+			</section>
+			<!-- team -->
 
-        <!-- faq -->
-        <section class="faq">
-          <div class="faq__container container"></div>
-        </section>
-        <!-- faq -->
-      </main>
+			<!-- faq -->
+			<section class="faq">
+				<div class="faq__container container"></div>
+			</section>
+			<!-- faq -->
+			<!-- COOKIES -->
+			<div class="cookies">
+				<p class="cookies__text">Are you using cookies?</p>
+				<button class="cookies__btn btn-transparent" id="btn-ok">Ok</button>
+				<button class="cookies__btn btn-transparent" id="btn-yes">Yes</button>
+			</div>
+			<!-- /COOKIES -->
 
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.js"
-      integrity="sha512-qcwcAul7d7yUcoz3MmQABiaGDa+gVkaDWgZX6wEd/z3I6z62nQCDW3EqioQG+O+QlGCpxmJLdH5snh4IaDPiPA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+			<div class="modal micromodal-slide" id="modal" aria-hidden="true">
+				<div class="modal__overlay" tabindex="-1" data-custom-close="modal">
+					<div class="modal__container" role="dialog" aria-modal="true">
+
+						<button class="modal__close" title="close" data-custom-close>
+							<img src="img/icons/icon-cancel.svg" alt="">
+						</button>
+
+						<header class="modal__header">
+							<p class="modal__title title"> Join Our Waitlist</p>
+							<div class="modal__logo">
+								<img src="img/icons/logo.svg" alt="logo">
+							</div>
+						</header>
+
+						<form>
+							<h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
+							<label class="custom-radio">
+								<input type="radio" name="customRadio" />
+								<span class="radio-button"></span>
+								Personal
+							</label>
+							<label class="custom-radio">
+								<input type="radio" name="customRadio" />
+								<span class="radio-button"></span>
+								Organisation
+							</label>
+							<div class="modal__footer">
+								<button class="modal__btn button btn-green">Next</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container"></div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.js"
+		integrity="sha512-qcwcAul7d7yUcoz3MmQABiaGDa+gVkaDWgZX6wEd/z3I6z62nQCDW3EqioQG+O+QlGCpxmJLdH5snh4IaDPiPA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script defer src="js/script.js"></script>
-  </body>
+	<script defer src="js/script.js"></script>
+</body>
+
 </html>
