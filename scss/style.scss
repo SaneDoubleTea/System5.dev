@@ -10,6 +10,12 @@
 body {
     font-family: 'Lexend', serif;
     font-size: 16px;
+    background: #303268;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
@@ -31,3 +37,6 @@ body {
         color: $text-highlight;
     }
 }
+
+@import 'blocks/header';
+@import 'blocks/intro';
