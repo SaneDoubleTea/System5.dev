@@ -644,3 +644,16 @@ body {
 .micromodal-slide .modal__overlay {
   will-change: transform;
 }
+
+.benefits__title {
+  margin-bottom: 40px;
+}
+.benefits__slide-title {
+  color: #FFF;
+  font-size: 40px;
+}
+.benefits__slide-text {
+  color: #FFF;
+  font-size: 32px;
+  letter-spacing: -1.6px;
+}
