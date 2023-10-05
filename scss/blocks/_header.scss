@@ -100,15 +100,65 @@
         }
     }
 }
+@media (max-width: 1024px) {
+    .header {
+        &__list {
+            gap: 0;
+        }
+    }
+}
 
 @media (max-width: 998px) {
     .header {
+        top: 16px;
         &__list {
             gap: 0;
         }
 
         &__link {
             font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .header {
+        max-height: 64px;
+        padding: 8px 0;
+
+        &__logo {
+            max-height: 40px;
+            max-width: 97px;
+            margin-right: 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__btn {
+            width: 100px;
+            height: 50px;
+            padding: 16px 22px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .header {
+       
+        &__btns {
+            justify-content: flex-end;
+            gap: 8px;
+        }
+        &__btn {
+            width: 45px;
+            height: 30px;
+            padding: 16px 5px;
+            font-size: 8px;
         }
     }
 }

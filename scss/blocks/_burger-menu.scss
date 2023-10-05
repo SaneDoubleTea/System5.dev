@@ -3,8 +3,6 @@
     overflow-y: hidden;
 }
 
-
-
 /* BTN NAV  STYLES*/
 .nav-btn {
     position: relative;
@@ -131,6 +129,7 @@
 
     .nav-btn {
         display: block;
+        margin-left: 12px;
     }
 
     .mobile-nav-active {

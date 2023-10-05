@@ -60,11 +60,16 @@ body {
     background-color: transparent;
     transition: all 0.4s ease-out;
     &:hover {
-        box-shadow: 0px 0px 14px 1px #34c21c;
+        border: 1px solid #34c21c;
+        background: linear-gradient(0deg, rgba(76, 188, 11, 0.1) 0%, rgba(76, 188, 11, 0.1) 100%),
+            radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 0px 0px 14px 1px #4cbc0b;
     }
     &:active,
     &:focus {
-        background-color: $green-active;
+        border: 1px solid #4cbc0b;
+        background: rgba(68, 12, 33, 0.1);
+        box-shadow: 0px 0px 14px 1px #4cbc0b;
     }
 }
 
@@ -127,12 +132,43 @@ body {
 }
 
 .wrapper {
-    padding-top: 132px;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth; /* Для Safari и старых версий Edge */
+    -moz-scroll-behavior: smooth; /* Для Firefox */
+    -ms-scroll-behavior: smooth; /* Для старых версий Edge */
+}
+section {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+@media (max-width: 768px) {
+    section {
+        width: 100%;
+        height: auto;
+        scroll-snap-align: unset;
+    }
 }
 
 @import 'blocks/header';
 @import 'blocks/burger-menu';
 
+@media (max-width: 992px) {
+    .title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+}
 @import 'blocks/intro';
 @import 'blocks/modal';
 @import 'blocks/benefits';

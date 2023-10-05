@@ -140,10 +140,14 @@ body {
   transition: all 0.4s ease-out;
 }
 .btn-transparent:hover {
-  box-shadow: 0px 0px 14px 1px #34c21c;
+  border: 1px solid #34c21c;
+  background: linear-gradient(0deg, rgba(76, 188, 11, 0.1) 0%, rgba(76, 188, 11, 0.1) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 14px 1px #4cbc0b;
 }
 .btn-transparent:active, .btn-transparent:focus {
-  background-color: #469618;
+  border: 1px solid #4cbc0b;
+  background: rgba(68, 12, 33, 0.1);
+  box-shadow: 0px 0px 14px 1px #4cbc0b;
 }
 
 .btn-green {
@@ -206,9 +210,30 @@ body {
 }
 
 .wrapper {
-  padding-top: 132px;
+  height: 100vh;
+  position: relative;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth; /* Для Safari и старых версий Edge */
+  -moz-scroll-behavior: smooth; /* Для Firefox */
+  -ms-scroll-behavior: smooth; /* Для старых версий Edge */
 }
 
+section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    height: auto;
+    scroll-snap-align: unset;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -299,12 +324,56 @@ body {
     gap: 5px;
   }
 }
+@media (max-width: 1024px) {
+  .header__list {
+    gap: 0;
+  }
+}
 @media (max-width: 998px) {
+  .header {
+    top: 16px;
+  }
   .header__list {
     gap: 0;
   }
   .header__link {
     font-size: 16px;
+  }
+}
+@media (max-width: 540px) {
+  .header {
+    max-height: 64px;
+    padding: 8px 0;
+  }
+  .header__logo {
+    max-height: 40px;
+    max-width: 97px;
+    margin-right: 0;
+  }
+  .header__logo img {
+    width: 100%;
+    height: auto;
+  }
+  .header__btn {
+    width: 100px;
+    height: 50px;
+    padding: 16px 22px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .header__btns {
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .header__btn {
+    width: 45px;
+    height: 30px;
+    padding: 16px 5px;
+    font-size: 8px;
   }
 }
 /* BURGER MENU STYLES */
@@ -412,6 +481,7 @@ body {
   }
   .nav-btn {
     display: block;
+    margin-left: 12px;
   }
   .mobile-nav-active {
     display: flex;
@@ -422,10 +492,22 @@ body {
     pointer-events: auto;
   }
 }
+@media (max-width: 992px) {
+  .title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+}
 .intro {
+  padding-top: 132px;
   margin-bottom: 100px;
 }
 .intro__row {
+  margin-top: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,6 +542,73 @@ body {
   height: auto;
 }
 
+@media (max-height: 600px) {
+  .intro__row {
+    margin-top: 0;
+  }
+  .intro__descr {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .intro {
+    padding-top: 104px;
+  }
+  .intro__row {
+    margin-top: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro__title {
+    text-align: center;
+    margin: 0 auto 16px;
+  }
+  .intro__descr {
+    text-align: center;
+  }
+  .intro__btn {
+    margin: 0 auto;
+  }
+  .intro__right-block {
+    max-height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .intro__title {
+    font-size: 32px;
+  }
+  .intro__descr {
+    font-size: 18px;
+  }
+}
+@media (max-width: 425px) {
+  .intro {
+    padding-top: 94px;
+  }
+  .intro__row {
+    margin-top: 0;
+  }
+  .intro__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .intro__descr {
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .intro__btn {
+    max-width: 170px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .intro__left-block {
+    margin-bottom: 16px;
+  }
+}
 /**************************\
   Basic Modal Styles
 \**************************/
@@ -490,6 +639,12 @@ body {
   background: linear-gradient(0deg, rgba(0, 111, 253, 0.1) 0%, rgba(0, 111, 253, 0.1) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
   -webkit-backdrop-filter: blur(500px);
           backdrop-filter: blur(500px);
+}
+.modal__container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__header {
@@ -527,9 +682,21 @@ body {
   font-weight: 600;
 }
 
+.modal__btn {
+  max-width: 360px;
+  width: 100%;
+}
+
+.modal__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .custom-radio {
   display: flex;
-  max-width: 300px;
+  max-width: 360px;
   width: 100%;
   padding: 20px 8px;
   border-radius: 12px;
@@ -545,6 +712,31 @@ body {
 .custom-radio + .custom-radio {
   margin-top: 20px;
 }
+.custom-radio + .modal__footer {
+  margin-top: 32px;
+}
+
+.custom-radio--active {
+  position: relative;
+  border-radius: 12px !important;
+}
+.custom-radio--active:active, .custom-radio--active:focus, .custom-radio--active:hover {
+  border-radius: 9999999px !important;
+  background: transparent;
+  -o-border-image: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+     border-image: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+  border-image-slice: 1;
+  border-image-source: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+}
+.custom-radio--active input[type=radio]:checked + .radio-button {
+  background-color: #2b99ff;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+.custom-radio--active input[type=radio]:checked + .radio-button::before {
+  display: block;
+}
+
 .custom-radio input[type=radio] {
   display: none;
   transition: all 0.3s ease-out;
@@ -574,15 +766,6 @@ body {
   border-radius: 50%;
   background-color: #fff;
   transition: all 0.3s ease-out;
-}
-
-.custom-radio input[type=radio]:checked + .radio-button {
-  background-color: #2b99ff;
-  opacity: 1;
-  transition: all 0.3s ease-out;
-}
-.custom-radio input[type=radio]:checked + .radio-button::before {
-  display: block;
 }
 
 /**************************\
@@ -650,6 +833,7 @@ body {
 }
 
 .benefits {
+  padding-top: 156px;
   padding-bottom: 80px;
 }
 .benefits__title {

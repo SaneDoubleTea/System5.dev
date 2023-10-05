@@ -160,3 +160,25 @@ new Swiper('.benefits__slider', {
         },
     },
 });
+
+// Получаем все элементы <label> с классом "custom-radio"
+const customRadios = document.querySelectorAll('.custom-radio');
+
+// Добавляем обработчик события для каждого <label>
+customRadios.forEach((customRadio) => {
+    // Получаем связанный с ним <input>
+    const radioInput = customRadio.querySelector('input[type="radio"]');
+
+    // Добавляем обработчик события change для <input>
+    radioInput.addEventListener('change', () => {
+        // Снимаем класс "custom-radio--active" со всех элементов <label> сразу
+        customRadios.forEach((otherRadio) => {
+            otherRadio.classList.remove('custom-radio--active');
+        });
+
+        // Если <input> становится checked, добавляем класс "custom-radio--active" к текущему <label>
+        if (radioInput.checked) {
+            customRadio.classList.add('custom-radio--active');
+        }
+    });
+});
