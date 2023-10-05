@@ -1,13 +1,14 @@
 @import 'blocks/reset';
 
-@import url(https://fonts.googleapis.com/css?family=Lexend:300,regular,500,600,700font-display:swap);
-@import url(https://fonts.googleapis.com/css?family=Spline+Sans:regularfont-display:swap);
-@import url(https://fonts.googleapis.com/css?family=Lora:600,700font-display:swap);
-@import url(https://fonts.googleapis.com/css?family=Manrope:700font-display:swap);
+@import url(https://fonts.googleapis.com/css?family=Lexend:300,regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Spline+Sans:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lora:600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Manrope:700&display=swap);
 
 @import 'blocks/vars';
 
 body {
+    color: $primary;
     font-family: 'Lexend', serif;
     font-size: 16px;
     background: #303268;
@@ -38,6 +39,12 @@ body {
     }
 }
 
+.wrapper {
+    padding-top: 132px;
+}
+
 @import 'blocks/header';
+@import 'blocks/burger-menu';
+
 @import 'blocks/intro';
 @import 'blocks/benefits';
