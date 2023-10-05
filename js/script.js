@@ -1,6 +1,4 @@
 //!======Swiper=========
-// import Swiper, { Navigation, Pagination, EffectFade, Scrollbar } from "swiper";
-
 // new Swiper(".swiper", {
 //     modules: [Navigation, Pagination, EffectFade, Scrollbar],
 //     loop: false,
@@ -36,18 +34,17 @@
 // });
 
 //!======Modal=========
-// import MicroModal from "micromodal";
-// MicroModal.init({
-//     // onShow: modal => console.info(`${modal.id} is shown`), // [1]
-//     // onClose: modal => console.info(`${modal.id} is hidden`), // [2]
-//     openTrigger: 'data-micromodal-trigger', // [3]
-//     closeTrigger: 'data-custom-close', // [4]
-//     disableScroll: true, // [5]
-//     disableFocus: false, // [6]
-//     awaitOpenAnimation: false, // [7]
-//     awaitCloseAnimation: false, // [8]
-//     debugMode: true, // [9]
-// });
+MicroModal.init({
+    // onShow: modal => console.info(`${modal.id} is shown`), // [1]
+    // onClose: modal => console.info(`${modal.id} is hidden`), // [2]
+    openTrigger: 'data-micromodal-trigger', // [3]
+    closeTrigger: 'data-custom-close', // [4]
+    disableScroll: true, // [5]
+    disableFocus: false, // [6]
+    awaitOpenAnimation: false, // [7]
+    awaitCloseAnimation: false, // [8]
+    debugMode: true, // [9]
+});
 
 //!ACCORDION
 // import Accordion from "accordion-js";
@@ -112,3 +109,30 @@ function toggleMobilenav() {
         }
     };
 })();
+
+document.addEventListener('DOMContentLoaded', function cookies() {
+    const cookiesPopup = document.querySelector('.cookies');
+    const okButton = document.querySelector('#btn-ok');
+    const yesButton = document.querySelector('#btn-yes');
+    
+	 const closeCookiesPopup = () => {
+        cookiesPopup.style.display = 'none';
+    };
+
+    okButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeCookiesPopup();
+    });
+
+    yesButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeCookiesPopup();
+    });
+
+    // Также добавляем обработчик события для .cookies для случаев, когда пользователь кликает вне кнопок
+    cookiesPopup.addEventListener('click', (event) => {
+        if (event.target === cookiesPopup) {
+            closeCookiesPopup();
+        }
+    });
+});
