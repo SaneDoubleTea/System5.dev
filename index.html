@@ -233,34 +233,35 @@
 			<div class="modal micromodal-slide" id="modal" aria-hidden="true">
 				<div class="modal__overlay" tabindex="-1" data-custom-close="modal">
 					<div class="modal__container" role="dialog" aria-modal="true">
+						<div class="modal__content">
+							<button class="modal__close" title="close" data-custom-close>
+								<img src="img/icons/icon-cancel.svg" alt="">
+							</button>
 
-						<button class="modal__close" title="close" data-custom-close>
-							<img src="img/icons/icon-cancel.svg" alt="">
-						</button>
+							<header class="modal__header">
+								<p class="modal__title title"> Join Our Waitlist</p>
+								<div class="modal__logo">
+									<img src="img/icons/logo.svg" alt="logo">
+								</div>
+							</header>
 
-						<header class="modal__header">
-							<p class="modal__title title"> Join Our Waitlist</p>
-							<div class="modal__logo">
-								<img src="img/icons/logo.svg" alt="logo">
-							</div>
-						</header>
-
-						<form>
-							<h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
-							<label class="custom-radio">
-								<input type="radio" name="customRadio" />
-								<span class="radio-button"></span>
-								Personal
-							</label>
-							<label class="custom-radio">
-								<input type="radio" name="customRadio" />
-								<span class="radio-button"></span>
-								Organisation
-							</label>
-							<div class="modal__footer">
-								<button class="modal__btn button btn-green">Next</button>
-							</div>
-						</form>
+							<form action="external-link">
+								<h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
+								<label class="custom-radio">
+									<input type="radio" name="customRadio" id="personalRadio" />
+									<span class="radio-button"></span>
+									Personal
+								</label>
+								<label class="custom-radio">
+									<input type="radio" name="customRadio" id="organizationRadio" />
+									<span class="radio-button"></span>
+									Organisation
+								</label>
+								<div class="modal__link">
+									<a href="#" class="modal__btn btn-green" id="nextButton">Next</a>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

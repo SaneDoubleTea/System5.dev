@@ -114,6 +114,9 @@
         &__list {
             gap: 0;
         }
+        &__btns {
+            justify-content: flex-end;
+        }
 
         &__link {
             font-size: 16px;
@@ -149,7 +152,6 @@
 
 @media (max-width: 440px) {
     .header {
-       
         &__btns {
             justify-content: flex-end;
             gap: 8px;
