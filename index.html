@@ -300,11 +300,16 @@
         </section>
         <!-- /features -->
 
-        <!-- howItWorks -->
-        <section class="howItWorks">
-          <div class="howItWork__container scontainer"></div>
-        </section>
-        <!-- howItWorks -->
+			<!-- howItWorks -->
+			<section class="howItWorks">
+				<div class="howItWork__container container">
+					<h4 class="howItWorks__title title"><span>How it</span> works</h4>
+					<div class="howItWorks__video">
+						<video src="video/graf-min.mp4" controls loop muted autoplay playsinline></video>
+					</div>
+				</div>
+			</section>
+			<!-- howItWorks -->
 
         <!-- team -->
         <section class="team">
@@ -312,26 +317,69 @@
         </section>
         <!-- team -->
 
-        <!-- faq -->
-        <section class="faq">
-          <div class="faq__container container"></div>
-        </section>
-        <!-- faq -->
-        <!-- COOKIES -->
-        <div class="cookies">
-          <p class="cookies__text">Are you using cookies?</p>
-          <button class="cookies__btn btn-transparent" id="btn-ok">Ok</button>
-          <button class="cookies__btn btn-transparent" id="btn-yes">Yes</button>
-        </div>
-        <!-- /COOKIES -->
+			<!-- faq -->
+			<section class="faq">
+				<div class="faq__container container">
+					<h6 class="faq__title title"><span>FAQ</span></h6>
+					<div class="faq__row">
+						<div class="faq__robot">
+							<img src="img/faq/neon-chatbot-assistant-answering-questions-online.svg" alt="">
+						</div>
+						<!-- accordion -->
+						<div class="accordion">
+							<div class="accordion-container">
 
-        <div class="modal micromodal-slide" id="modal" aria-hidden="true">
-          <div class="modal__overlay" tabindex="-1" data-custom-close="modal">
-            <div class="modal__container" role="dialog" aria-modal="true">
-              <div class="modal__content">
-                <button class="modal__close" title="close" data-custom-close>
-                  <img src="img/icons/icon-cancel.svg" alt="" />
-                </button>
+								<div class="ac accordion__item">
+									<div class="ac-header accordion__header">
+										<img src="img/faq/accordion-img1.svg" alt="img which description this question">
+										
+										<button class="ac-trigger accordion__trigger">
+
+											<span>So it is one more diagramming tool?</span>
+
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+												fill="none">
+												<path d="M0 10.2861H24V13.7147H0V10.2861Z" fill="white" />
+												<path d="M10 24L10 0H13.4286L13.4286 24H10Z" fill="white" />
+											</svg>
+										</button>
+										
+									</div>
+									<div class="ac-panel accordion__panel">
+										<p class="ac-text accordion__text">
+											Not even close. We are strong believers of textual models (LLMs approve!) so diagrams
+											will be our side benefit. The core
+											and the main idea of the product is a “one system - one model” principle also known as
+											a “digital thread”. We can
+											collect and organise all the contextual information according to inner metamodel
+											structure to effectively use it as a
+											basis for evolutional engineering processes.
+										</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- faq -->
+			<!-- COOKIES -->
+			<div class="cookies">
+				<p class="cookies__text">Are you using cookies?</p>
+				<button class="cookies__btn btn-transparent" id="btn-ok">Ok</button>
+				<button class="cookies__btn btn-transparent" id="btn-yes">Yes</button>
+			</div>
+			<!-- /COOKIES -->
+
+			<!-- MODAL -->
+			<div class="modal micromodal-slide" id="modal" aria-hidden="true">
+				<div class="modal__overlay" tabindex="-1" data-custom-close="modal">
+					<div class="modal__container" role="dialog" aria-modal="true">
+						<div class="modal__content">
+							<button class="modal__close" title="close" data-custom-close>
+								<img src="img/icons/icon-cancel.svg" alt="">
+							</button>
 
                 <header class="modal__header">
                   <p class="modal__title title">Join Our Waitlist</p>
@@ -340,27 +388,29 @@
                   </div>
                 </header>
 
-                <form action="external-link">
-                  <h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
-                  <label class="custom-radio">
-                    <input type="radio" name="customRadio" id="personalRadio" />
-                    <span class="radio-button"></span>
-                    Personal
-                  </label>
-                  <label class="custom-radio">
-                    <input type="radio" name="customRadio" id="organizationRadio" />
-                    <span class="radio-button"></span>
-                    Organisation
-                  </label>
-                  <div class="modal__link">
-                    <a href="#" class="modal__btn btn-green" id="nextButton">Next</a>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+							<form action="external-link">
+								<h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
+								<label class="custom-radio">
+									<input type="radio" name="customRadio" id="personalRadio" />
+									<span class="radio-button"></span>
+									Personal
+								</label>
+								<label class="custom-radio">
+									<input type="radio" name="customRadio" id="organizationRadio" />
+									<span class="radio-button"></span>
+									Organisation
+								</label>
+								<div class="modal__link">
+									<a href="#" class="modal__btn btn-green" id="nextButton">Next</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /MODAL -->
+
+		</main>
 
       <footer>
         <div class="container"></div>

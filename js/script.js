@@ -69,26 +69,26 @@ document.addEventListener("DOMContentLoaded", function cookies() {
   const okButton = document.querySelector("#btn-ok");
   const yesButton = document.querySelector("#btn-yes");
 
-  const closeCookiesPopup = () => {
-    cookiesPopup.style.display = "none";
-  };
+    const closeCookiesPopup = () => {
+        cookiesPopup.style.display = 'none';
+    };
 
-  okButton.addEventListener("click", (event) => {
-    event.stopPropagation();
-    closeCookiesPopup();
-  });
+    okButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeCookiesPopup();
+    });
 
-  yesButton.addEventListener("click", (event) => {
-    event.stopPropagation();
-    closeCookiesPopup();
-  });
+    yesButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeCookiesPopup();
+    });
 
-  // Также добавляем обработчик события для .cookies для случаев, когда пользователь кликает вне кнопок
-  cookiesPopup.addEventListener("click", (event) => {
-    if (event.target === cookiesPopup) {
-      closeCookiesPopup();
-    }
-  });
+    // Также добавляем обработчик события для .cookies для случаев, когда пользователь кликает вне кнопок
+    cookiesPopup.addEventListener('click', (event) => {
+        if (event.target === cookiesPopup) {
+            closeCookiesPopup();
+        }
+    });
 });
 
 //!======Modal=========
@@ -166,7 +166,7 @@ const slideCount2 = slides2.length;
 const slideCountText2 = slideCount2 >= 10 ? slideCount2.toString() : `0${slideCount2}`;
 
 function formatNumber(number) {
-  return number < 10 ? `0${number}` : `${number}`;
+    return number < 10 ? `0${number}` : `${number}`;
 }
 
 function updateFraction(fractionElement, currentIndex, totalSlides) {
@@ -226,24 +226,23 @@ new Swiper(".features__slider", {
 
 // !ACCORDION
 // import Accordion from "accordion-js";
-// var accordion = new Accordion(".accordion-container");
-// var accordion = new Accordion(".accordion-container", {
-//     // animation duration in ms {number}
-//     duration: 600,
-//     // add ARIA elements to the HTML structure {boolean}
-//     ariaEnabled: true,
-//     // allow collapse expanded panel {boolean}
-//     collapse: true,
-//     // show multiple elements at the same time {boolean}
-//     showMultiple: false,
-//     // show accordion elements during initialization {array}
-//     openOnInit: [],
-//     // element class {string}
-//     elementClass: "ac",
-//     // trigger class {string}
-//     triggerClass: "ac-trigger",
-//     // panel class {string}
-//     panelClass: "ac-panel",
-//     // active element class {string}
-//     activeClass: "is-active",
-// });
+let accordion = new Accordion('.accordion-container', {
+    // animation duration in ms {number}
+    duration: 600,
+    // add ARIA elements to the HTML structure {boolean}
+    ariaEnabled: true,
+    // allow collapse expanded panel {boolean}
+    collapse: true,
+    // show multiple elements at the same time {boolean}
+    showMultiple: false,
+    // show accordion elements during initialization {array}
+    openOnInit: [],
+    // element class {string}
+    elementClass: 'ac',
+    // trigger class {string}
+    triggerClass: 'ac-trigger',
+    // panel class {string}
+    panelClass: 'ac-panel',
+    // active element class {string}
+    activeClass: 'is-active',
+});

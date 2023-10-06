@@ -1,71 +1,29 @@
-/*=== accordion vars ========*/
-$bg: #fff;
-$text: #7288a2;
-$gray: #4d5974;
-$border-color: #848484;
-$border-active: #037e8c;
-$blue: #03b5d2;
-$color-text: #141312;
-$arrow-passive: #121214;
-
-/* ac */
-.accordion__item {
-    margin-bottom: 8px;
-    border: 0.5px solid $border-color;
-    border-radius: 3px;
-    background-color: #fff;
-    box-sizing: border-box;
-}
-/* ac-trigger */
-.accordion__trigger {
-    background-color: transparent;
-    padding: 16px 10px 19px 25px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-}
-.accordion__text {
-    margin: 0;
-    padding: 10px;
-    color: $color-text;
-    font-size: 14px;
-    line-height: 21px;
-}
-.ac {
-    .ac-header {
-        margin: 0;
-        padding: 0;
+.accordion {
+    &__header {
+        display: flex;
+        align-items: center;
     }
-    .ac-trigger {
-        text-align: left;
-        width: 100%;
-        display: block;
-        cursor: pointer;
-        transition: color 0.25s ease;
-        position: relative;
-        text-decoration: none;
-        margin: 0;
-        border: 0;
 
-        &::after {
-            position: absolute;
-            content: "\2715";
-            text-align: center;
-            width: 12px;
-            height: 22px;
-            transform: translate(0, -50%);
-            right: 10px;
-            top: 50%;
-        }
+    &__item {
+        border-radius: 24px;
+        border: 2px solid #fff;
+        background: linear-gradient(0deg, rgba(76, 188, 11, 0.1) 0%, rgba(76, 188, 11, 0.1) 100%),
+            radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &__text {
+        color: $primary;
+    }
+
+    &__trigger {
+        background-color: transparent;
+        color: $primary;
         svg {
         }
-
-        &:focus {
-            color: $color-text;
-        }
     }
+}
 
-    // Panel class
+.ac {
     .ac-panel {
         overflow: hidden;
         transition-property: height, visibility;
@@ -81,23 +39,11 @@ $arrow-passive: #121214;
 
     // Active class
     &.is-active {
-        border: 0.5px solid $border-active;
-
+        border: 1px solid $green-primary;
         .ac-panel {
             visibility: visible;
         }
-
         & > .ac-header .ac-trigger {
-            &::after {
-                position: absolute;
-                content: "\2715";
-                text-align: center;
-                width: 12px;
-                height: 22px;
-                transform: translate(0, -50%);
-                right: 10px;
-                top: 50%;
-            }
             svg {
                 // символ/ стрелочка, плюсик
             }
