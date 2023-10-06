@@ -140,11 +140,13 @@ body {
   transition: all 0.4s ease-out;
 }
 .btn-transparent:hover {
+  border-radius: 1000px;
   border: 1px solid #34c21c;
   background: linear-gradient(0deg, rgba(76, 188, 11, 0.1) 0%, rgba(76, 188, 11, 0.1) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0px 0px 14px 1px #4cbc0b;
 }
 .btn-transparent:active, .btn-transparent:focus {
+  border-radius: 1000px;
   border: 1px solid #4cbc0b;
   background: rgba(68, 12, 33, 0.1);
   box-shadow: 0px 0px 14px 1px #4cbc0b;
@@ -187,7 +189,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  z-index: 1;
+  z-index: 9;
 }
 .cookies__text {
   min-width: -moz-fit-content;
@@ -328,6 +330,9 @@ section {
   }
   .header__list {
     gap: 0;
+  }
+  .header__btns {
+    justify-content: flex-end;
   }
   .header__link {
     font-size: 16px;
@@ -494,6 +499,29 @@ section {
   .title {
     font-size: 24px;
   }
+  .cookies {
+    max-height: 80px;
+    padding: 20px 8px;
+  }
+  .cookies__text {
+    font-size: 16px;
+    margin-right: 12px;
+  }
+  .cookies__btn {
+    max-width: 70px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .cookies {
+    left: 16px;
+    right: 16px;
+    max-width: 100%;
+    justify-content: center;
+    transform: translateX(0%);
+  }
 }
 .intro {
   padding-top: 132px;
@@ -574,6 +602,19 @@ section {
     font-size: 18px;
   }
 }
+@media (max-height: 768px) {
+  .intro__row {
+    margin-top: 50px;
+  }
+}
+@media (max-height: 600px) {
+  .intro {
+    padding-top: 110px;
+  }
+  .intro__row {
+    margin-top: 0px;
+  }
+}
 @media (max-width: 425px) {
   .intro {
     padding-top: 94px;
@@ -615,6 +656,7 @@ section {
   display: flex;
   justify-content: center;
   padding-top: 148px;
+  z-index: 10;
 }
 
 .modal__container {
@@ -622,12 +664,7 @@ section {
   max-height: 560px;
   width: 100%;
   height: 100%;
-  padding: 32px 8px 76px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-radius: 10px;
-  border: 1px solid #fff;
   overflow-y: auto;
   background: linear-gradient(0deg, rgba(0, 111, 253, 0.1) 0%, rgba(0, 111, 253, 0.1) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
   -webkit-backdrop-filter: blur(500px);
@@ -638,6 +675,29 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.modal__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 32px 8px 76px;
+}
+.modal__content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 1px;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .modal__header {
@@ -680,7 +740,7 @@ section {
   width: 100%;
 }
 
-.modal__footer {
+.modal__link {
   width: 100%;
   display: flex;
   align-items: center;
@@ -695,30 +755,45 @@ section {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: transparent;
+  color: #a5a5a5;
+  font-family: "Spline Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.3px;
   cursor: pointer;
-  transition: all 0.7s ease-out;
+  transition: all 0.3s ease-out;
 }
 .custom-radio:hover {
+  color: #e0e0e0;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(0deg, rgba(76, 188, 11, 0.04) 0%, rgba(76, 188, 11, 0.04) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .custom-radio + .custom-radio {
   margin-top: 20px;
 }
-.custom-radio + .modal__footer {
+.custom-radio + .modal__link {
   margin-top: 32px;
 }
 
 .custom-radio--active {
   position: relative;
-  border-radius: 12px;
+  border-color: transparent;
+  border-width: 0px;
+  border: none;
+  color: #a5a5a5;
 }
-.custom-radio--active:active, .custom-radio--active:focus, .custom-radio--active:hover {
-  background: transparent;
-  -o-border-image: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
-     border-image: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
-  border-image-slice: 1;
-  border-image-source: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+.custom-radio--active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px;
+  pointer-events: none;
 }
 .custom-radio--active input[type=radio]:checked + .radio-button {
   background-color: #2b99ff;
@@ -761,7 +836,7 @@ section {
 }
 
 /**************************\
-  Demo Animation Style
+   Animation Style
 \**************************/
 @keyframes mmfadeIn {
   from {
@@ -824,6 +899,48 @@ section {
   will-change: transform;
 }
 
+@media (max-width: 768px) {
+  .modal__overlay {
+    padding: 148px 16px 40px;
+  }
+}
+@media (max-width: 500px) {
+  .modal__overlay {
+    padding: 94px 16px 40px;
+  }
+  .modal__content {
+    padding: 44px 8px 76px;
+  }
+  .modal__close {
+    top: 4px;
+    right: 4px;
+  }
+  .modal__title {
+    font-size: 32px;
+  }
+  .modal__subtitle {
+    max-width: 350px;
+    margin-bottom: 16px;
+  }
+  .modal__logo {
+    max-width: 80px;
+    margin-bottom: 16px;
+  }
+  .modal .custom-radio + .custom-radio {
+    margin-top: 16px;
+  }
+  .modal .custom-radio + .modal__link {
+    margin-top: 16px;
+  }
+}
+@media (max-height: 530px) {
+  .modal__overlay {
+    padding-bottom: 10px;
+  }
+  .modal__content {
+    height: auto;
+  }
+}
 .benefits {
   padding-top: 156px;
   padding-bottom: 80px;

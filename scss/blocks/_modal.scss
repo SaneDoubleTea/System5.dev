@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     padding-top: 148px;
+    z-index: 10;
 }
 
 .modal__container {
@@ -22,12 +23,7 @@
     max-height: 560px;
     width: 100%;
     height: 100%;
-    padding: 32px 8px 76px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 10px;
-    border: 1px solid #fff;
     overflow-y: auto;
     background: linear-gradient(0deg, rgba(0, 111, 253, 0.1) 0%, rgba(0, 111, 253, 0.1) 100%),
         radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
@@ -40,7 +36,30 @@
         align-items: center;
     }
 }
+.modal__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
 
+    padding: 32px 8px 76px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 12px;
+        background: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        padding: 1px;
+        pointer-events: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
 .modal__header {
     display: flex;
     justify-content: space-between;
@@ -84,7 +103,7 @@
     width: 100%;
 }
 
-.modal__footer {
+.modal__link {
     width: 100%;
     display: flex;
     align-items: center;
@@ -99,9 +118,16 @@
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: transparent;
+    color: #a5a5a5;
+    font-family: 'Spline Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.3px;
     cursor: pointer;
-    transition: all 0.7s ease-out;
+    transition: all 0.3s ease-out;
     &:hover {
+        color: #e0e0e0;
         border: 1px solid rgba(255, 255, 255, 0.2);
         background: linear-gradient(0deg, rgba(76, 188, 11, 0.04) 0%, rgba(76, 188, 11, 0.04) 100%),
             radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
@@ -109,22 +135,28 @@
     + .custom-radio {
         margin-top: 20px;
     }
-    + .modal__footer {
+    + .modal__link {
         margin-top: 32px;
     }
 }
 
 .custom-radio--active {
     position: relative;
-    border-radius: 12px;
-
-    &:active,
-    &:focus,
-    &:hover {
-        background: transparent;
-        border-image: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
-        border-image-slice: 1;
-        border-image-source: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+    border-color: transparent;
+    border-width: 0px;
+    border: none;
+    color: #a5a5a5;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 12px;
+        background: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        padding: 2px;
+        pointer-events: none;
     }
 
     input[type='radio']:checked + .radio-button {
@@ -170,7 +202,7 @@
 }
 
 /**************************\
-  Demo Animation Style
+   Animation Style
 \**************************/
 @keyframes mmfadeIn {
     from {
@@ -235,4 +267,55 @@
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
     will-change: transform;
+}
+
+@media (max-width: 768px) {
+    .modal {
+        &__overlay {
+            padding: 148px 16px 40px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .modal {
+        &__overlay {
+            padding: 94px 16px 40px;
+        }
+        &__content {
+            padding: 44px 8px 76px;
+        }
+        &__close {
+            top: 4px;
+            right: 4px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__subtitle {
+            max-width: 350px;
+            margin-bottom: 16px;
+        }
+        &__logo {
+            max-width: 80px;
+            margin-bottom: 16px;
+        }
+        .custom-radio + .custom-radio {
+            margin-top: 16px;
+        }
+        .custom-radio + .modal__link {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media (max-height: 530px) {
+    .modal {
+        &__overlay {
+            padding-bottom: 10px;
+        }
+        &__content {
+            height: auto;
+        }
+    }
 }

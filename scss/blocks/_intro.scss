@@ -96,6 +96,21 @@
     }
 }
 
+@media (max-height: 768px) {
+    .intro {
+        &__row {
+            margin-top: 50px;
+        }
+    }
+}
+@media (max-height: 600px) {
+    .intro {
+        padding-top: 110px;
+        &__row {
+            margin-top: 0px;
+        }
+    }
+}
 @media (max-width: 425px) {
     .intro {
         padding-top: 94px;
