@@ -33,41 +33,41 @@
 //     },
 // });
 //!====== Burger Menu=========
-document.addEventListener('DOMContentLoaded', function burgerMenu() {
-    const navBtn = document.querySelector('.nav-btn'),
-        mobileNav = document.querySelector('.mobile-nav'),
-        body = document.body;
+document.addEventListener("DOMContentLoaded", function burgerMenu() {
+  const navBtn = document.querySelector(".nav-btn"),
+    mobileNav = document.querySelector(".mobile-nav"),
+    body = document.body;
 
-    //Клик по кнопке
-    navBtn.addEventListener('click', function (event) {
-        event.stopPropagation();
-        toggleMobilenav();
-    });
+  //Клик по кнопке
+  navBtn.addEventListener("click", function (event) {
+    event.stopPropagation();
+    toggleMobilenav();
+  });
 
-    //Клик по окну за пределами навигации
-    window.addEventListener('click', function () {
-        if (body.classList.contains('no-scroll')) {
-            toggleMobilenav();
-        }
-    });
-
-    //останавливаем клик внутри открытой мобильной навигации
-    mobileNav.addEventListener('click', function (event) {
-        event.stopPropagation();
-    });
-
-    function toggleMobilenav() {
-        mobileNav.classList.toggle('mobile-nav-active');
-        navBtn.classList.toggle('nav-btn-close');
-        body.classList.toggle('no-scroll');
+  //Клик по окну за пределами навигации
+  window.addEventListener("click", function () {
+    if (body.classList.contains("no-scroll")) {
+      toggleMobilenav();
     }
+  });
+
+  //останавливаем клик внутри открытой мобильной навигации
+  mobileNav.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
+  function toggleMobilenav() {
+    mobileNav.classList.toggle("mobile-nav-active");
+    navBtn.classList.toggle("nav-btn-close");
+    body.classList.toggle("no-scroll");
+  }
 });
 
 //!======Cookies=========
-document.addEventListener('DOMContentLoaded', function cookies() {
-    const cookiesPopup = document.querySelector('.cookies');
-    const okButton = document.querySelector('#btn-ok');
-    const yesButton = document.querySelector('#btn-yes');
+document.addEventListener("DOMContentLoaded", function cookies() {
+  const cookiesPopup = document.querySelector(".cookies");
+  const okButton = document.querySelector("#btn-ok");
+  const yesButton = document.querySelector("#btn-yes");
 
   const closeCookiesPopup = () => {
     cookiesPopup.style.display = "none";
@@ -92,103 +92,141 @@ document.addEventListener('DOMContentLoaded', function cookies() {
 });
 
 //!======Modal=========
-document.addEventListener('DOMContentLoaded', function modalWindow() {
-    MicroModal.init({
-        openTrigger: 'data-micromodal-trigger',
-        closeTrigger: 'data-custom-close',
-        disableScroll: true,
-        disableFocus: false,
-        awaitOpenAnimation: false,
-        awaitCloseAnimation: false,
-        debugMode: true,
-    });
+document.addEventListener("DOMContentLoaded", function modalWindow() {
+  MicroModal.init({
+    openTrigger: "data-micromodal-trigger",
+    closeTrigger: "data-custom-close",
+    disableScroll: true,
+    disableFocus: false,
+    awaitOpenAnimation: false,
+    awaitCloseAnimation: false,
+    debugMode: true,
+  });
 });
 
 //!======Radio Buttons=========
-document.addEventListener('DOMContentLoaded', function RadioButtons() {
-    const customRadios = document.querySelectorAll('.custom-radio');
+document.addEventListener("DOMContentLoaded", function RadioButtons() {
+  const customRadios = document.querySelectorAll(".custom-radio");
 
-    customRadios.forEach((customRadio) => {
-        const radioInput = customRadio.querySelector('input[type="radio"]');
+  customRadios.forEach((customRadio) => {
+    const radioInput = customRadio.querySelector('input[type="radio"]');
 
-        radioInput.addEventListener('change', () => {
-            customRadios.forEach((otherRadio) => {
-                otherRadio.classList.remove('custom-radio--active');
-            });
+    radioInput.addEventListener("change", () => {
+      customRadios.forEach((otherRadio) => {
+        otherRadio.classList.remove("custom-radio--active");
+      });
 
-            if (radioInput.checked) {
-                customRadio.classList.add('custom-radio--active');
-            }
-        });
+      if (radioInput.checked) {
+        customRadio.classList.add("custom-radio--active");
+      }
     });
+  });
 });
 
 // !======Radio Linsk===========
-document.addEventListener('DOMContentLoaded', function () {
-    const personalRadio = document.getElementById('personalRadio');
-    const organizationRadio = document.getElementById('organizationRadio');
-    const nextButton = document.getElementById('nextButton');
+document.addEventListener("DOMContentLoaded", function () {
+  const personalRadio = document.getElementById("personalRadio");
+  const organizationRadio = document.getElementById("organizationRadio");
+  const nextButton = document.getElementById("nextButton");
 
-    const personalLink = 'https://google.com';
-    const organizationLink = 'https://google.com/images';
+  const personalLink = "https://google.com";
+  const organizationLink = "https://google.com/images";
 
-    let selectedOption = null;
+  let selectedOption = null;
 
-    personalRadio.addEventListener('change', function () {
-        selectedOption = personalLink;
-    });
+  personalRadio.addEventListener("change", function () {
+    selectedOption = personalLink;
+  });
 
-    organizationRadio.addEventListener('change', function () {
-        selectedOption = organizationLink;
-    });
+  organizationRadio.addEventListener("change", function () {
+    selectedOption = organizationLink;
+  });
 
-    nextButton.addEventListener('click', function (e) {
-        e.preventDefault(); // Предотвращаем стандартное действие ссылки.
+  nextButton.addEventListener("click", function (e) {
+    e.preventDefault(); // Предотвращаем стандартное действие ссылки.
 
-        if (selectedOption !== null) {
-            // Открываем выбранную ссылку в новом окне.
-            window.open(selectedOption, '_blank');
-        } else {
-            alert('Please choose option.');
-        }
-    });
+    if (selectedOption !== null) {
+      // Открываем выбранную ссылку в новом окне.
+      window.open(selectedOption, "_blank");
+    } else {
+      alert("Please choose option.");
+    }
+  });
 });
 
 //======Swiper=========
-const fraction = document.getElementById("fraction");
-const slides = document.querySelectorAll(".swiper-slide");
-const slideCount = slides.length;
+const slider1 = document.getElementById("slider1");
+const slides1 = slider1.querySelectorAll(".swiper-slide");
+const slideCount1 = slides1.length;
+const slideCountText1 = slideCount1 >= 10 ? slideCount1.toString() : `0${slideCount1}`;
+
+const slider2 = document.getElementById("slider2");
+const slides2 = slider2.querySelectorAll(".swiper-slide");
+const slideCount2 = slides2.length;
+const slideCountText2 = slideCount2 >= 10 ? slideCount2.toString() : `0${slideCount2}`;
 
 function formatNumber(number) {
   return number < 10 ? `0${number}` : `${number}`;
 }
 
-const slideCountText = slideCount >= 10 ? slideCount.toString() : `0${slideCount}`;
-fraction.innerHTML = `<span>${formatNumber(1)}</span> / <span>${slideCountText}</span>`;
+function updateFraction(fractionElement, currentIndex, totalSlides) {
+  fractionElement.innerHTML = `<span>${formatNumber(currentIndex)}</span> / <span>${totalSlides}</span>`;
+}
 
 new Swiper(".benefits__slider", {
   loop: false,
   speed: 800,
   spaceBetween: 30,
   navigation: {
-    nextEl: ".slider-next",
-    prevEl: ".slider-prev",
+    nextEl: ".benefits__slider-next",
+    prevEl: ".benefits__slider-prev",
   },
   pagination: {
-    el: ".pagination-slider",
+    el: ".benefits__pagination-slider",
     clickable: true,
   },
   on: {
+    init: (swiper) => {
+      updateFraction(document.getElementById("fraction"), 1, slideCountText1);
+    },
     slideChange: (swiper) => {
       const currentIndex = swiper.realIndex + 1;
-      fraction.innerHTML = `<span>${formatNumber(currentIndex)}</span> / <span>${slideCountText}</span>`;
+      updateFraction(document.getElementById("fraction"), currentIndex, slideCountText1);
     },
   },
 });
 
-//!ACCORDION
+new Swiper(".features__slider", {
+  loop: false,
+  speed: 1500,
+  grid: {
+    rows: 2,
+    fill: "row",
+  },
+  slidesPerView: 2,
+  slidesPerGroup: 4,
+  navigation: {
+    nextEl: ".features__slider-next",
+    prevEl: ".features__slider-prev",
+  },
+  pagination: {
+    el: ".features__pagination-slider",
+    clickable: true,
+  },
+  on: {
+    init: (swiper) => {
+      updateFraction(document.getElementById("fraction2"), 1, slideCountText2);
+    },
+    slideChange: (swiper) => {
+      const currentIndex = swiper.realIndex + 1;
+      updateFraction(document.getElementById("fraction2"), currentIndex, slideCountText2);
+    },
+  },
+});
+
+// !ACCORDION
 // import Accordion from "accordion-js";
-//var accordion = new Accordion(".accordion-container");
+// var accordion = new Accordion(".accordion-container");
 // var accordion = new Accordion(".accordion-container", {
 //     // animation duration in ms {number}
 //     duration: 600,
