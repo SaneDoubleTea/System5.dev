@@ -189,7 +189,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  z-index: 1;
+  z-index: 9;
 }
 .cookies__text {
   min-width: -moz-fit-content;
@@ -229,13 +229,6 @@ section {
   scroll-snap-align: start;
 }
 
-@media (max-width: 768px) {
-  section {
-    width: 100%;
-    height: auto;
-    scroll-snap-align: unset;
-  }
-}
 .header {
   display: flex;
   align-items: center;
@@ -609,6 +602,19 @@ section {
     font-size: 18px;
   }
 }
+@media (max-height: 768px) {
+  .intro__row {
+    margin-top: 50px;
+  }
+}
+@media (max-height: 600px) {
+  .intro {
+    padding-top: 110px;
+  }
+  .intro__row {
+    margin-top: 0px;
+  }
+}
 @media (max-width: 425px) {
   .intro {
     padding-top: 94px;
@@ -650,7 +656,7 @@ section {
   display: flex;
   justify-content: center;
   padding-top: 148px;
-  z-index: 2;
+  z-index: 10;
 }
 
 .modal__container {

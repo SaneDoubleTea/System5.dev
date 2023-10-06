@@ -112,7 +112,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 150%;
-    z-index: 1;
+    z-index: 9;
 
     &__text {
         min-width: fit-content;
@@ -151,10 +151,13 @@ section {
     scroll-snap-align: start;
 }
 @media (max-width: 768px) {
+	.wrapper {
+		// scroll-snap-type: none;
+	}
     section {
-        width: 100%;
-        height: auto;
-        scroll-snap-align: unset;
+      //   width: 100%;
+      //   height: auto;
+      //   scroll-snap-align: unset;
     }
 }
 
