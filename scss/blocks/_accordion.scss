@@ -1,25 +1,95 @@
 .accordion {
+    position: relative;
+    max-width: 648px;
+    padding: 24px 0;
+    font-family: 'Lora';
+
+    border-radius: 24px;
+    background: linear-gradient(0deg, rgba(76, 188, 11, 0.1) 0%, rgba(76, 188, 11, 0.1) 100%),
+        radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 24px;
+        background: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        padding: 2px;
+        pointer-events: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
     &__header {
-        display: flex;
-        align-items: center;
+        margin-bottom: 12px;
+        color: #fff;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 
     &__item {
-        border-radius: 24px;
-        border: 2px solid #fff;
-        background: linear-gradient(0deg, rgba(76, 188, 11, 0.1) 0%, rgba(76, 188, 11, 0.1) 100%),
-            radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+        position: relative;
+        padding: 0 16px;
+        transition: opacity 0.3s ease-out;
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: -6px;
+            width: 50px;
+            height: 6px;
+            left: 2px;
+            background-color: $green-primary;
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+        }
+
+        &::after {
+            width: 70%;
+            height: 4px;
+            bottom: 0;
+        }
+
+        + .accordion__item {
+            margin-top: 20px;
+        }
+    }
+
+    &__trigger {
+        max-height: 48px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        background-color: transparent;
+        color: $primary;
+
+        span {
+            flex: 1 1 auto;
+        }
+
+        svg {
+            transition: all 0.3s ease-out;
+
+            path {
+                transition: all 0.3s ease-out;
+            }
+        }
     }
 
     &__text {
         color: $primary;
-    }
-
-    &__trigger {
-        background-color: transparent;
-        color: $primary;
-        svg {
-        }
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%;
     }
 }
 
@@ -30,7 +100,6 @@
         transition-timing-function: ease;
     }
 
-    // Hide content when Javascript is enabled
     &.js-enabled {
         .ac-panel {
             visibility: hidden;
@@ -39,7 +108,29 @@
 
     // Active class
     &.is-active {
-        border: 1px solid $green-primary;
+        position: relative;
+        padding-bottom: 24px;
+        font-family: 'Lexend';
+
+        + .accordion__item {
+            margin-top: 24px;
+        }
+        .accordion__header {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 70px;
+        }
+
+        &::after,
+        &::before {
+            opacity: 1;
+        }
+        svg {
+            & path:nth-child(2) {
+                opacity: 0;
+            }
+        }
         .ac-panel {
             visibility: visible;
         }
