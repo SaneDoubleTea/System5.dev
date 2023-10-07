@@ -1,114 +1,112 @@
 .benefits {
-  padding-top: 156px;
-  padding-bottom: 80px;
-  background: url(../../img/benefits/gif.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  &__title {
-    margin-bottom: 40px;
-  }
-  &__inner {
-    position: relative;
-  }
-  &__slide {
-    max-height: 600px;
-    min-height: 600px;
-    padding: 16px 40px 70px;
-    border-radius: 24px;
-    border: 2px solid #34c21c;
-    background: rgba(48, 50, 104, 0.3);
-    backdrop-filter: blur(175px);
-  }
-  &__slide-title {
-    color: #fff;
-    font-size: 40px;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-  &__slide-img {
-    max-width: 200px;
-    max-height: 245px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  &__slide-text {
-    color: #fff;
-    font-size: 32px;
-    letter-spacing: -1.6px;
-    span {
-      color: #00ff38;
+    padding-top: 156px;
+    padding-bottom: 80px;
+
+    &__title {
+        margin-bottom: 40px;
     }
-  }
-  &__slider-prev,
-  &__slider-next {
-    width: 48px;
-    height: 48px;
-  }
-  &__slider-prev {
-    left: -62px;
-  }
-  &__slider-next {
-    right: -40px;
-  }
+    &__inner {
+        position: relative;
+    }
+    &__slide {
+        max-height: 600px;
+        min-height: 600px;
+        padding: 16px 40px 70px;
+        border-radius: 24px;
+        border: 2px solid #34c21c;
+        background: rgba(48, 50, 104, 0.3);
+        backdrop-filter: blur(175px);
+    }
+    &__slide-title {
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    &__slide-img {
+        max-width: 200px;
+        max-height: 245px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    &__slide-text {
+        color: #fff;
+        font-size: 32px;
+        letter-spacing: -1.6px;
+        span {
+            color: #00ff38;
+        }
+    }
+    &__slider-prev,
+    &__slider-next {
+        width: 48px;
+        height: 48px;
+    }
+    &__slider-prev {
+        left: -62px;
+    }
+    &__slider-next {
+        right: -40px;
+    }
 }
 
 @media (max-width: 945px) {
-  .benefits {
-    &__slide-title {
-      font-size: 32px;
+    .benefits {
+        &__slide-title {
+            font-size: 32px;
+        }
+        &__slide-text {
+            font-size: 24px;
+            letter-spacing: -1.2px;
+        }
     }
-    &__slide-text {
-      font-size: 24px;
-      letter-spacing: -1.2px;
-    }
-  }
 }
 
 @media (max-width: 768px) {
-  .benefits {
-    padding-top: 145px;
-    background: none;
-    background: url(../../img/benefits/bg-mob.gif);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    &__slider-prev,
-    &__slider-next {
-      width: 30px;
-      height: 30px;
+    .benefits {
+        padding-top: 145px;
+        background: none;
+        background: url(../../img/benefits/bg-mob.gif);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &__slider-prev,
+        &__slider-next {
+            width: 30px;
+            height: 30px;
+        }
+        &__slider-prev {
+            left: 0;
+        }
+        &__slider-next {
+            right: 0;
+        }
     }
-    &__slider-prev {
-      left: 0;
-    }
-    &__slider-next {
-      right: 0;
-    }
-  }
 }
 
 @media (max-width: 540px) {
-  .benefits {
-    &__slide-text {
-      font-size: 18px;
+    .benefits {
+        &__slide-text {
+            font-size: 18px;
+        }
     }
-  }
 }
 
 @media (max-width: 360px) {
-  .benefits {
-    &__slide-title {
-      font-size: 28px;
+    .benefits {
+        &__slide-title {
+            font-size: 28px;
+        }
+        &__slide-text {
+            font-size: 16px;
+        }
+        &__slide-img {
+            max-width: 180px;
+            max-height: 170px;
+            margin-bottom: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
-    &__slide-text {
-      font-size: 16px;
-    }
-    &__slide-img {
-      max-width: 180px;
-      max-height: 170px;
-      margin-bottom: 20px;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
 }

@@ -1,411 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>System5.dev</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>System5.dev</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <header class="header">
-        <div class="header__container container">
-          <div class="header__row">
-            <div class="header__logo logo">
-              <a href="#!"><img src="img/header/logo.svg" alt="logo" /></a>
-            </div>
+<body>
+	<div class="wrapper">
 
-            <nav class="header__nav" data-da=".mobile-nav__item,992">
-              <ul class="header__list">
-                <li class="header__link header__link--active"><a href="#!">Home</a></li>
-                <li class="header__link"><a href="#!">Benefits</a></li>
-                <li class="header__link"><a href="#!">Features</a></li>
-                <li class="header__link"><a href="#!">How it works</a></li>
-                <li class="header__link"><a href="#!">Team</a></li>
-                <li class="header__link"><a href="#!">FAQ</a></li>
-              </ul>
-            </nav>
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__row">
+					<div class="header__logo logo">
+						<a href="#!"><img src="img/header/logo.svg" alt="logo" /></a>
+					</div>
 
-            <div class="header__btns">
-              <button class="header__btn btn-transparent" data-micromodal-trigger="modal">Log in</button>
-              <button class="header__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
-            </div>
+					<nav class="header__nav" data-da=".mobile-nav__item,992">
+						<ul class="header__list">
+							<li class="header__link header__link--active"><a href="#!">Home</a></li>
+							<li class="header__link"><a href="#!">Benefits</a></li>
+							<li class="header__link"><a href="#!">Features</a></li>
+							<li class="header__link"><a href="#!">How it works</a></li>
+							<li class="header__link"><a href="#!">Team</a></li>
+							<li class="header__link"><a href="#!">FAQ</a></li>
+						</ul>
+					</nav>
 
-            <!-- NavBtn -->
-            <button class="nav-btn">
-              <span class="nav-btn-icon"></span>
-            </button>
-            <!-- MobNav -->
-            <div class="mobile-nav">
-              <div class="mobile-nav__item">
-                <!-- header__list -->
+					<div class="header__btns">
+						<button class="header__btn btn-transparent" data-micromodal-trigger="modal">Log in</button>
+						<button class="header__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
+					</div>
 
-              </div>
-            </div>
-            <!-- //MobNav -->
-          </div>
-        </div>
-      </header>
+					<!-- NavBtn -->
+					<button class="nav-btn">
+						<span class="nav-btn-icon"></span>
+					</button>
+					<!-- MobNav -->
+					<div class="mobile-nav">
+						<div class="mobile-nav__item">
+							<!-- header__list -->
 
-      <main>
-        <!-- intro -->
-        <section class="intro">
-          <div class="intro__container container">
-            <div class="intro__row">
-              <div class="intro__left-block">
-                <h1 class="intro__title title"><span>System5.dev: </span>Crafting Architecture Copilot</h1>
-                <div class="intro__descr">
-                  <p>
-                    Our mission is to elevate engineering of evolving complex multi-domain systems to achieve a manyfold increase in development
-                    <span>velocity</span>, newcomers <span>time-to-productivity</span>, and make everyone able to <span>understand</span> and
-                    <span>contribute</span> - even without programming background.
-                  </p>
-                </div>
-                <button class="intro__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
-              </div>
+						</div>
+					</div>
+					<!-- //MobNav -->
+				</div>
+			</div>
+		</header>
 
-              <div class="intro__right-block">
-                <img src="img/intro/cube.gif" alt="animated gif cube" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /intro -->
+		<main>
+			<!-- intro -->
+			<section class="intro">
+				<div class="intro__container container">
+					<div class="intro__row">
+						<div class="intro__left-block">
+							<h1 class="intro__title title"><span>System5.dev: </span>Crafting Architecture Copilot</h1>
+							<div class="intro__descr">
+								<p>
+									Our mission is to elevate engineering of evolving complex multi-domain systems to achieve a
+									manyfold increase in development
+									<span>velocity</span>, newcomers <span>time-to-productivity</span>, and make everyone able to
+									<span>understand</span> and
+									<span>contribute</span> - even without programming background.
+								</p>
+							</div>
+							<button class="intro__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
+						</div>
 
-        <!-- benefits -->
-        <section class="benefits">
-          <!-- <img class="benefits-bg" src="img/benefits/bg-mob.gif" alt=""> -->
-          <div class="benefits__container container">
-            <h2 class="benefits__title title"><span>Our</span> Benefits</h2>
-            <div class="benefits__inner">
-              <div id="slider1" class="benefits__slider swiper">
-                <div class="swiper-wrapper">
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Сollaboration</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/1.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      Humans make mistakes. Team is always smarter than each individual member. Experience the future of architectural collaboration
-                      with our platform. We empower teams to engage in collaborative "<span>thinking by modelling</span>" practices within a
-                      <span>shared context</span>, minimising risk of mistake and improving <span>engineering experience</span>.
-                    </p>
-                  </div>
+						<div class="intro__right-block">
+							<img src="img/intro/cube.gif" alt="animated gif cube" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /intro -->
 
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Traceability</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/2.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      HuNavigate your architecture with transparency. Our platform provides comprehensive traceability for a clear view of every
-                      <span>decision</span> and its <span>impact</span>. No detail is hidden.
-                    </p>
-                  </div>
+			<!-- benefits -->
+			<section class="benefits">
+				<div class="benefits__container container">
+					<h2 class="benefits__title title"><span>Our</span> Benefits</h2>
+					<div class="benefits__inner">
+						<div id="slider1" class="benefits__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Сollaboration</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/1.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										Humans make mistakes. Team is always smarter than each individual member. Experience the
+										future of architectural collaboration
+										with our platform. We empower teams to engage in collaborative "<span>thinking by
+											modelling</span>" practices within a
+										<span>shared context</span>, minimising risk of mistake and improving <span>engineering
+											experience</span>.
+									</p>
+								</div>
 
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Autonomy</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/3.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      Distributed architecture decision-making is the most efficient way to handle growing systems complexity. Even if you have unique
-                      experts to handle any area of the product, they become a flow bottleneck very soon.
-                      <span>Decompose</span>, keep <span>boundaries</span> in <span>focus</span>, <span>visualise</span> and <span>inform </span>all
-                      stakeholders about important decisions with no efforts.
-                    </p>
-                  </div>
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Traceability</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/2.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										HuNavigate your architecture with transparency. Our platform provides comprehensive
+										traceability for a clear view of every
+										<span>decision</span> and its <span>impact</span>. No detail is hidden.
+									</p>
+								</div>
 
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Ownership</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/4.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      Most powerful teams take the full accountability for their <span>decisions</span>
-                      outcomes. Our platform gives you complete ownership by connecting high-level decisions to target system behavior, product
-                      <span>metrics</span> and <span>acceptance</span>strategy.
-                    </p>
-                  </div>
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Autonomy</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/3.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										Distributed architecture decision-making is the most efficient way to handle growing
+										systems complexity. Even if you have unique
+										experts to handle any area of the product, they become a flow bottleneck very soon.
+										<span>Decompose</span>, keep <span>boundaries</span> in <span>focus</span>,
+										<span>visualise</span> and <span>inform </span>all
+										stakeholders about important decisions with no efforts.
+									</p>
+								</div>
 
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Cross-functional Architecture</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/5.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      The most influential decisions are not always confined to engineers or architects. True "<span>cross-functional</span>"
-                      collaboration transcends the conventional boundaries of "frontend + backend + QA." With
-                      <span>inclusive</span> Architecture Copilot, individuals from various backgrounds, such as analysts, product managers, business
-                      subject matter experts, and UX designers, can seamlessly <span>engage</span> and <span>contribute</span>, even if they lack a
-                      programming background.
-                    </p>
-                  </div>
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Evolution</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/6.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      In essence, the concept of evolution in complex engineered systems embodies a dynamic and continuous journey of improvement and
-                      adaptation, ensuring that these systems remain effective, competitive, and aligned with the evolving demands of their
-                      operational environment. Architecture Copilot supports system <span>evolvability</span>
-                      and promote evolutional
-                      <span>mindset</span> with <span>incremental</span> controlled system mutations with a <span>feedback</span> loop.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination benefits__pagination-slider"></div>
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Ownership</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/4.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										Most powerful teams take the full accountability for their <span>decisions</span>
+										outcomes. Our platform gives you complete ownership by connecting high-level decisions to
+										target system behavior, product
+										<span>metrics</span> and <span>acceptance</span>strategy.
+									</p>
+								</div>
 
-              <div id="fraction" class="swiper-fraction"></div>
-              <!-- If we need navigation buttons -->
-              <div class="slider-buttons">
-                <div class="swiper-button-prev benefits__slider-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M20 9.85938L5.85938 24L20 38.1406L23 35.1406L13.8594 26H42V22H13.8594L23 12.8594L20 9.85938Z" fill="white" />
-                  </svg>
-                  <img class="slider-prev-mob" src="img/benefits/slider-prev-mob.svg" alt="arrow-button" />
-                </div>
-                <div class="swiper-button-next benefits__slider-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M28 38.1406L42.1406 24L28 9.85938L25 12.8594L34.1406 22L6 22V26L34.1406 26L25 35.1406L28 38.1406Z" fill="white" />
-                  </svg>
-                  <img class="slider-next-mob" src="img/benefits/slider-next-mob.svg" alt="arrow-button" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /benefits -->
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Cross-functional Architecture</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/5.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										The most influential decisions are not always confined to engineers or architects. True
+										"<span>cross-functional</span>"
+										collaboration transcends the conventional boundaries of "frontend + backend + QA." With
+										<span>inclusive</span> Architecture Copilot, individuals from various backgrounds, such as
+										analysts, product managers, business
+										subject matter experts, and UX designers, can seamlessly <span>engage</span> and
+										<span>contribute</span>, even if they lack a
+										programming background.
+									</p>
+								</div>
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Evolution</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/6.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										In essence, the concept of evolution in complex engineered systems embodies a dynamic and
+										continuous journey of improvement and
+										adaptation, ensuring that these systems remain effective, competitive, and aligned with
+										the evolving demands of their
+										operational environment. Architecture Copilot supports system <span>evolvability</span>
+										and promote evolutional
+										<span>mindset</span> with <span>incremental</span> controlled system mutations with a
+										<span>feedback</span> loop.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination benefits__pagination-slider"></div>
 
-        <!-- features -->
-        <section class="features">
-          <div class="features__container container">
-            <h2 class="features__title title"><span>Our</span> Features</h2>
+						<div id="fraction" class="swiper-fraction"></div>
+						<!-- If we need navigation buttons -->
+						<div class="slider-buttons">
+							<div class="swiper-button-prev benefits__slider-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path
+										d="M20 9.85938L5.85938 24L20 38.1406L23 35.1406L13.8594 26H42V22H13.8594L23 12.8594L20 9.85938Z"
+										fill="white" />
+								</svg>
+								<img class="slider-prev-mob" src="img/benefits/slider-prev-mob.svg" alt="arrow-button" />
+							</div>
+							<div class="swiper-button-next benefits__slider-next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path
+										d="M28 38.1406L42.1406 24L28 9.85938L25 12.8594L34.1406 22L6 22V26L34.1406 26L25 35.1406L28 38.1406Z"
+										fill="white" />
+								</svg>
+								<img class="slider-next-mob" src="img/benefits/slider-next-mob.svg" alt="arrow-button" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /benefits -->
 
-            <div class="features__inner">
-              <div id="slider2" class="features__slider swiper">
-                <div class="swiper-wrapper">
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/1.png" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Digital Thread</p>
-                    <p class="features__slide-text">
-                      “One system - one model.” Generate any number of architecture views, description or diagrams on-demand from a single
-                      multidimensional cross-functional model with all complexity hidden under the user-friendly interfaces.
-                    </p>
-                  </div>
+			<!-- features -->
+			<section class="features">
+				<div class="features__container container">
+					<h2 class="features__title title"><span>Our</span> Features</h2>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/2.png" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Teams topology as part of the model</p>
-                    <p class="features__slide-text">
-                      Stream-aligned teams and “Teams Topology” pioneered the adoption of “reverse Conway maneuver”, but the Architecture Copilot
-                      embodied it as a core operational model. Assign ownership, define architecture communication flow, put stakeholders in the loop.
-                    </p>
-                  </div>
+					<div class="features__inner">
+						<div id="slider2" class="features__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/1.png" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Digital Thread</p>
+									<p class="features__slide-text">
+										“One system - one model.” Generate any number of architecture views, description or
+										diagrams on-demand from a single
+										multidimensional cross-functional model with all complexity hidden under the user-friendly
+										interfaces.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/3.gif" alt="slide-gif" />
-                    </div>
-                    <p class="features__slide-title">Architecture documentation auto-sync</p>
-                    <p class="features__slide-text">
-                      Bring your favorite tools for document management, product management and team collaboration. Architecture Copilot deliver
-                      necessary data to external systems automatically.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/2.png" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Teams topology as part of the model</p>
+									<p class="features__slide-text">
+										Stream-aligned teams and “Teams Topology” pioneered the adoption of “reverse Conway
+										maneuver”, but the Architecture Copilot
+										embodied it as a core operational model. Assign ownership, define architecture
+										communication flow, put stakeholders in the loop.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/4.png" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Architecture Canvas</p>
-                    <p class="features__slide-text">
-                      Streamline collaboration and keep teams focus on important matters by using Domain and Feature canvases. All entered information
-                      validated and merged with Digital Thread according to customisable architecture “game rules”.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/3.gif" alt="slide-gif" />
+									</div>
+									<p class="features__slide-title">Architecture documentation auto-sync</p>
+									<p class="features__slide-text">
+										Bring your favorite tools for document management, product management and team
+										collaboration. Architecture Copilot deliver
+										necessary data to external systems automatically.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/5.svg" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Smart Model Ingestion</p>
-                    <p class="features__slide-text">
-                      AI-powered mechanism can extract structured information from your data. All the sources work: product documentation, use cases,
-                      support tickets, customer feedback etc.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/4.png" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Architecture Canvas</p>
+									<p class="features__slide-text">
+										Streamline collaboration and keep teams focus on important matters by using Domain and
+										Feature canvases. All entered information
+										validated and merged with Digital Thread according to customisable architecture “game
+										rules”.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/6.gif" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Self-service Acceptance Toolkit</p>
-                    <p class="features__slide-text">
-                      Define success criteria on early architecture design stage, propagate metrics before making product change, collect data and
-                      measure feature impact by built-in Architecture Copilot functions.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/5.svg" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Smart Model Ingestion</p>
+									<p class="features__slide-text">
+										AI-powered mechanism can extract structured information from your data. All the sources
+										work: product documentation, use cases,
+										support tickets, customer feedback etc.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/7.gif" alt="slide-gif" />
-                    </div>
-                    <p class="features__slide-title">Architecture Repository</p>
-                    <p class="features__slide-text">
-                      Accumulate knowledge in the Digital Thread to enable “rapid architecture design” process. Architecture building blocks help your
-                      teams to decrease cognitive load and minimise risk of mistake.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/6.gif" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Self-service Acceptance Toolkit</p>
+									<p class="features__slide-text">
+										Define success criteria on early architecture design stage, propagate metrics before
+										making product change, collect data and
+										measure feature impact by built-in Architecture Copilot functions.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/8.svg" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Track System Increment Delivery</p>
-                    <p class="features__slide-text">
-                      Map your work-management units to your codebase through the Architecture Copilot to benefit from optimal feature scope
-                      decomposition, dependencies management and improved traceability.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination features__pagination-slider"></div>
-              <div id="fraction2" class="swiper-fraction"></div>
-              <div class="slider-buttons">
-                <div class="swiper-button-prev features__slider-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M20 9.85938L5.85938 24L20 38.1406L23 35.1406L13.8594 26H42V22H13.8594L23 12.8594L20 9.85938Z" fill="white" />
-                  </svg>
-                  <img class="slider-prev-mob" src="img/benefits/slider-prev-mob.svg" alt="arrow-button" />
-                </div>
-                <div class="swiper-button-next features__slider-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M28 38.1406L42.1406 24L28 9.85938L25 12.8594L34.1406 22L6 22V26L34.1406 26L25 35.1406L28 38.1406Z" fill="white" />
-                  </svg>
-                  <img class="slider-next-mob" src="img/benefits/slider-next-mob.svg" alt="arrow-button" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /features -->
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/7.gif" alt="slide-gif" />
+									</div>
+									<p class="features__slide-title">Architecture Repository</p>
+									<p class="features__slide-text">
+										Accumulate knowledge in the Digital Thread to enable “rapid architecture design” process.
+										Architecture building blocks help your
+										teams to decrease cognitive load and minimise risk of mistake.
+									</p>
+								</div>
 
-        <!-- howItWorks -->
-        <!-- <section class="howItWorks">
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/8.svg" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Track System Increment Delivery</p>
+									<p class="features__slide-text">
+										Map your work-management units to your codebase through the Architecture Copilot to
+										benefit from optimal feature scope
+										decomposition, dependencies management and improved traceability.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination features__pagination-slider"></div>
+						<div id="fraction2" class="swiper-fraction"></div>
+						<div class="slider-buttons">
+							<div class="swiper-button-prev features__slider-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path
+										d="M20 9.85938L5.85938 24L20 38.1406L23 35.1406L13.8594 26H42V22H13.8594L23 12.8594L20 9.85938Z"
+										fill="white" />
+								</svg>
+								<img class="slider-prev-mob" src="img/benefits/slider-prev-mob.svg" alt="arrow-button" />
+							</div>
+							<div class="swiper-button-next features__slider-next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path
+										d="M28 38.1406L42.1406 24L28 9.85938L25 12.8594L34.1406 22L6 22V26L34.1406 26L25 35.1406L28 38.1406Z"
+										fill="white" />
+								</svg>
+								<img class="slider-next-mob" src="img/benefits/slider-next-mob.svg" alt="arrow-button" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /features -->
+
+			<!-- howItWorks -->
+			<section class="howItWorks">
 				<div class="howItWork__container container">
 					<h4 class="howItWorks__title title"><span>How it</span> works</h4>
 					<div class="howItWorks__video">
-						<video src="video/graf-min.mp4" controls loop muted autoplay playsinline></video>
+						<video width="500px" src="video/graf-min.mp4" controls loop muted autoplay playsinline></video>
 					</div>
 				</div>
-			</section> -->
-        <!-- howItWorks -->
+			</section>
+			<!-- howItWorks -->
 
-        <!-- team -->
-        <section class="team">
-          <div class="team__container container">
-            <h4 class="team__title title">Team</h4>
-            <p class="team__subtitle">
-              Please meet our Founding team: 40+ combined years of experience delivering customers value with complex dynamic systems as part of
-              multiple teams in numerous domains.
-            </p>
-            <div class="team__content">
-              <div class="team__item">
-                <div class="team__item-img">
-                  <img src="img/team/Ivan.png" alt="image-team-member" />
-                </div>
-                <p class="team__name">Ivan Padabed</p>
-                <p class="team__subname">Founder</p>
-                <p class="team__text">
-                  Engineer by heart, Ivan has successfully applied his “systems thinking” superpower to master Systems Architecture, Enterprise
-                  Architecture, Technical Product Management, and Engineering Management. His “pain” coming from architecture tooling imperfection
-                  became a motivation to build System5.dev
-                </p>
-                <div class="team__social">
-                  <p class="team__social-title">Social media</p>
-                  <div class="team__social-links">
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link">
-                        <img src="img/icons/linkedin.svg" alt="linkedin-icon" />
-                      </a>
-                      <p class="team__social-name">Linkedin</p>
-                    </div>
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link">
-                        <img src="img/icons/tg.svg" alt="telegram-icon" />
-                      </a>
-                      <p class="team__social-name">Telegram</p>
-                    </div>
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link">
-                        <img src="img/icons/whatsapp.svg" alt="whatapp-icon" />
-                      </a>
-                      <p class="team__social-name">Whats Up</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+			<!-- team -->
+			<section class="team">
+				<div class="team__container container">
+					<h4 class="team__title title">Team</h4>
+					<p class="team__subtitle">
+						Please meet our Founding team: 40+ combined years of experience delivering customers value with
+						complex dynamic systems as part of
+						multiple teams in numerous domains.
+					</p>
+					<div class="team__content">
+						<div class="team__item">
+							<div class="team__item-img">
+								<img src="img/team/Ivan.png" alt="image-team-member" />
+							</div>
+							<p class="team__name">Ivan Padabed</p>
+							<p class="team__subname">Founder</p>
+							<p class="team__text">
+								Engineer by heart, Ivan has successfully applied his “systems thinking” superpower to master
+								Systems Architecture, Enterprise
+								Architecture, Technical Product Management, and Engineering Management. His “pain” coming from
+								architecture tooling imperfection
+								became a motivation to build System5.dev
+							</p>
+							<div class="team__social">
+								<p class="team__social-title">Social media</p>
+								<div class="team__social-links">
+									<div class="team__social-item">
+										<a href="#" class="team__social-link">
+											<img src="img/icons/linkedin.svg" alt="linkedin-icon" />
+										</a>
+										<p class="team__social-name">Linkedin</p>
+									</div>
+									<div class="team__social-item">
+										<a href="#" class="team__social-link">
+											<img src="img/icons/tg.svg" alt="telegram-icon" />
+										</a>
+										<p class="team__social-name">Telegram</p>
+									</div>
+									<div class="team__social-item">
+										<a href="#" class="team__social-link">
+											<img src="img/icons/whatsapp.svg" alt="whatapp-icon" />
+										</a>
+										<p class="team__social-name">Whats Up</p>
+									</div>
+								</div>
+							</div>
+						</div>
 
-              <div class="team__item">
-                <div class="team__item-img">
-                  <img src="img/team/Roman.png" alt="image-team-member" />
-                </div>
-                <p class="team__name">Roman Voronin</p>
-                <p class="team__subname">Co-Founder</p>
-                <p class="team__text">
-                  Software and Solution Architect with over 18 years of experience in IT. Strong experience with system architecture with a special
-                  focus on AWS Technologies, Kubernetes, and Python. Adept of System Engineering approach. Certified AWS specialist. Leader and events
-                  organizer of Minsk AWS Community
-                </p>
-                <div class="team__social">
-                  <p class="team__social-title">Social media</p>
-                  <div class="team__social-links">
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link">
-                        <img src="img/icons/linkedin.svg" alt="linkedin-icon" />
-                      </a>
-                      <p class="team__social-name">Linkedin</p>
-                    </div>
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link">
-                        <img src="img/icons/tg.svg" alt="telegram-icon" />
-                      </a>
-                      <p class="team__social-name">Telegram</p>
-                    </div>
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link">
-                        <img src="img/icons/whatsapp.svg" alt="whatsup-icon" />
-                      </a>
-                      <p class="team__social-name">Whats Up</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- team -->
+						<div class="team__item">
+							<div class="team__item-img">
+								<img src="img/team/Roman.png" alt="image-team-member" />
+							</div>
+							<p class="team__name">Roman Voronin</p>
+							<p class="team__subname">Co-Founder</p>
+							<p class="team__text">
+								Software and Solution Architect with over 18 years of experience in IT. Strong experience with
+								system architecture with a special
+								focus on AWS Technologies, Kubernetes, and Python. Adept of System Engineering approach.
+								Certified AWS specialist. Leader and events
+								organizer of Minsk AWS Community
+							</p>
+							<div class="team__social">
+								<p class="team__social-title">Social media</p>
+								<div class="team__social-links">
+									<div class="team__social-item">
+										<a href="#" class="team__social-link">
+											<img src="img/icons/linkedin.svg" alt="linkedin-icon" />
+										</a>
+										<p class="team__social-name">Linkedin</p>
+									</div>
+									<div class="team__social-item">
+										<a href="#" class="team__social-link">
+											<img src="img/icons/tg.svg" alt="telegram-icon" />
+										</a>
+										<p class="team__social-name">Telegram</p>
+									</div>
+									<div class="team__social-item">
+										<a href="#" class="team__social-link">
+											<img src="img/icons/whatsapp.svg" alt="whatsup-icon" />
+										</a>
+										<p class="team__social-name">Whats Up</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- team -->
 
-        <!-- faq -->
-        <!-- <section class="faq">
+			<!-- faq -->
+			<section class="faq">
 				<div class="faq__container container">
 					<h6 class="faq__title title"><span>FAQ</span></h6>
 					<div class="faq__row">
 						<div class="faq__robot">
 							<img src="img/faq/neon-chatbot-assistant-answering-questions-online.svg" alt="">
 						</div>
-						 accordion 
 						<div class="accordion">
 							<div class="accordion-container">
 								<div class="ac accordion__item">
@@ -489,135 +527,135 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
-        <!-- faq -->
-        <!-- COOKIES -->
-        <div class="cookies">
-          <p class="cookies__text">Are you using cookies?</p>
-          <button class="cookies__btn btn-transparent" id="btn-ok">Ok</button>
-          <button class="cookies__btn btn-transparent" id="btn-yes">Yes</button>
-        </div>
-        <!-- /COOKIES -->
+			</section>
+			<!-- faq -->
+			<!-- COOKIES -->
+			<div class="cookies">
+				<p class="cookies__text">Are you using cookies?</p>
+				<button class="cookies__btn btn-transparent" id="btn-ok">Ok</button>
+				<button class="cookies__btn btn-transparent" id="btn-yes">Yes</button>
+			</div>
+			<!-- /COOKIES -->
 
-        <!-- MODAL -->
-        <div class="modal micromodal-slide" id="modal" aria-hidden="true">
-          <div class="modal__overlay" tabindex="-1" data-custom-close="modal">
-            <div class="modal__container" role="dialog" aria-modal="true">
-              <div class="modal__content">
-                <button class="modal__close" title="close" data-custom-close>
-                  <img src="img/icons/icon-cancel.svg" alt="" />
-                </button>
+			<!-- MODAL -->
+			<div class="modal micromodal-slide" id="modal" aria-hidden="true">
+				<div class="modal__overlay" tabindex="-1" data-custom-close="modal">
+					<div class="modal__container" role="dialog" aria-modal="true">
+						<div class="modal__content">
+							<button class="modal__close" title="close" data-custom-close>
+								<img src="img/icons/icon-cancel.svg" alt="" />
+							</button>
 
-                <header class="modal__header">
-                  <p class="modal__title title">Join Our Waitlist</p>
-                  <div class="modal__logo">
-                    <img src="img/icons/logo.svg" alt="logo" />
-                  </div>
-                </header>
+							<header class="modal__header">
+								<p class="modal__title title">Join Our Waitlist</p>
+								<div class="modal__logo">
+									<img src="img/icons/logo.svg" alt="logo" />
+								</div>
+							</header>
 
-                <form action="external-link">
-                  <h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
-                  <label class="custom-radio">
-                    <input type="radio" name="customRadio" id="personalRadio" />
-                    <span class="radio-button"></span>
-                    Personal
-                  </label>
-                  <label class="custom-radio">
-                    <input type="radio" name="customRadio" id="organizationRadio" />
-                    <span class="radio-button"></span>
-                    Organisation
-                  </label>
-                  <div class="modal__link">
-                    <a href="#" class="modal__btn btn-green" id="nextButton">Next</a>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /MODAL -->
-      </main>
+							<form action="external-link">
+								<h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
+								<label class="custom-radio">
+									<input type="radio" name="customRadio" id="personalRadio" />
+									<span class="radio-button"></span>
+									Personal
+								</label>
+								<label class="custom-radio">
+									<input type="radio" name="customRadio" id="organizationRadio" />
+									<span class="radio-button"></span>
+									Organisation
+								</label>
+								<div class="modal__link">
+									<a href="#" class="modal__btn btn-green" id="nextButton">Next</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /MODAL -->
+		</main>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__inner">
-            <div class="footer__about">
-              <a class="footer__logo" href="#">
-                <img src="img/icons/logo.svg" alt="logo" />
-              </a>
-              <p class="footer__text">
-                Our mission is to elevate engineering of evolving complex multi-domain systems to achieve a manyfold increase in development
-                <span>velocity</span>, newcomers <span>time-to-productivity</span>, and make everyone able to <span>understand</span> and
-                <span>contribute</span> - even without programming background.
-              </p>
-            </div>
-            <div class="footer__navigation">
-              <div class="footer__name">Navigation</div>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#">Home</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Benefits</a>
-                </li>
-                <li class="footer__item">
-                  <a href="">Features</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">How it works</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__signup">
-              <div class="footer__name">Sign Up</div>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#">Log in</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Registration</a>
-                </li>
-                <li class="footer__item">
-                  <a href="">Team</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">FAQ</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__social">
-              <div class="footer__name">Social <span>networks</span></div>
-              <div class="footer__box">
-                <a class="footer__social-item" href="#">
-                  <img src="img/icons/linkedin.svg" alt="linkedin-icon" />
-                </a>
-                <a class="footer__social-item" href="#">
-                  <img src="img/icons/tg.svg" alt="telegram-icon" />
-                </a>
-                <a class="footer__social-item" href="#">
-                  <img src="img/icons/whatsapp.svg" alt="whatsapp-icon" />
-                </a>
-                <a class="footer__social-item" href="#">
-                  <img src="img/icons/instagram.svg" alt="instagram-icon" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="footer__copy">
-            <p class="footer__copy-text">Copyright © 2024. System5.dev</p>
-            <button class="footer__signup-btn">Sign Up</button>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.js"
-      integrity="sha512-qcwcAul7d7yUcoz3MmQABiaGDa+gVkaDWgZX6wEd/z3I6z62nQCDW3EqioQG+O+QlGCpxmJLdH5snh4IaDPiPA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script defer src="js/script.js"></script>
-  </body>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__about">
+						<a class="footer__logo" href="#">
+							<img src="img/icons/logo.svg" alt="logo" />
+						</a>
+						<p class="footer__text">
+							Our mission is to elevate engineering of evolving complex multi-domain systems to achieve a
+							manyfold increase in development
+							<span>velocity</span>, newcomers <span>time-to-productivity</span>, and make everyone able to
+							<span>understand</span> and
+							<span>contribute</span> - even without programming background.
+						</p>
+					</div>
+					<div class="footer__navigation">
+						<div class="footer__name">Navigation</div>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#">Home</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Benefits</a>
+							</li>
+							<li class="footer__item">
+								<a href="">Features</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">How it works</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__signup">
+						<div class="footer__name">Sign Up</div>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#">Log in</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Registration</a>
+							</li>
+							<li class="footer__item">
+								<a href="">Team</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">FAQ</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__social">
+						<div class="footer__name">Social <span>networks</span></div>
+						<div class="footer__box">
+							<a class="footer__social-item" href="#">
+								<img src="img/icons/linkedin.svg" alt="linkedin-icon" />
+							</a>
+							<a class="footer__social-item" href="#">
+								<img src="img/icons/tg.svg" alt="telegram-icon" />
+							</a>
+							<a class="footer__social-item" href="#">
+								<img src="img/icons/whatsapp.svg" alt="whatsapp-icon" />
+							</a>
+							<a class="footer__social-item" href="#">
+								<img src="img/icons/instagram.svg" alt="instagram-icon" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<p class="footer__copy-text">Copyright © 2024. System5.dev</p>
+					<button class="footer__signup-btn">Sign Up</button>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.js"
+		integrity="sha512-qcwcAul7d7yUcoz3MmQABiaGDa+gVkaDWgZX6wEd/z3I6z62nQCDW3EqioQG+O+QlGCpxmJLdH5snh4IaDPiPA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script defer src="js/script.js"></script>
+</body>
+
 </html>

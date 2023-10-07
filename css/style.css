@@ -96,10 +96,6 @@ body {
   color: #fff;
   font-family: "Lexend", serif;
   font-size: 16px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   background: radial-gradient(58.86% 81.51% at 50% 40.91%, rgba(0, 25, 255, 0.5) 20.92%, rgba(30, 42, 156, 0.5) 84.26%), #303268;
 }
 
@@ -211,32 +207,9 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
   position: relative;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
 }
 
-section {
-  width: 100%;
-  height: 100vh;
-  scroll-snap-align: center;
-}
-
-@media (max-width: 1024px) {
-  .wrapper {
-    scroll-snap-type: none;
-  }
-  section {
-    width: 100%;
-    height: auto;
-    scroll-snap-align: unset;
-  }
-}
 .header {
   display: flex;
   align-items: center;
@@ -1023,9 +996,6 @@ section {
 .benefits {
   padding-top: 156px;
   padding-bottom: 80px;
-  background: url(../../img/benefits/gif.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .benefits__title {
   margin-bottom: 40px;
@@ -1185,6 +1155,33 @@ section {
     right: 0;
   }
 }
+.howItWorks {
+  /* .howItWorks__video */
+  padding-top: 160px;
+  padding-bottom: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.howItWorks__title {
+  margin-bottom: 32px;
+}
+.howItWorks__video {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+}
+.howItWorks__video video {
+  border-radius: 24px;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .team {
   padding-top: 140px;
   margin-bottom: 24px;
@@ -1343,6 +1340,138 @@ section {
     height: 30px;
   }
 }
+.faq {
+  padding-top: 163px;
+  padding-bottom: 70px;
+}
+.faq__title {
+  margin-bottom: 74px;
+}
+.faq__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1240px) {
+  .faq__row {
+    flex-direction: column;
+  }
+}
+.accordion {
+  position: relative;
+  max-width: 648px;
+  padding: 24px 0;
+  font-family: "Lora";
+  border-radius: 24px;
+  background: linear-gradient(0deg, rgba(76, 188, 11, 0.1) 0%, rgba(76, 188, 11, 0.1) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.accordion::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  background: linear-gradient(114deg, #fff 0%, #006ffd 33.59%, #006ffd 62.84%, #fff 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.accordion__header {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.accordion__item {
+  position: relative;
+  padding: 0 16px;
+  transition: opacity 0.3s ease-out;
+}
+.accordion__item::after, .accordion__item::before {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  width: 50px;
+  height: 6px;
+  left: 2px;
+  background-color: #34c21c;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+.accordion__item::after {
+  width: 70%;
+  height: 4px;
+  bottom: 0;
+}
+.accordion__item + .accordion__item {
+  margin-top: 20px;
+}
+.accordion__trigger {
+  max-height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background-color: transparent;
+  color: #fff;
+}
+.accordion__trigger span {
+  flex: 1 1 auto;
+}
+.accordion__trigger svg {
+  transition: all 0.3s ease-out;
+}
+.accordion__trigger svg path {
+  transition: all 0.3s ease-out;
+}
+.accordion__text {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+}
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.ac.is-active {
+  position: relative;
+  padding-bottom: 24px;
+  font-family: "Lexend";
+}
+.ac.is-active + .accordion__item {
+  margin-top: 24px;
+}
+.ac.is-active .accordion__header {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70px;
+}
+.ac.is-active::after, .ac.is-active::before {
+  opacity: 1;
+}
+.ac.is-active svg path:nth-child(2) {
+  opacity: 0;
+}
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
 .footer {
   padding: 64px 0 24px;
   border: 1px solid #006ffd;
@@ -1382,45 +1511,136 @@ section {
 }
 .footer__box {
   border-radius: 24px;
-  border: 2px solid #fff;
-  background: linear-gradient(0deg, rgba(76, 188, 11, 0.1) 0%, rgba(76, 188, 11, 0.1) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid var(--3, #fff);
+  background: linear-gradient(0deg, rgba(0, 111, 253, 0.1) 0%, rgba(0, 111, 253, 0.1) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 144px;
+  height: 152px;
+  padding: 24px;
+  gap: 14px;
+  margin-top: 47px;
 }
-.accordion__text {
-  color: #fff;
+.footer__social-item img {
+  width: 40px;
+  height: 40px;
 }
-.accordion__trigger {
+.footer__copy {
+  display: flex;
+  justify-content: center;
+}
+.footer__copy-text {
+  opacity: 0.5;
+  text-align: center;
+}
+.footer__signup-btn {
+  display: none;
+  width: 162px;
+  height: 50px;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
-}
-.ac .ac-panel {
-  overflow: hidden;
-  transition-property: height, visibility;
-  transition-timing-function: ease;
-}
-.ac.js-enabled .ac-panel {
-  visibility: hidden;
-}
-.ac.is-active {
-  border: 1px solid #34c21c;
-}
-.ac.is-active .ac-panel {
-  visibility: visible;
-}
-.faq {
-  padding-top: 163px;
-  padding-bottom: 70px;
-}
-.faq__title {
-  margin-bottom: 74px;
-}
-.faq__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  font-size: 14px;
 }
 
-@media (max-width: 1240px) {
-  .faq__row {
+@media (max-width: 1024px) {
+  .footer__about {
+    max-width: 254px;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
+  .footer__navigation, .footer__signup, .footer__social {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 24px 8px;
+  }
+  .footer__text {
+    font-size: 14px;
+  }
+  .footer__name {
+    font-size: 18px;
+  }
+  .footer__item {
+    font-size: 16px;
+  }
+  .footer__box {
     flex-direction: column;
+    flex-wrap: nowrap;
+    width: 69px;
+    height: 200px;
+    padding: 8px 14px;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .footer__name span {
+    display: none;
+  }
+  .footer__copy {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__signup-btn {
+    display: block;
+  }
+}
+@media (max-width: 670px) {
+  .footer {
+    padding: 8px 0 8px;
+  }
+  .footer__inner {
+    margin-bottom: 24px;
+  }
+  .footer__logo img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer__text {
+    display: none;
+  }
+  .footer__copy {
+    justify-content: center;
+  }
+  .footer__signup-btn {
+    display: none;
+  }
+  .footer__box {
+    background: none;
+    border: none;
+    box-shadow: none;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .footer__social-item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 490px) {
+  .footer__name {
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+  .footer__item {
+    font-size: 10px;
+  }
+  .footer__item + .footer__item {
+    margin-top: 10px;
+  }
+  .footer__social-item img {
+    width: 24px;
+    height: 24px;
+  }
+  .footer__copy-text {
+    font-size: 9px;
   }
 }
