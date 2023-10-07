@@ -1456,6 +1456,7 @@ body {
   gap: 8px;
   background-color: transparent;
   color: #fff;
+  cursor: pointer;
 }
 .accordion__trigger span {
   flex: 1 1 auto;
