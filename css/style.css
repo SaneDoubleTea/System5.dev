@@ -332,6 +332,9 @@ section {
   .header__list {
     gap: 0;
   }
+  .header__logo img {
+    height: 40px;
+  }
 }
 @media (max-width: 998px) {
   .header {
@@ -1182,5 +1185,335 @@ section {
   }
   .features__slider-next {
     right: 0;
+  }
+}
+.team {
+  padding-top: 140px;
+  margin-bottom: 24px;
+}
+.team__title {
+  margin-bottom: 32px;
+  color: #25ff00;
+}
+.team__subtitle {
+  font-size: 18px;
+  line-height: 166%;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.team__content {
+  display: flex;
+  gap: 30px;
+}
+.team__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  width: 100%;
+  height: 643px;
+  padding: 4px 16px 24px;
+  background: #4660aa;
+  -webkit-backdrop-filter: blur(175px);
+          backdrop-filter: blur(175px);
+}
+.team__item-img {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+.team__item-img img {
+  width: 200px;
+  height: 200px;
+}
+.team__name {
+  font-size: 32px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.team__subname {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.team__text {
+  overflow-y: auto;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 16px;
+  height: 166px;
+}
+.team__text::-webkit-scrollbar {
+  width: 1.5px;
+}
+.team__text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #000;
+  opacity: 0.3;
+}
+.team__text::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.team__social-title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 87.5%;
+  margin-bottom: 32px;
+}
+.team__social-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.team__social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.team__social-name {
+  font-size: 14px;
+  line-height: 200%;
+}
+
+@media (max-width: 1024px) {
+  .team__content {
+    gap: 9px;
+  }
+  .team__item {
+    height: 575px;
+  }
+  .team__social-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .team__text {
+    font-size: 16px;
+  }
+  .team__item-img img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 675px) {
+  .team__content {
+    flex-direction: column;
+  }
+  .team__item {
+    height: 580px;
+  }
+}
+@media (max-width: 490px) {
+  .team__item {
+    padding: 4px 20px 24px;
+  }
+  .team__text {
+    font-size: 14px;
+  }
+  .team__social {
+    margin-top: auto;
+  }
+  .team__social-links {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 375px) {
+  .team__item {
+    height: 550px;
+  }
+  .team__item-img img {
+    width: 100px;
+    height: 100px;
+  }
+  .team__name {
+    font-size: 26px;
+  }
+  .team__subname {
+    font-size: 18px;
+  }
+  .team__social-link img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.footer {
+  padding: 64px 0 24px;
+  border: 1px solid #006ffd;
+  background: #071220;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.footer__about {
+  max-width: 582px;
+  opacity: 0.8;
+}
+.footer__logo {
+  margin-bottom: 16px;
+}
+.footer__logo img {
+  width: 44px;
+  height: 34px;
+}
+.footer__text {
+  font-size: 20px;
+  line-height: 150%;
+}
+.footer__name {
+  font-size: 18px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+.footer__item {
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer__item + .footer__item {
+  margin-top: 24px;
+}
+.footer__box {
+  border-radius: 24px;
+  border: 1px solid var(--3, #fff);
+  background: linear-gradient(0deg, rgba(0, 111, 253, 0.1) 0%, rgba(0, 111, 253, 0.1) 100%), radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 144px;
+  height: 152px;
+  padding: 24px;
+  gap: 14px;
+  margin-top: 47px;
+}
+.footer__social-item img {
+  width: 40px;
+  height: 40px;
+}
+.footer__copy {
+  display: flex;
+  justify-content: center;
+}
+.footer__copy-text {
+  opacity: 0.5;
+  text-align: center;
+}
+.footer__signup-btn {
+  display: none;
+  width: 162px;
+  height: 50px;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .footer__about {
+    max-width: 254px;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
+  .footer__navigation, .footer__signup, .footer__social {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 24px 8px;
+  }
+  .footer__text {
+    font-size: 14px;
+  }
+  .footer__name {
+    font-size: 18px;
+  }
+  .footer__item {
+    font-size: 16px;
+  }
+  .footer__box {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 69px;
+    height: 200px;
+    padding: 8px 14px;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .footer__name span {
+    display: none;
+  }
+  .footer__copy {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__signup-btn {
+    display: block;
+  }
+}
+@media (max-width: 670px) {
+  .footer {
+    padding: 8px 0 8px;
+  }
+  .footer__inner {
+    margin-bottom: 24px;
+  }
+  .footer__logo img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer__text {
+    display: none;
+  }
+  .footer__copy {
+    justify-content: center;
+  }
+  .footer__signup-btn {
+    display: none;
+  }
+  .footer__box {
+    background: none;
+    border: none;
+    box-shadow: none;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .footer__social-item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 490px) {
+  .footer__name {
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+  .footer__item {
+    font-size: 10px;
+  }
+  .footer__item + .footer__item {
+    margin-top: 10px;
+  }
+  .footer__social-item img {
+    width: 24px;
+    height: 24px;
+  }
+  .footer__copy-text {
+    font-size: 9px;
   }
 }
