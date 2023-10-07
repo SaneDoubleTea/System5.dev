@@ -141,3 +141,41 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .accordion {
+        padding-bottom: 88px;
+        &__header {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &__trigger {
+            img {
+                max-width: 40px;
+            }
+        }
+
+        &__text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        &__item {
+            padding: 0 8px;
+        }
+    }
+    .ac {
+        &.is-active {
+            .accordion {
+                &__header {
+                    margin-bottom: 16px;
+                    font-size: 18px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

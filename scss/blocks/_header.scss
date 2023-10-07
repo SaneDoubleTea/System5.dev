@@ -11,7 +11,7 @@
     backdrop-filter: blur(8px);
     /* IF HEADER FIXED */
     position: fixed;
-     top: 32px;
+    top: 32px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -105,7 +105,7 @@
         &__list {
             gap: 0;
         }
-        &__logo img{
+        &__logo img {
             height: 40px;
         }
     }
@@ -163,6 +163,9 @@
 
 @media (max-width: 440px) {
     .header {
+        &__container {
+            padding: 0 8px;
+        }
         &__btns {
             justify-content: flex-end;
             gap: 5px;
