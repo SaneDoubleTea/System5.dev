@@ -13,9 +13,11 @@
   }
   &__logo {
     margin-bottom: 16px;
+    width: 60px;
+    height: 60px;
     img {
-      width: 44px;
-      height: 34px;
+      width: 60px;
+      height: 60px;
     }
   }
 
@@ -56,9 +58,26 @@
   }
 
   &__social-item {
-    img {
+    width: 40px;
+    height: 40px;
+    svg {
       width: 40px;
       height: 40px;
+      g {
+        rect {
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    &:hover {
+      svg {
+        g {
+          rect {
+            transition: all 0.3s ease;
+            fill: #25ff00;
+          }
+        }
+      }
     }
   }
   &__copy {
@@ -185,9 +204,14 @@
         margin-top: 10px;
       }
     }
-    &__social-item img {
+
+    &__social-item {
       width: 24px;
       height: 24px;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
     &__copy-text {
       font-size: 9px;

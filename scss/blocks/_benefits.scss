@@ -64,7 +64,7 @@
 
 @media (max-width: 768px) {
     .benefits {
-        padding-top: 145px;
+        padding-top: 100px;
       //   background: none;
       //   background: url(../../img/benefits/bg-mob.gif);
       //   background-repeat: no-repeat;
@@ -85,6 +85,10 @@
 
 @media (max-width: 540px) {
     .benefits {
+        padding-top: 0;
+        &__title{
+            margin-bottom: 24px;
+        }
         &__slide-text {
             font-size: 18px;
         }
