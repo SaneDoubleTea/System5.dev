@@ -1,1020 +1,1160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>System5.dev</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container container">
-          <div class="header__row">
-            <div class="header__logo logo">
-              <a href="#!"><img src="img/header/logo.svg" alt="logo" /></a>
-            </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>System5.dev</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
 
-            <nav class="header__nav" data-da=".mobile-nav__item,992">
-              <ul class="header__list">
-                <li class="header__link header__link--active"><a href="#!">Home</a></li>
-                <li class="header__link"><a href="#!">Benefits</a></li>
-                <li class="header__link"><a href="#!">Features</a></li>
-                <li class="header__link"><a href="#!">How it works</a></li>
-                <li class="header__link"><a href="#!">Team</a></li>
-                <li class="header__link"><a href="#!">FAQ</a></li>
-              </ul>
-            </nav>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__row">
+					<div class="header__logo logo">
+						<a href="#!"><img src="img/header/logo.svg" alt="logo" /></a>
+					</div>
 
-            <div class="header__btns">
-              <button class="header__btn btn-transparent" data-micromodal-trigger="modal">Log in</button>
-              <button class="header__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
-            </div>
+					<nav class="header__nav" data-da=".mobile-nav__item,992">
+						<ul class="header__list">
+							<li class="header__link header__link--active"><a href="#home">Home</a></li>
+							<li class="header__link"><a href="#benefits">Benefits</a></li>
+							<li class="header__link"><a href="#features">Features</a></li>
+							<li class="header__link"><a href="#howItWorks">How it works</a></li>
+							<li class="header__link"><a href="#team">Team</a></li>
+							<li class="header__link"><a href="#faq">FAQ</a></li>
+							<li class="header__link contacts"><a href="#contacts">Contacts</a></li>
+						</ul>
+					</nav>
 
-            <!-- NavBtn -->
-            <button class="nav-btn">
-              <span class="nav-btn-icon"></span>
-            </button>
-            <!-- MobNav -->
-            <div class="mobile-nav">
-              <div class="mobile-nav__item">
-                <!-- header__list -->
-              </div>
-            </div>
-            <!-- //MobNav -->
-          </div>
-        </div>
-      </header>
+					<div class="header__btns">
+						<button class="header__btn btn-transparent" data-micromodal-trigger="modal">Log in</button>
+						<button class="header__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
+					</div>
 
-      <main>
-        <!-- intro -->
-        <section class="intro">
-          <div class="intro__container container">
-            <div class="intro__row">
-              <div class="intro__left-block">
-                <h1 class="intro__title title"><span>System5.dev: </span>Crafting Architecture Copilot</h1>
-                <div class="intro__descr">
-                  <p>
-                    Our mission is to elevate engineering of evolving complex multi-domain systems to achieve a manyfold increase in development
-                    <span>velocity</span>, newcomers <span>time-to-productivity</span>, and make everyone able to <span>understand</span> and
-                    <span>contribute</span> - even without programming background.
-                  </p>
-                </div>
-                <button class="intro__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
-              </div>
+					<!-- NavBtn -->
+					<button class="nav-btn">
+						<span class="nav-btn-icon"></span>
+					</button>
 
-              <div class="intro__right-block">
-                <img src="img/intro/cube.gif" alt="animated gif cube" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /intro -->
+				</div>
+				<!-- MobNav -->
+				<div class="mobile-nav">
+					<div class="mobile-nav__item">
+						<!-- header__list -->
+					</div>
+				</div>
+				<!-- /MobNav -->
+			</div>
+		</header>
 
-        <!-- benefits -->
-        <section class="benefits">
-          <div class="benefits__container container">
-            <h2 class="benefits__title title"><span>Our</span> Benefits</h2>
-            <div class="benefits__inner">
-              <div id="slider1" class="benefits__slider swiper">
-                <div class="swiper-wrapper">
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Сollaboration</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/1.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      Humans make mistakes. Team is always smarter than each individual member. Experience the future of architectural collaboration
-                      with our platform. We empower teams to engage in collaborative "<span>thinking by modelling</span>" practices within a
-                      <span>shared context</span>, minimising risk of mistake and improving <span>engineering experience</span>.
-                    </p>
-                  </div>
+		<main>
+			<!-- intro -->
+			<section id="home" class="intro">
+				<div class="intro__container container">
+					<div class="intro__row">
+						<div class="intro__left-block">
+							<h1 class="intro__title title"><span>System5.dev: </span>Crafting Architecture Copilot</h1>
+							<div class="intro__descr">
+								<p>
+									Our mission is to elevate engineering of evolving complex multi-domain systems to achieve a
+									manyfold increase in development
+									<span>velocity</span>, newcomers <span>time-to-productivity</span>, and make everyone able to
+									<span>understand</span> and
+									<span>contribute</span> - even without programming background.
+								</p>
+							</div>
+							<button class="intro__btn btn-green" data-micromodal-trigger="modal">Sign Up</button>
+						</div>
 
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Traceability</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/2.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      HuNavigate your architecture with transparency. Our platform provides comprehensive traceability for a clear view of every
-                      <span>decision</span> and its <span>impact</span>. No detail is hidden.
-                    </p>
-                  </div>
+						<div class="intro__right-block">
+							<!-- <video src="img/intro/cube.webm"></video> -->
+							<img src="img/intro/cube.gif" alt="animated gif cube" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /intro -->
 
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Autonomy</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/3.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      Distributed architecture decision-making is the most efficient way to handle growing systems complexity. Even if you have unique
-                      experts to handle any area of the product, they become a flow bottleneck very soon.
-                      <span>Decompose</span>, keep <span>boundaries</span> in <span>focus</span>, <span>visualise</span> and <span>inform </span>all
-                      stakeholders about important decisions with no efforts.
-                    </p>
-                  </div>
+			<!-- benefits -->
+			<section id="benefits" class="benefits">
+				<div class="benefits__container container">
+					<h2 class="benefits__title title"><span>Our</span> Benefits</h2>
+					<div class="benefits__inner">
+						<div id="slider1" class="benefits__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Сollaboration</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/1.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										Humans make mistakes. Team is always smarter than each individual member. Experience the
+										future of architectural collaboration
+										with our platform. We empower teams to engage in collaborative "<span>thinking by
+											modelling</span>" practices within a
+										<span>shared context</span>, minimising risk of mistake and improving <span>engineering
+											experience</span>.
+									</p>
+								</div>
 
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Ownership</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/4.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      Most powerful teams take the full accountability for their <span>decisions</span>
-                      outcomes. Our platform gives you complete ownership by connecting high-level decisions to target system behavior, product
-                      <span>metrics</span> and <span>acceptance</span>strategy.
-                    </p>
-                  </div>
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Traceability</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/2.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										HuNavigate your architecture with transparency. Our platform provides comprehensive
+										traceability for a clear view of every
+										<span>decision</span> and its <span>impact</span>. No detail is hidden.
+									</p>
+								</div>
 
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Cross-functional Architecture</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/5.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      The most influential decisions are not always confined to engineers or architects. True "<span>cross-functional</span>"
-                      collaboration transcends the conventional boundaries of "frontend + backend + QA." With
-                      <span>inclusive</span> Architecture Copilot, individuals from various backgrounds, such as analysts, product managers, business
-                      subject matter experts, and UX designers, can seamlessly <span>engage</span> and <span>contribute</span>, even if they lack a
-                      programming background.
-                    </p>
-                  </div>
-                  <div class="benefits__slide swiper-slide">
-                    <p class="benefits__slide-title">Evolution</p>
-                    <div class="benefits__slide-img">
-                      <img src="img/benefits/6.png" alt="slide-image" />
-                    </div>
-                    <p class="benefits__slide-text">
-                      In essence, the concept of evolution in complex engineered systems embodies a dynamic and continuous journey of improvement and
-                      adaptation, ensuring that these systems remain effective, competitive, and aligned with the evolving demands of their
-                      operational environment. Architecture Copilot supports system <span>evolvability</span>
-                      and promote evolutional
-                      <span>mindset</span> with <span>incremental</span> controlled system mutations with a <span>feedback</span> loop.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination benefits__pagination-slider"></div>
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Autonomy</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/3.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										Distributed architecture decision-making is the most efficient way to handle growing
+										systems complexity. Even if you have unique
+										experts to handle any area of the product, they become a flow bottleneck very soon.
+										<span>Decompose</span>, keep <span>boundaries</span> in <span>focus</span>,
+										<span>visualise</span> and <span>inform </span>all
+										stakeholders about important decisions with no efforts.
+									</p>
+								</div>
 
-              <div id="fraction" class="swiper-fraction"></div>
-              <!-- If we need navigation buttons -->
-              <div class="slider-buttons">
-                <div class="swiper-button-prev benefits__slider-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M20 9.85938L5.85938 24L20 38.1406L23 35.1406L13.8594 26H42V22H13.8594L23 12.8594L20 9.85938Z" fill="white" />
-                  </svg>
-                  <img class="slider-prev-mob" src="img/benefits/slider-prev-mob.svg" alt="arrow-button" />
-                </div>
-                <div class="swiper-button-next benefits__slider-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M28 38.1406L42.1406 24L28 9.85938L25 12.8594L34.1406 22L6 22V26L34.1406 26L25 35.1406L28 38.1406Z" fill="white" />
-                  </svg>
-                  <img class="slider-next-mob" src="img/benefits/slider-next-mob.svg" alt="arrow-button" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /benefits -->
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Ownership</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/4.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										Most powerful teams take the full accountability for their <span>decisions</span>
+										outcomes. Our platform gives you complete ownership by connecting high-level decisions to
+										target system behavior, product
+										<span>metrics</span> and <span>acceptance</span>strategy.
+									</p>
+								</div>
 
-        <!-- features -->
-        <section class="features">
-          <div class="features__container container">
-            <h2 class="features__title title"><span>Our</span> Features</h2>
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Cross-functional Architecture</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/5.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										The most influential decisions are not always confined to engineers or architects. True
+										"<span>cross-functional</span>"
+										collaboration transcends the conventional boundaries of "frontend + backend + QA." With
+										<span>inclusive</span> Architecture Copilot, individuals from various backgrounds, such as
+										analysts, product managers, business
+										subject matter experts, and UX designers, can seamlessly <span>engage</span> and
+										<span>contribute</span>, even if they lack a
+										programming background.
+									</p>
+								</div>
+								<div class="benefits__slide swiper-slide">
+									<p class="benefits__slide-title">Evolution</p>
+									<div class="benefits__slide-img">
+										<img src="img/benefits/6.png" alt="slide-image" />
+									</div>
+									<p class="benefits__slide-text">
+										In essence, the concept of evolution in complex engineered systems embodies a dynamic and
+										continuous journey of improvement and
+										adaptation, ensuring that these systems remain effective, competitive, and aligned with
+										the evolving demands of their
+										operational environment. Architecture Copilot supports system <span>evolvability</span>
+										and promote evolutional
+										<span>mindset</span> with <span>incremental</span> controlled system mutations with a
+										<span>feedback</span> loop.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination benefits__pagination-slider"></div>
 
-            <div class="features__inner">
-              <div id="slider2" class="features__slider swiper">
-                <div class="swiper-wrapper">
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/1.png" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Digital Thread</p>
-                    <p class="features__slide-text">
-                      “One system - one model.” Generate any number of architecture views, description or diagrams on-demand from a single
-                      multidimensional cross-functional model with all complexity hidden under the user-friendly interfaces.
-                    </p>
-                  </div>
+						<div id="fraction" class="swiper-fraction"></div>
+						<!-- If we need navigation buttons -->
+						<div class="slider-buttons">
+							<div class="swiper-button-prev benefits__slider-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path
+										d="M20 9.85938L5.85938 24L20 38.1406L23 35.1406L13.8594 26H42V22H13.8594L23 12.8594L20 9.85938Z"
+										fill="white" />
+								</svg>
+								<img class="slider-prev-mob" src="img/benefits/slider-prev-mob.svg" alt="arrow-button" />
+							</div>
+							<div class="swiper-button-next benefits__slider-next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path
+										d="M28 38.1406L42.1406 24L28 9.85938L25 12.8594L34.1406 22L6 22V26L34.1406 26L25 35.1406L28 38.1406Z"
+										fill="white" />
+								</svg>
+								<img class="slider-next-mob" src="img/benefits/slider-next-mob.svg" alt="arrow-button" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /benefits -->
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/2.png" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Teams topology as part of the model</p>
-                    <p class="features__slide-text">
-                      Stream-aligned teams and “Teams Topology” pioneered the adoption of “reverse Conway maneuver”, but the Architecture Copilot
-                      embodied it as a core operational model. Assign ownership, define architecture communication flow, put stakeholders in the loop.
-                    </p>
-                  </div>
+			<!-- features -->
+			<section id="features" class="features">
+				<div class="features__container container">
+					<h2 class="features__title title"><span>Our</span> Features</h2>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/3.gif" alt="slide-gif" />
-                    </div>
-                    <p class="features__slide-title">Architecture documentation auto-sync</p>
-                    <p class="features__slide-text">
-                      Bring your favorite tools for document management, product management and team collaboration. Architecture Copilot deliver
-                      necessary data to external systems automatically.
-                    </p>
-                  </div>
+					<div class="features__inner">
+						<div id="slider2" class="features__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/1.png" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Digital Thread</p>
+									<p class="features__slide-text">
+										“One system - one model.” Generate any number of architecture views, description or
+										diagrams on-demand from a single
+										multidimensional cross-functional model with all complexity hidden under the user-friendly
+										interfaces.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/4.png" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Architecture Canvas</p>
-                    <p class="features__slide-text">
-                      Streamline collaboration and keep teams focus on important matters by using Domain and Feature canvases. All entered information
-                      validated and merged with Digital Thread according to customisable architecture “game rules”.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/2.png" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Teams topology as part of the model</p>
+									<p class="features__slide-text">
+										Stream-aligned teams and “Teams Topology” pioneered the adoption of “reverse Conway
+										maneuver”, but the Architecture Copilot
+										embodied it as a core operational model. Assign ownership, define architecture
+										communication flow, put stakeholders in the loop.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/5.svg" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Smart Model Ingestion</p>
-                    <p class="features__slide-text">
-                      AI-powered mechanism can extract structured information from your data. All the sources work: product documentation, use cases,
-                      support tickets, customer feedback etc.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/3.gif" alt="slide-gif" />
+									</div>
+									<p class="features__slide-title">Architecture documentation auto-sync</p>
+									<p class="features__slide-text">
+										Bring your favorite tools for document management, product management and team
+										collaboration. Architecture Copilot deliver
+										necessary data to external systems automatically.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/6.gif" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Self-service Acceptance Toolkit</p>
-                    <p class="features__slide-text">
-                      Define success criteria on early architecture design stage, propagate metrics before making product change, collect data and
-                      measure feature impact by built-in Architecture Copilot functions.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/4.png" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Architecture Canvas</p>
+									<p class="features__slide-text">
+										Streamline collaboration and keep teams focus on important matters by using Domain and
+										Feature canvases. All entered information
+										validated and merged with Digital Thread according to customisable architecture “game
+										rules”.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img features__slide-img--gif">
-                      <img src="img/features/7.gif" alt="slide-gif" />
-                    </div>
-                    <p class="features__slide-title">Architecture Repository</p>
-                    <p class="features__slide-text">
-                      Accumulate knowledge in the Digital Thread to enable “rapid architecture design” process. Architecture building blocks help your
-                      teams to decrease cognitive load and minimise risk of mistake.
-                    </p>
-                  </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/5.svg" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Smart Model Ingestion</p>
+									<p class="features__slide-text">
+										AI-powered mechanism can extract structured information from your data. All the sources
+										work: product documentation, use cases,
+										support tickets, customer feedback etc.
+									</p>
+								</div>
 
-                  <div class="features__slide swiper-slide">
-                    <div class="features__slide-img">
-                      <img src="img/features/8.svg" alt="slide-image" />
-                    </div>
-                    <p class="features__slide-title">Track System Increment Delivery</p>
-                    <p class="features__slide-text">
-                      Map your work-management units to your codebase through the Architecture Copilot to benefit from optimal feature scope
-                      decomposition, dependencies management and improved traceability.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination features__pagination-slider"></div>
-              <div id="fraction2" class="swiper-fraction"></div>
-              <div class="slider-buttons">
-                <div class="swiper-button-prev features__slider-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M20 9.85938L5.85938 24L20 38.1406L23 35.1406L13.8594 26H42V22H13.8594L23 12.8594L20 9.85938Z" fill="white" />
-                  </svg>
-                  <img class="slider-prev-mob" src="img/benefits/slider-prev-mob.svg" alt="arrow-button" />
-                </div>
-                <div class="swiper-button-next features__slider-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M28 38.1406L42.1406 24L28 9.85938L25 12.8594L34.1406 22L6 22V26L34.1406 26L25 35.1406L28 38.1406Z" fill="white" />
-                  </svg>
-                  <img class="slider-next-mob" src="img/benefits/slider-next-mob.svg" alt="arrow-button" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- /features -->
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/6.gif" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Self-service Acceptance Toolkit</p>
+									<p class="features__slide-text">
+										Define success criteria on early architecture design stage, propagate metrics before
+										making product change, collect data and
+										measure feature impact by built-in Architecture Copilot functions.
+									</p>
+								</div>
 
-        <!-- howItWorks -->
-        <section class="howItWorks">
-          <div class="howItWork__container container">
-            <h4 class="howItWorks__title title"><span>How it</span> works</h4>
-            <div class="howItWorks__video">
-              <video width="500px" src="video/graf-min.mp4" controls muted playsinline></video>
-            </div>
-          </div>
-        </section>
-        <!-- howItWorks -->
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img features__slide-img--gif">
+										<img src="img/features/7.gif" alt="slide-gif" />
+									</div>
+									<p class="features__slide-title">Architecture Repository</p>
+									<p class="features__slide-text">
+										Accumulate knowledge in the Digital Thread to enable “rapid architecture design” process.
+										Architecture building blocks help your
+										teams to decrease cognitive load and minimise risk of mistake.
+									</p>
+								</div>
 
-        <!-- team -->
-        <section class="team">
-          <div class="team__container container">
-            <h4 class="team__title title">Team</h4>
-            <p class="team__subtitle">
-              Please meet our Founding team: 40+ combined years of experience delivering customers value with complex dynamic systems as part of
-              multiple teams in numerous domains.
-            </p>
-            <div class="team__content">
-              <div class="team__item">
-                <div class="team__item-img">
-                  <img src="img/team/Ivan.png" alt="image-team-member" />
-                </div>
-                <p class="team__name">Ivan Padabed</p>
-                <p class="team__subname">Founder</p>
-                <p class="team__text">
-                  Engineer by heart, Ivan has successfully applied his “systems thinking” superpower to master Systems Architecture, Enterprise
-                  Architecture, Technical Product Management, and Engineering Management. His “pain” coming from architecture tooling imperfection
-                  became a motivation to build System5.dev
-                </p>
-                <div class="team__social">
-                  <p class="team__social-title">Social media</p>
-                  <div class="team__social-links">
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link" target="_blank">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_433_4283)">
-                            <rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4283)" fill-opacity="0.2" />
-                            <rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
-                            <g filter="url(#filter0_f_433_4283)">
-                              <rect x="15" y="13" width="24" height="23" rx="11.5" fill="#34C21C" />
-                            </g>
-                            <path
-                              d="M14.3868 18.9648H19.3627V35H14.3868V18.9648ZM16.8835 11C18.4835 11 19.7671 12.2863 19.7671 13.8899C19.7671 15.4934 18.4835 16.7797 16.8835 16.7797C15.2835 16.7797 14 15.4758 14 13.8899C14 12.304 15.2835 11 16.8835 11Z"
-                              fill="white"
-                            />
-                            <path
-                              d="M22.4922 18.9629H27.2571V21.1479H27.3274C27.9956 19.8792 29.6131 18.5576 32.0395 18.5576C37.0681 18.5576 38 21.8704 38 26.1876V34.9805H33.0242V27.192C33.0242 25.3241 32.989 22.9453 30.4395 22.9453C27.8901 22.9453 27.4505 24.9717 27.4505 27.0686V34.9981H22.4747V18.9629H22.4922Z"
-                              fill="white"
-                            />
-                          </g>
-                          <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint1_linear_433_4283)" />
-                          <defs>
-                            <filter
-                              id="filter0_f_433_4283"
-                              x="-5"
-                              y="-7"
-                              width="64"
-                              height="63"
-                              filterUnits="userSpaceOnUse"
-                              color-interpolation-filters="sRGB"
-                            >
-                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                              <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4283" />
-                            </filter>
-                            <radialGradient
-                              id="paint0_radial_433_4283"
-                              cx="0"
-                              cy="0"
-                              r="1"
-                              gradientUnits="userSpaceOnUse"
-                              gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)"
-                            >
-                              <stop stop-color="white" stop-opacity="0.4" />
-                              <stop offset="1" stop-color="white" stop-opacity="0" />
-                            </radialGradient>
-                            <linearGradient id="paint1_linear_433_4283" x1="0" y1="0" x2="60.3093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                              <stop stop-color="white" />
-                              <stop offset="0.335851" stop-color="#006FFD" />
-                              <stop offset="0.62839" stop-color="#006FFD" />
-                              <stop offset="1" stop-color="white" />
-                            </linearGradient>
-                            <clipPath id="clip0_433_4283">
-                              <rect width="50" height="50" rx="25" fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </a>
-                      <p class="team__social-name">Linkedin</p>
-                    </div>
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link" target="_blank">
-                        <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_433_4286)">
-                          <rect x="0.5" width="50" height="50" rx="25" fill="url(#paint0_radial_433_4286)" fill-opacity="0.2"/>
-                          <rect x="0.5" width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1"/>
-                          <g filter="url(#filter0_f_433_4286)">
-                          <rect x="11.5" y="13" width="24" height="23" rx="11.5" fill="#34C21C"/>
-                          </g>
-                          <g filter="url(#filter1_d_433_4286)">
-                          <path d="M12.2161 24.0386L12.216 24.0385C11.6854 24.2549 11.2865 24.4668 11.0154 24.6732C10.7424 24.8811 10.6122 25.0733 10.5909 25.2472L10.5059 25.2368L10.5909 25.2472C10.5693 25.4238 10.6143 25.5665 10.7139 25.692C10.8161 25.8208 10.9785 25.9348 11.1963 26.0429C11.5285 26.2079 11.9673 26.3494 12.4711 26.5119C12.6313 26.5635 12.7981 26.6173 12.9701 26.6746L12.943 26.7559L12.9701 26.6746C13.5446 26.8661 14.2177 27.0737 14.847 27.2355C15.4783 27.3978 16.0586 27.5122 16.4506 27.5209C17.1555 27.5365 17.9528 27.2384 18.8451 26.6102L18.8456 26.6098C21.917 24.4839 24.2457 22.8836 25.8315 21.8089C26.6244 21.2716 27.2319 20.8654 27.6538 20.5905C27.8647 20.4532 28.0297 20.3482 28.1486 20.276C28.208 20.24 28.2567 20.2116 28.2941 20.1913C28.3276 20.1732 28.3619 20.1559 28.3876 20.1499C28.4573 20.1337 28.5503 20.1128 28.6444 20.1136C28.74 20.1144 28.8449 20.1374 28.9316 20.2164C29.0183 20.2954 29.053 20.4049 29.0659 20.494C29.0788 20.5834 29.0719 20.6662 29.0624 20.7077C29.0624 20.7077 29.0624 20.7077 29.0624 20.7077L12.2161 24.0386ZM12.2161 24.0386L12.2186 24.0374M12.2161 24.0386L12.2186 24.0374M12.2186 24.0374C18.7932 21.1004 23.1766 19.1644 25.3693 18.2293M12.2186 24.0374L25.3693 18.2293M30.8846 35.8012L30.8765 35.7159C31.4167 35.665 32.0266 35.1412 32.3415 33.4151C33.0887 29.3195 34.5566 20.4498 34.8956 16.7976C34.9176 16.5612 34.9275 16.2686 34.884 15.9962C34.8403 15.7222 34.7446 15.4823 34.5675 15.3349L34.6222 15.2691L34.5675 15.3349C34.446 15.2338 34.2878 15.17 34.1336 15.1322C33.9798 15.0945 33.8363 15.0842 33.7499 15.0858L30.8846 35.8012ZM30.8846 35.8012L30.8765 35.7159C30.2476 35.7753 29.6905 35.5633 29.127 35.2239M30.8846 35.8012L29.127 35.2239M25.3693 18.2293C28.5011 16.8937 30.3904 16.1107 31.6025 15.6597M25.3693 18.2293L31.6025 15.6597M31.6025 15.6597C32.816 15.2082 33.3416 15.0932 33.7499 15.0858L31.6025 15.6597ZM29.127 35.2239C28.8451 35.0541 28.5636 34.8536 28.2716 34.6409M29.127 35.2239L28.2716 34.6409M28.2716 34.6409C28.2229 34.6055 28.1739 34.5697 28.1246 34.5336M28.2716 34.6409L28.1246 34.5336M28.1246 34.5336C27.879 34.3541 27.6253 34.1686 27.3597 33.9901M28.1246 34.5336L27.3597 33.9901M27.3597 33.9901C26.3679 33.3235 25.5919 32.7827 24.8227 32.2457M27.3597 33.9901L24.8227 32.2457M24.8227 32.2457L24.7224 32.1756M24.8227 32.2457L24.7224 32.1756M24.7224 32.1756C23.9868 31.662 23.249 31.1468 22.3269 30.5238M24.7224 32.1756L22.3269 30.5238M22.3269 30.5238C21.7749 30.1508 21.4617 29.827 21.3134 29.5358M22.3269 30.5238L21.3134 29.5358M21.3134 29.5358C21.1681 29.2505 21.1781 28.9907 21.2898 28.7297M21.3134 29.5358L21.2898 28.7297M21.2898 28.7297C21.4038 28.4631 21.624 28.1956 21.9022 27.9053M21.2898 28.7297L21.9022 27.9053M21.9022 27.9053C22.0248 27.7774 22.157 27.6467 22.2947 27.5106M21.9022 27.9053L22.2947 27.5106M22.2947 27.5106C22.3125 27.493 22.3304 27.4753 22.3484 27.4575M22.2947 27.5106L22.3484 27.4575M22.3484 27.4575C22.505 27.3025 22.6674 27.1408 22.8272 26.9707L22.3484 27.4575Z" fill="white" stroke="url(#paint1_linear_433_4286)" stroke-width="0.171268"/>
-                          </g>
-                          </g>
-                          <rect x="1" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint2_linear_433_4286)"/>
-                          <defs>
-                          <filter id="filter0_f_433_4286" x="-8.5" y="-7" width="64" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                          <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4286"/>
-                          </filter>
-                          <filter id="filter1_d_433_4286" x="-9.5" y="-1" width="64.5" height="60.8115" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                          <feOffset dy="4"/>
-                          <feGaussianBlur stdDeviation="10"/>
-                          <feComposite in2="hardAlpha" operator="out"/>
-                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_433_4286"/>
-                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_433_4286" result="shape"/>
-                          </filter>
-                          <radialGradient id="paint0_radial_433_4286" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24.0931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
-                          <stop stop-color="white" stop-opacity="0.4"/>
-                          <stop offset="1" stop-color="white" stop-opacity="0"/>
-                          </radialGradient>
-                          <linearGradient id="paint1_linear_433_4286" x1="15.5256" y1="33.9438" x2="26.7837" y2="15.3892" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white" stop-opacity="0.25"/>
-                          <stop offset="1" stop-color="white" stop-opacity="0"/>
-                          </linearGradient>
-                          <linearGradient id="paint2_linear_433_4286" x1="0.5" y1="0" x2="60.8093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white"/>
-                          <stop offset="0.335851" stop-color="#006FFD"/>
-                          <stop offset="0.62839" stop-color="#006FFD"/>
-                          <stop offset="1" stop-color="white"/>
-                          </linearGradient>
-                          <clipPath id="clip0_433_4286">
-                          <rect x="0.5" width="50" height="50" rx="25" fill="white"/>
-                          </clipPath>
-                          </defs>
-                          </svg>                 
-                      </a>
-                      <p class="team__social-name">Telegram</p>
-                    </div>
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link" target="_blank">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_433_4289)">
-                          <rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4289)" fill-opacity="0.2"/>
-                          <rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1"/>
-                          <g filter="url(#filter0_f_433_4289)">
-                          <rect x="13" y="14" width="24" height="23" rx="11.5" fill="#34C21C"/>
-                          </g>
-                          <path d="M33.5344 16.53C31.5204 14.512 28.8458 13.2744 25.993 13.0405C23.1402 12.8066 20.297 13.5917 17.9763 15.2543C15.6557 16.9169 14.0102 19.3475 13.3369 22.1076C12.6635 24.8678 13.0065 27.7758 14.304 30.3071L13.0304 36.4417C13.0171 36.5028 13.0168 36.5659 13.0293 36.6271C13.0417 36.6883 13.0668 36.7463 13.1029 36.7974C13.1558 36.8751 13.2314 36.9348 13.3194 36.9688C13.4075 37.0027 13.5038 37.0092 13.5957 36.9873L19.6561 35.5622C22.2005 36.8169 25.111 37.1353 27.8698 36.4608C30.6287 35.7863 33.0568 34.1627 34.7222 31.8788C36.3876 29.5949 37.1823 26.7989 36.9648 23.9884C36.7473 21.1778 35.5317 18.5349 33.5344 16.53ZM31.6448 31.4922C30.2513 32.8707 28.4569 33.7808 26.5144 34.094C24.572 34.4072 22.5794 34.1078 20.8175 33.238L19.9728 32.8234L16.2574 33.6963L16.2684 33.6505L17.0383 29.9405L16.6248 29.1309C15.7245 27.3769 15.407 25.3852 15.7176 23.4411C16.0282 21.4971 16.951 19.7005 18.3538 18.3086C20.1165 16.5604 22.5069 15.5784 24.9993 15.5784C27.4917 15.5784 29.8821 16.5604 31.6448 18.3086C31.6598 18.3257 31.676 18.3417 31.6932 18.3566C33.4341 20.1093 34.4059 22.4737 34.3968 24.9343C34.3877 27.3949 33.3985 29.7521 31.6448 31.4922Z" fill="white"/>
-                          <path d="M31.3148 28.7711C30.8595 29.4826 30.1402 30.3533 29.2361 30.5694C27.6522 30.9491 25.2215 30.5825 22.1968 27.7847L22.1594 27.752C19.4999 25.3056 18.8091 23.2694 18.9763 21.6545C19.0687 20.7379 19.8386 19.9086 20.4876 19.3674C20.5902 19.2805 20.7118 19.2187 20.8428 19.1868C20.9738 19.1549 21.1105 19.1539 21.242 19.1838C21.3734 19.2137 21.496 19.2737 21.6 19.359C21.7039 19.4443 21.7862 19.5526 21.8404 19.6751L22.8193 21.8575C22.8829 21.999 22.9065 22.155 22.8875 22.3088C22.8685 22.4626 22.8077 22.6083 22.7115 22.7304L22.2166 23.3676C22.1104 23.4992 22.0463 23.6593 22.0326 23.8273C22.0188 23.9953 22.0561 24.1636 22.1396 24.3104C22.4168 24.7927 23.0811 25.502 23.818 26.1589C24.6451 26.9009 25.5624 27.5796 26.1432 27.8109C26.2986 27.8739 26.4694 27.8892 26.6337 27.855C26.798 27.8208 26.9482 27.7385 27.0649 27.6188L27.639 27.0449C27.7498 26.9365 27.8876 26.8592 28.0383 26.8209C28.189 26.7825 28.3472 26.7845 28.4969 26.8267L30.8221 27.4814C30.9503 27.5204 31.0679 27.588 31.1658 27.679C31.2637 27.7701 31.3393 27.8821 31.3868 28.0065C31.4344 28.131 31.4526 28.2646 31.4401 28.3971C31.4277 28.5296 31.3848 28.6576 31.3148 28.7711Z" fill="white"/>
-                          </g>
-                          <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint1_linear_433_4289)"/>
-                          <defs>
-                          <filter id="filter0_f_433_4289" x="-7" y="-6" width="64" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                          <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4289"/>
-                          </filter>
-                          <radialGradient id="paint0_radial_433_4289" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
-                          <stop stop-color="white" stop-opacity="0.4"/>
-                          <stop offset="1" stop-color="white" stop-opacity="0"/>
-                          </radialGradient>
-                          <linearGradient id="paint1_linear_433_4289" x1="0" y1="0" x2="60.3093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white"/>
-                          <stop offset="0.335851" stop-color="#006FFD"/>
-                          <stop offset="0.62839" stop-color="#006FFD"/>
-                          <stop offset="1" stop-color="white"/>
-                          </linearGradient>
-                          <clipPath id="clip0_433_4289">
-                          <rect width="50" height="50" rx="25" fill="white"/>
-                          </clipPath>
-                          </defs>
-                          </svg>
-                          
-                      </a>
-                      <p class="team__social-name">Whats Up</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+								<div class="features__slide swiper-slide">
+									<div class="features__slide-img">
+										<img src="img/features/8.svg" alt="slide-image" />
+									</div>
+									<p class="features__slide-title">Track System Increment Delivery</p>
+									<p class="features__slide-text">
+										Map your work-management units to your codebase through the Architecture Copilot to
+										benefit from optimal feature scope
+										decomposition, dependencies management and improved traceability.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination features__pagination-slider"></div>
+						<div id="fraction2" class="swiper-fraction"></div>
+						<div class="slider-buttons">
+							<div class="swiper-button-prev features__slider-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path
+										d="M20 9.85938L5.85938 24L20 38.1406L23 35.1406L13.8594 26H42V22H13.8594L23 12.8594L20 9.85938Z"
+										fill="white" />
+								</svg>
+								<img class="slider-prev-mob" src="img/benefits/slider-prev-mob.svg" alt="arrow-button" />
+							</div>
+							<div class="swiper-button-next features__slider-next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path
+										d="M28 38.1406L42.1406 24L28 9.85938L25 12.8594L34.1406 22L6 22V26L34.1406 26L25 35.1406L28 38.1406Z"
+										fill="white" />
+								</svg>
+								<img class="slider-next-mob" src="img/benefits/slider-next-mob.svg" alt="arrow-button" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /features -->
 
-              <div class="team__item">
-                <div class="team__item-img">
-                  <img src="img/team/Roman.png" alt="image-team-member" />
-                </div>
-                <p class="team__name">Roman Voronin</p>
-                <p class="team__subname">Co-Founder</p>
-                <p class="team__text">
-                  Software and Solution Architect with over 18 years of experience in IT. Strong experience with system architecture with a special
-                  focus on AWS Technologies, Kubernetes, and Python. Adept of System Engineering approach. Certified AWS specialist. Leader and events
-                  organizer of Minsk AWS Community
-                </p>
-                <div class="team__social">
-                  <p class="team__social-title">Social media</p>
-                  <div class="team__social-links">
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link" target="_blank">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_433_4283)">
-                            <rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4283)" fill-opacity="0.2" />
-                            <rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
-                            <g filter="url(#filter0_f_433_4283)">
-                              <rect x="15" y="13" width="24" height="23" rx="11.5" fill="#34C21C" />
-                            </g>
-                            <path
-                              d="M14.3868 18.9648H19.3627V35H14.3868V18.9648ZM16.8835 11C18.4835 11 19.7671 12.2863 19.7671 13.8899C19.7671 15.4934 18.4835 16.7797 16.8835 16.7797C15.2835 16.7797 14 15.4758 14 13.8899C14 12.304 15.2835 11 16.8835 11Z"
-                              fill="white"
-                            />
-                            <path
-                              d="M22.4922 18.9629H27.2571V21.1479H27.3274C27.9956 19.8792 29.6131 18.5576 32.0395 18.5576C37.0681 18.5576 38 21.8704 38 26.1876V34.9805H33.0242V27.192C33.0242 25.3241 32.989 22.9453 30.4395 22.9453C27.8901 22.9453 27.4505 24.9717 27.4505 27.0686V34.9981H22.4747V18.9629H22.4922Z"
-                              fill="white"
-                            />
-                          </g>
-                          <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint1_linear_433_4283)" />
-                          <defs>
-                            <filter
-                              id="filter0_f_433_4283"
-                              x="-5"
-                              y="-7"
-                              width="64"
-                              height="63"
-                              filterUnits="userSpaceOnUse"
-                              color-interpolation-filters="sRGB"
-                            >
-                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                              <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4283" />
-                            </filter>
-                            <radialGradient
-                              id="paint0_radial_433_4283"
-                              cx="0"
-                              cy="0"
-                              r="1"
-                              gradientUnits="userSpaceOnUse"
-                              gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)"
-                            >
-                              <stop stop-color="white" stop-opacity="0.4" />
-                              <stop offset="1" stop-color="white" stop-opacity="0" />
-                            </radialGradient>
-                            <linearGradient id="paint1_linear_433_4283" x1="0" y1="0" x2="60.3093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                              <stop stop-color="white" />
-                              <stop offset="0.335851" stop-color="#006FFD" />
-                              <stop offset="0.62839" stop-color="#006FFD" />
-                              <stop offset="1" stop-color="white" />
-                            </linearGradient>
-                            <clipPath id="clip0_433_4283">
-                              <rect width="50" height="50" rx="25" fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </a>
-                      <p class="team__social-name">Linkedin</p>
-                    </div>
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link" target="_blank">
-                        <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_433_4286)">
-                          <rect x="0.5" width="50" height="50" rx="25" fill="url(#paint0_radial_433_4286)" fill-opacity="0.2"/>
-                          <rect x="0.5" width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1"/>
-                          <g filter="url(#filter0_f_433_4286)">
-                          <rect x="11.5" y="13" width="24" height="23" rx="11.5" fill="#34C21C"/>
-                          </g>
-                          <g filter="url(#filter1_d_433_4286)">
-                          <path d="M12.2161 24.0386L12.216 24.0385C11.6854 24.2549 11.2865 24.4668 11.0154 24.6732C10.7424 24.8811 10.6122 25.0733 10.5909 25.2472L10.5059 25.2368L10.5909 25.2472C10.5693 25.4238 10.6143 25.5665 10.7139 25.692C10.8161 25.8208 10.9785 25.9348 11.1963 26.0429C11.5285 26.2079 11.9673 26.3494 12.4711 26.5119C12.6313 26.5635 12.7981 26.6173 12.9701 26.6746L12.943 26.7559L12.9701 26.6746C13.5446 26.8661 14.2177 27.0737 14.847 27.2355C15.4783 27.3978 16.0586 27.5122 16.4506 27.5209C17.1555 27.5365 17.9528 27.2384 18.8451 26.6102L18.8456 26.6098C21.917 24.4839 24.2457 22.8836 25.8315 21.8089C26.6244 21.2716 27.2319 20.8654 27.6538 20.5905C27.8647 20.4532 28.0297 20.3482 28.1486 20.276C28.208 20.24 28.2567 20.2116 28.2941 20.1913C28.3276 20.1732 28.3619 20.1559 28.3876 20.1499C28.4573 20.1337 28.5503 20.1128 28.6444 20.1136C28.74 20.1144 28.8449 20.1374 28.9316 20.2164C29.0183 20.2954 29.053 20.4049 29.0659 20.494C29.0788 20.5834 29.0719 20.6662 29.0624 20.7077C29.0624 20.7077 29.0624 20.7077 29.0624 20.7077L12.2161 24.0386ZM12.2161 24.0386L12.2186 24.0374M12.2161 24.0386L12.2186 24.0374M12.2186 24.0374C18.7932 21.1004 23.1766 19.1644 25.3693 18.2293M12.2186 24.0374L25.3693 18.2293M30.8846 35.8012L30.8765 35.7159C31.4167 35.665 32.0266 35.1412 32.3415 33.4151C33.0887 29.3195 34.5566 20.4498 34.8956 16.7976C34.9176 16.5612 34.9275 16.2686 34.884 15.9962C34.8403 15.7222 34.7446 15.4823 34.5675 15.3349L34.6222 15.2691L34.5675 15.3349C34.446 15.2338 34.2878 15.17 34.1336 15.1322C33.9798 15.0945 33.8363 15.0842 33.7499 15.0858L30.8846 35.8012ZM30.8846 35.8012L30.8765 35.7159C30.2476 35.7753 29.6905 35.5633 29.127 35.2239M30.8846 35.8012L29.127 35.2239M25.3693 18.2293C28.5011 16.8937 30.3904 16.1107 31.6025 15.6597M25.3693 18.2293L31.6025 15.6597M31.6025 15.6597C32.816 15.2082 33.3416 15.0932 33.7499 15.0858L31.6025 15.6597ZM29.127 35.2239C28.8451 35.0541 28.5636 34.8536 28.2716 34.6409M29.127 35.2239L28.2716 34.6409M28.2716 34.6409C28.2229 34.6055 28.1739 34.5697 28.1246 34.5336M28.2716 34.6409L28.1246 34.5336M28.1246 34.5336C27.879 34.3541 27.6253 34.1686 27.3597 33.9901M28.1246 34.5336L27.3597 33.9901M27.3597 33.9901C26.3679 33.3235 25.5919 32.7827 24.8227 32.2457M27.3597 33.9901L24.8227 32.2457M24.8227 32.2457L24.7224 32.1756M24.8227 32.2457L24.7224 32.1756M24.7224 32.1756C23.9868 31.662 23.249 31.1468 22.3269 30.5238M24.7224 32.1756L22.3269 30.5238M22.3269 30.5238C21.7749 30.1508 21.4617 29.827 21.3134 29.5358M22.3269 30.5238L21.3134 29.5358M21.3134 29.5358C21.1681 29.2505 21.1781 28.9907 21.2898 28.7297M21.3134 29.5358L21.2898 28.7297M21.2898 28.7297C21.4038 28.4631 21.624 28.1956 21.9022 27.9053M21.2898 28.7297L21.9022 27.9053M21.9022 27.9053C22.0248 27.7774 22.157 27.6467 22.2947 27.5106M21.9022 27.9053L22.2947 27.5106M22.2947 27.5106C22.3125 27.493 22.3304 27.4753 22.3484 27.4575M22.2947 27.5106L22.3484 27.4575M22.3484 27.4575C22.505 27.3025 22.6674 27.1408 22.8272 26.9707L22.3484 27.4575Z" fill="white" stroke="url(#paint1_linear_433_4286)" stroke-width="0.171268"/>
-                          </g>
-                          </g>
-                          <rect x="1" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint2_linear_433_4286)"/>
-                          <defs>
-                          <filter id="filter0_f_433_4286" x="-8.5" y="-7" width="64" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                          <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4286"/>
-                          </filter>
-                          <filter id="filter1_d_433_4286" x="-9.5" y="-1" width="64.5" height="60.8115" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                          <feOffset dy="4"/>
-                          <feGaussianBlur stdDeviation="10"/>
-                          <feComposite in2="hardAlpha" operator="out"/>
-                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_433_4286"/>
-                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_433_4286" result="shape"/>
-                          </filter>
-                          <radialGradient id="paint0_radial_433_4286" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24.0931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
-                          <stop stop-color="white" stop-opacity="0.4"/>
-                          <stop offset="1" stop-color="white" stop-opacity="0"/>
-                          </radialGradient>
-                          <linearGradient id="paint1_linear_433_4286" x1="15.5256" y1="33.9438" x2="26.7837" y2="15.3892" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white" stop-opacity="0.25"/>
-                          <stop offset="1" stop-color="white" stop-opacity="0"/>
-                          </linearGradient>
-                          <linearGradient id="paint2_linear_433_4286" x1="0.5" y1="0" x2="60.8093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white"/>
-                          <stop offset="0.335851" stop-color="#006FFD"/>
-                          <stop offset="0.62839" stop-color="#006FFD"/>
-                          <stop offset="1" stop-color="white"/>
-                          </linearGradient>
-                          <clipPath id="clip0_433_4286">
-                          <rect x="0.5" width="50" height="50" rx="25" fill="white"/>
-                          </clipPath>
-                          </defs>
-                          </svg>
-                          
-                      </a>
-                      <p class="team__social-name">Telegram</p>
-                    </div>
-                    <div class="team__social-item">
-                      <a href="#" class="team__social-link" target="_blank">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_433_4289)">
-                          <rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4289)" fill-opacity="0.2"/>
-                          <rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1"/>
-                          <g filter="url(#filter0_f_433_4289)">
-                          <rect x="13" y="14" width="24" height="23" rx="11.5" fill="#34C21C"/>
-                          </g>
-                          <path d="M33.5344 16.53C31.5204 14.512 28.8458 13.2744 25.993 13.0405C23.1402 12.8066 20.297 13.5917 17.9763 15.2543C15.6557 16.9169 14.0102 19.3475 13.3369 22.1076C12.6635 24.8678 13.0065 27.7758 14.304 30.3071L13.0304 36.4417C13.0171 36.5028 13.0168 36.5659 13.0293 36.6271C13.0417 36.6883 13.0668 36.7463 13.1029 36.7974C13.1558 36.8751 13.2314 36.9348 13.3194 36.9688C13.4075 37.0027 13.5038 37.0092 13.5957 36.9873L19.6561 35.5622C22.2005 36.8169 25.111 37.1353 27.8698 36.4608C30.6287 35.7863 33.0568 34.1627 34.7222 31.8788C36.3876 29.5949 37.1823 26.7989 36.9648 23.9884C36.7473 21.1778 35.5317 18.5349 33.5344 16.53ZM31.6448 31.4922C30.2513 32.8707 28.4569 33.7808 26.5144 34.094C24.572 34.4072 22.5794 34.1078 20.8175 33.238L19.9728 32.8234L16.2574 33.6963L16.2684 33.6505L17.0383 29.9405L16.6248 29.1309C15.7245 27.3769 15.407 25.3852 15.7176 23.4411C16.0282 21.4971 16.951 19.7005 18.3538 18.3086C20.1165 16.5604 22.5069 15.5784 24.9993 15.5784C27.4917 15.5784 29.8821 16.5604 31.6448 18.3086C31.6598 18.3257 31.676 18.3417 31.6932 18.3566C33.4341 20.1093 34.4059 22.4737 34.3968 24.9343C34.3877 27.3949 33.3985 29.7521 31.6448 31.4922Z" fill="white"/>
-                          <path d="M31.3148 28.7711C30.8595 29.4826 30.1402 30.3533 29.2361 30.5694C27.6522 30.9491 25.2215 30.5825 22.1968 27.7847L22.1594 27.752C19.4999 25.3056 18.8091 23.2694 18.9763 21.6545C19.0687 20.7379 19.8386 19.9086 20.4876 19.3674C20.5902 19.2805 20.7118 19.2187 20.8428 19.1868C20.9738 19.1549 21.1105 19.1539 21.242 19.1838C21.3734 19.2137 21.496 19.2737 21.6 19.359C21.7039 19.4443 21.7862 19.5526 21.8404 19.6751L22.8193 21.8575C22.8829 21.999 22.9065 22.155 22.8875 22.3088C22.8685 22.4626 22.8077 22.6083 22.7115 22.7304L22.2166 23.3676C22.1104 23.4992 22.0463 23.6593 22.0326 23.8273C22.0188 23.9953 22.0561 24.1636 22.1396 24.3104C22.4168 24.7927 23.0811 25.502 23.818 26.1589C24.6451 26.9009 25.5624 27.5796 26.1432 27.8109C26.2986 27.8739 26.4694 27.8892 26.6337 27.855C26.798 27.8208 26.9482 27.7385 27.0649 27.6188L27.639 27.0449C27.7498 26.9365 27.8876 26.8592 28.0383 26.8209C28.189 26.7825 28.3472 26.7845 28.4969 26.8267L30.8221 27.4814C30.9503 27.5204 31.0679 27.588 31.1658 27.679C31.2637 27.7701 31.3393 27.8821 31.3868 28.0065C31.4344 28.131 31.4526 28.2646 31.4401 28.3971C31.4277 28.5296 31.3848 28.6576 31.3148 28.7711Z" fill="white"/>
-                          </g>
-                          <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint1_linear_433_4289)"/>
-                          <defs>
-                          <filter id="filter0_f_433_4289" x="-7" y="-6" width="64" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                          <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4289"/>
-                          </filter>
-                          <radialGradient id="paint0_radial_433_4289" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
-                          <stop stop-color="white" stop-opacity="0.4"/>
-                          <stop offset="1" stop-color="white" stop-opacity="0"/>
-                          </radialGradient>
-                          <linearGradient id="paint1_linear_433_4289" x1="0" y1="0" x2="60.3093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white"/>
-                          <stop offset="0.335851" stop-color="#006FFD"/>
-                          <stop offset="0.62839" stop-color="#006FFD"/>
-                          <stop offset="1" stop-color="white"/>
-                          </linearGradient>
-                          <clipPath id="clip0_433_4289">
-                          <rect width="50" height="50" rx="25" fill="white"/>
-                          </clipPath>
-                          </defs>
-                          </svg>
-                          
-                      </a>
-                      <p class="team__social-name">Whats Up</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- team -->
+			<!-- howItWorks -->
+			<section id="howItWorks" class="howItWorks">
+				<div class="howItWork__container container">
+					<h4 class="howItWorks__title title"><span>How it</span> works</h4>
+					<div class="howItWorks__video">
+						<video width="500px" src="video/graf-min.mp4" controls muted playsinline></video>
+					</div>
+				</div>
+			</section>
+			<!-- howItWorks -->
 
-        <!-- faq -->
-        <section class="faq">
-          <div class="faq__container container">
-            <h6 class="faq__title title"><span>FAQ</span></h6>
-            <div class="faq__row">
-              <div class="faq__robot">
-                <img src="img/faq/neon-chatbot-assistant-answering-questions-online.svg" alt="" />
-              </div>
-              <div class="accordion">
-                <div class="accordion-container">
-                  <div class="ac accordion__item">
-                    <div class="ac-header accordion__header">
-                      <div class="ac-trigger accordion__trigger">
-                        <img src="img/faq/accordion-img1.svg" alt="img which description this question" />
-                        <span>So it is one more diagramming tool?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                          <path d="M0 10.2861H24V13.7147H0V10.2861Z" fill="white" />
-                          <path d="M10 24L10 0H13.4286L13.4286 24H10Z" fill="white" />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ac-panel accordion__panel">
-                      <p class="ac-text accordion__text">
-                        Not even close. We are strong believers of textual models (LLMs approve!) so diagrams will be our side benefit. The core and
-                        the main idea of the product is a “one system - one model” principle also known as a “digital thread”. We can collect and
-                        organise all the contextual information according to inner metamodel structure to effectively use it as a basis for
-                        evolutional engineering processes.
-                      </p>
-                    </div>
-                  </div>
+			<!-- team -->
+			<section id="team" class="team">
+				<div class="team__container container">
+					<h4 class="team__title title">Team</h4>
+					<p class="team__subtitle">
+						Please meet our Founding team: 40+ combined years of experience delivering customers value with
+						complex dynamic systems as part of
+						multiple teams in numerous domains.
+					</p>
+					<div class="team__content">
+						<div class="team__item">
+							<div class="team__item-img">
+								<img src="img/team/Ivan.png" alt="image-team-member" />
+							</div>
+							<p class="team__name">Ivan Padabed</p>
+							<p class="team__subname">Founder</p>
+							<p class="team__text">
+								Engineer by heart, Ivan has successfully applied his “systems thinking” superpower to master
+								Systems Architecture, Enterprise
+								Architecture, Technical Product Management, and Engineering Management. His “pain” coming from
+								architecture tooling imperfection
+								became a motivation to build System5.dev
+							</p>
+							<div class="team__social">
+								<p class="team__social-title">Social media</p>
+								<div class="team__social-links">
+									<div class="team__social-item">
+										<a href="#" class="team__social-link" target="_blank">
+											<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_4283)">
+													<rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4283)"
+														fill-opacity="0.2" />
+													<rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+													<g filter="url(#filter0_f_433_4283)">
+														<rect x="15" y="13" width="24" height="23" rx="11.5" fill="#34C21C" />
+													</g>
+													<path
+														d="M14.3868 18.9648H19.3627V35H14.3868V18.9648ZM16.8835 11C18.4835 11 19.7671 12.2863 19.7671 13.8899C19.7671 15.4934 18.4835 16.7797 16.8835 16.7797C15.2835 16.7797 14 15.4758 14 13.8899C14 12.304 15.2835 11 16.8835 11Z"
+														fill="white" />
+													<path
+														d="M22.4922 18.9629H27.2571V21.1479H27.3274C27.9956 19.8792 29.6131 18.5576 32.0395 18.5576C37.0681 18.5576 38 21.8704 38 26.1876V34.9805H33.0242V27.192C33.0242 25.3241 32.989 22.9453 30.4395 22.9453C27.8901 22.9453 27.4505 24.9717 27.4505 27.0686V34.9981H22.4747V18.9629H22.4922Z"
+														fill="white" />
+												</g>
+												<rect x="0.5" y="0.5" width="49" height="49" rx="24.5"
+													stroke="url(#paint1_linear_433_4283)" />
+												<defs>
+													<filter id="filter0_f_433_4283" x="-5" y="-7" width="64" height="63"
+														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+														<feFlood flood-opacity="0" result="BackgroundImageFix" />
+														<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+															result="shape" />
+														<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4283" />
+													</filter>
+													<radialGradient id="paint0_radial_433_4283" cx="0" cy="0" r="1"
+														gradientUnits="userSpaceOnUse"
+														gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+														<stop stop-color="white" stop-opacity="0.4" />
+														<stop offset="1" stop-color="white" stop-opacity="0" />
+													</radialGradient>
+													<linearGradient id="paint1_linear_433_4283" x1="0" y1="0" x2="60.3093"
+														y2="26.8041" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" />
+														<stop offset="0.335851" stop-color="#006FFD" />
+														<stop offset="0.62839" stop-color="#006FFD" />
+														<stop offset="1" stop-color="white" />
+													</linearGradient>
+													<clipPath id="clip0_433_4283">
+														<rect width="50" height="50" rx="25" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<p class="team__social-name">Linkedin</p>
+									</div>
+									<div class="team__social-item">
+										<a href="#" class="team__social-link" target="_blank">
+											<svg width="51" height="50" viewBox="0 0 51 50" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_4286)">
+													<rect x="0.5" width="50" height="50" rx="25" fill="url(#paint0_radial_433_4286)"
+														fill-opacity="0.2" />
+													<rect x="0.5" width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+													<g filter="url(#filter0_f_433_4286)">
+														<rect x="11.5" y="13" width="24" height="23" rx="11.5" fill="#34C21C" />
+													</g>
+													<g filter="url(#filter1_d_433_4286)">
+														<path
+															d="M12.2161 24.0386L12.216 24.0385C11.6854 24.2549 11.2865 24.4668 11.0154 24.6732C10.7424 24.8811 10.6122 25.0733 10.5909 25.2472L10.5059 25.2368L10.5909 25.2472C10.5693 25.4238 10.6143 25.5665 10.7139 25.692C10.8161 25.8208 10.9785 25.9348 11.1963 26.0429C11.5285 26.2079 11.9673 26.3494 12.4711 26.5119C12.6313 26.5635 12.7981 26.6173 12.9701 26.6746L12.943 26.7559L12.9701 26.6746C13.5446 26.8661 14.2177 27.0737 14.847 27.2355C15.4783 27.3978 16.0586 27.5122 16.4506 27.5209C17.1555 27.5365 17.9528 27.2384 18.8451 26.6102L18.8456 26.6098C21.917 24.4839 24.2457 22.8836 25.8315 21.8089C26.6244 21.2716 27.2319 20.8654 27.6538 20.5905C27.8647 20.4532 28.0297 20.3482 28.1486 20.276C28.208 20.24 28.2567 20.2116 28.2941 20.1913C28.3276 20.1732 28.3619 20.1559 28.3876 20.1499C28.4573 20.1337 28.5503 20.1128 28.6444 20.1136C28.74 20.1144 28.8449 20.1374 28.9316 20.2164C29.0183 20.2954 29.053 20.4049 29.0659 20.494C29.0788 20.5834 29.0719 20.6662 29.0624 20.7077C29.0624 20.7077 29.0624 20.7077 29.0624 20.7077L12.2161 24.0386ZM12.2161 24.0386L12.2186 24.0374M12.2161 24.0386L12.2186 24.0374M12.2186 24.0374C18.7932 21.1004 23.1766 19.1644 25.3693 18.2293M12.2186 24.0374L25.3693 18.2293M30.8846 35.8012L30.8765 35.7159C31.4167 35.665 32.0266 35.1412 32.3415 33.4151C33.0887 29.3195 34.5566 20.4498 34.8956 16.7976C34.9176 16.5612 34.9275 16.2686 34.884 15.9962C34.8403 15.7222 34.7446 15.4823 34.5675 15.3349L34.6222 15.2691L34.5675 15.3349C34.446 15.2338 34.2878 15.17 34.1336 15.1322C33.9798 15.0945 33.8363 15.0842 33.7499 15.0858L30.8846 35.8012ZM30.8846 35.8012L30.8765 35.7159C30.2476 35.7753 29.6905 35.5633 29.127 35.2239M30.8846 35.8012L29.127 35.2239M25.3693 18.2293C28.5011 16.8937 30.3904 16.1107 31.6025 15.6597M25.3693 18.2293L31.6025 15.6597M31.6025 15.6597C32.816 15.2082 33.3416 15.0932 33.7499 15.0858L31.6025 15.6597ZM29.127 35.2239C28.8451 35.0541 28.5636 34.8536 28.2716 34.6409M29.127 35.2239L28.2716 34.6409M28.2716 34.6409C28.2229 34.6055 28.1739 34.5697 28.1246 34.5336M28.2716 34.6409L28.1246 34.5336M28.1246 34.5336C27.879 34.3541 27.6253 34.1686 27.3597 33.9901M28.1246 34.5336L27.3597 33.9901M27.3597 33.9901C26.3679 33.3235 25.5919 32.7827 24.8227 32.2457M27.3597 33.9901L24.8227 32.2457M24.8227 32.2457L24.7224 32.1756M24.8227 32.2457L24.7224 32.1756M24.7224 32.1756C23.9868 31.662 23.249 31.1468 22.3269 30.5238M24.7224 32.1756L22.3269 30.5238M22.3269 30.5238C21.7749 30.1508 21.4617 29.827 21.3134 29.5358M22.3269 30.5238L21.3134 29.5358M21.3134 29.5358C21.1681 29.2505 21.1781 28.9907 21.2898 28.7297M21.3134 29.5358L21.2898 28.7297M21.2898 28.7297C21.4038 28.4631 21.624 28.1956 21.9022 27.9053M21.2898 28.7297L21.9022 27.9053M21.9022 27.9053C22.0248 27.7774 22.157 27.6467 22.2947 27.5106M21.9022 27.9053L22.2947 27.5106M22.2947 27.5106C22.3125 27.493 22.3304 27.4753 22.3484 27.4575M22.2947 27.5106L22.3484 27.4575M22.3484 27.4575C22.505 27.3025 22.6674 27.1408 22.8272 26.9707L22.3484 27.4575Z"
+															fill="white" stroke="url(#paint1_linear_433_4286)"
+															stroke-width="0.171268" />
+													</g>
+												</g>
+												<rect x="1" y="0.5" width="49" height="49" rx="24.5"
+													stroke="url(#paint2_linear_433_4286)" />
+												<defs>
+													<filter id="filter0_f_433_4286" x="-8.5" y="-7" width="64" height="63"
+														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+														<feFlood flood-opacity="0" result="BackgroundImageFix" />
+														<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+															result="shape" />
+														<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4286" />
+													</filter>
+													<filter id="filter1_d_433_4286" x="-9.5" y="-1" width="64.5" height="60.8115"
+														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+														<feFlood flood-opacity="0" result="BackgroundImageFix" />
+														<feColorMatrix in="SourceAlpha" type="matrix"
+															values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+														<feOffset dy="4" />
+														<feGaussianBlur stdDeviation="10" />
+														<feComposite in2="hardAlpha" operator="out" />
+														<feColorMatrix type="matrix"
+															values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+														<feBlend mode="normal" in2="BackgroundImageFix"
+															result="effect1_dropShadow_433_4286" />
+														<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_433_4286"
+															result="shape" />
+													</filter>
+													<radialGradient id="paint0_radial_433_4286" cx="0" cy="0" r="1"
+														gradientUnits="userSpaceOnUse"
+														gradientTransform="translate(24.0931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+														<stop stop-color="white" stop-opacity="0.4" />
+														<stop offset="1" stop-color="white" stop-opacity="0" />
+													</radialGradient>
+													<linearGradient id="paint1_linear_433_4286" x1="15.5256" y1="33.9438"
+														x2="26.7837" y2="15.3892" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" stop-opacity="0.25" />
+														<stop offset="1" stop-color="white" stop-opacity="0" />
+													</linearGradient>
+													<linearGradient id="paint2_linear_433_4286" x1="0.5" y1="0" x2="60.8093"
+														y2="26.8041" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" />
+														<stop offset="0.335851" stop-color="#006FFD" />
+														<stop offset="0.62839" stop-color="#006FFD" />
+														<stop offset="1" stop-color="white" />
+													</linearGradient>
+													<clipPath id="clip0_433_4286">
+														<rect x="0.5" width="50" height="50" rx="25" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<p class="team__social-name">Telegram</p>
+									</div>
+									<div class="team__social-item">
+										<a href="#" class="team__social-link" target="_blank">
+											<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_4289)">
+													<rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4289)"
+														fill-opacity="0.2" />
+													<rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+													<g filter="url(#filter0_f_433_4289)">
+														<rect x="13" y="14" width="24" height="23" rx="11.5" fill="#34C21C" />
+													</g>
+													<path
+														d="M33.5344 16.53C31.5204 14.512 28.8458 13.2744 25.993 13.0405C23.1402 12.8066 20.297 13.5917 17.9763 15.2543C15.6557 16.9169 14.0102 19.3475 13.3369 22.1076C12.6635 24.8678 13.0065 27.7758 14.304 30.3071L13.0304 36.4417C13.0171 36.5028 13.0168 36.5659 13.0293 36.6271C13.0417 36.6883 13.0668 36.7463 13.1029 36.7974C13.1558 36.8751 13.2314 36.9348 13.3194 36.9688C13.4075 37.0027 13.5038 37.0092 13.5957 36.9873L19.6561 35.5622C22.2005 36.8169 25.111 37.1353 27.8698 36.4608C30.6287 35.7863 33.0568 34.1627 34.7222 31.8788C36.3876 29.5949 37.1823 26.7989 36.9648 23.9884C36.7473 21.1778 35.5317 18.5349 33.5344 16.53ZM31.6448 31.4922C30.2513 32.8707 28.4569 33.7808 26.5144 34.094C24.572 34.4072 22.5794 34.1078 20.8175 33.238L19.9728 32.8234L16.2574 33.6963L16.2684 33.6505L17.0383 29.9405L16.6248 29.1309C15.7245 27.3769 15.407 25.3852 15.7176 23.4411C16.0282 21.4971 16.951 19.7005 18.3538 18.3086C20.1165 16.5604 22.5069 15.5784 24.9993 15.5784C27.4917 15.5784 29.8821 16.5604 31.6448 18.3086C31.6598 18.3257 31.676 18.3417 31.6932 18.3566C33.4341 20.1093 34.4059 22.4737 34.3968 24.9343C34.3877 27.3949 33.3985 29.7521 31.6448 31.4922Z"
+														fill="white" />
+													<path
+														d="M31.3148 28.7711C30.8595 29.4826 30.1402 30.3533 29.2361 30.5694C27.6522 30.9491 25.2215 30.5825 22.1968 27.7847L22.1594 27.752C19.4999 25.3056 18.8091 23.2694 18.9763 21.6545C19.0687 20.7379 19.8386 19.9086 20.4876 19.3674C20.5902 19.2805 20.7118 19.2187 20.8428 19.1868C20.9738 19.1549 21.1105 19.1539 21.242 19.1838C21.3734 19.2137 21.496 19.2737 21.6 19.359C21.7039 19.4443 21.7862 19.5526 21.8404 19.6751L22.8193 21.8575C22.8829 21.999 22.9065 22.155 22.8875 22.3088C22.8685 22.4626 22.8077 22.6083 22.7115 22.7304L22.2166 23.3676C22.1104 23.4992 22.0463 23.6593 22.0326 23.8273C22.0188 23.9953 22.0561 24.1636 22.1396 24.3104C22.4168 24.7927 23.0811 25.502 23.818 26.1589C24.6451 26.9009 25.5624 27.5796 26.1432 27.8109C26.2986 27.8739 26.4694 27.8892 26.6337 27.855C26.798 27.8208 26.9482 27.7385 27.0649 27.6188L27.639 27.0449C27.7498 26.9365 27.8876 26.8592 28.0383 26.8209C28.189 26.7825 28.3472 26.7845 28.4969 26.8267L30.8221 27.4814C30.9503 27.5204 31.0679 27.588 31.1658 27.679C31.2637 27.7701 31.3393 27.8821 31.3868 28.0065C31.4344 28.131 31.4526 28.2646 31.4401 28.3971C31.4277 28.5296 31.3848 28.6576 31.3148 28.7711Z"
+														fill="white" />
+												</g>
+												<rect x="0.5" y="0.5" width="49" height="49" rx="24.5"
+													stroke="url(#paint1_linear_433_4289)" />
+												<defs>
+													<filter id="filter0_f_433_4289" x="-7" y="-6" width="64" height="63"
+														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+														<feFlood flood-opacity="0" result="BackgroundImageFix" />
+														<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+															result="shape" />
+														<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4289" />
+													</filter>
+													<radialGradient id="paint0_radial_433_4289" cx="0" cy="0" r="1"
+														gradientUnits="userSpaceOnUse"
+														gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+														<stop stop-color="white" stop-opacity="0.4" />
+														<stop offset="1" stop-color="white" stop-opacity="0" />
+													</radialGradient>
+													<linearGradient id="paint1_linear_433_4289" x1="0" y1="0" x2="60.3093"
+														y2="26.8041" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" />
+														<stop offset="0.335851" stop-color="#006FFD" />
+														<stop offset="0.62839" stop-color="#006FFD" />
+														<stop offset="1" stop-color="white" />
+													</linearGradient>
+													<clipPath id="clip0_433_4289">
+														<rect width="50" height="50" rx="25" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
 
-                  <div class="ac accordion__item">
-                    <div class="ac-header accordion__header">
-                      <div class="ac-trigger accordion__trigger">
-                        <img src="img/faq/whywearebetter.svg" alt="why we are better" />
-                        <span>Why we are better than other tools ?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                          <path d="M0 10.2861H24V13.7147H0V10.2861Z" fill="white" />
-                          <path d="M10 24L10 0H13.4286L13.4286 24H10Z" fill="white" />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ac-panel accordion__panel">
-                      <p class="ac-text accordion__text">
-                        We are better just because there are no similar tools on the market now. Closest match might be a combination of multiple
-                        products like Jira, Confluence, Compass, Fibery, GitHub, Cortex, PlantUML etc. But any combined flow will have similar
-                        problems: reinventing the SotA, integration problems, high maintenance cost, cognitive load, UX. Our Architecture Copilot will
-                        not replace but make it smooth and efficient.
-                      </p>
-                    </div>
-                  </div>
+										</a>
+										<p class="team__social-name">Whats Up</p>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                  <div class="ac accordion__item">
-                    <div class="ac-header accordion__header">
-                      <div class="ac-trigger accordion__trigger">
-                        <img src="img/faq/whyshouldilearn.svg" alt="why should i learn" />
-                        <span>Why should I learn it as engineer?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                          <path d="M0 10.2861H24V13.7147H0V10.2861Z" fill="white" />
-                          <path d="M10 24L10 0H13.4286L13.4286 24H10Z" fill="white" />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ac-panel accordion__panel">
-                      <p class="ac-text accordion__text">
-                        We are better just because there are no similar tools on the market now. Closest match might be a combination of multiple
-                        products like Jira, Confluence, Compass, Fibery, GitHub, Cortex, PlantUML etc. But any combined flow will have similar
-                        problems: reinventing the SotA, integration problems, high maintenance cost, cognitive load, UX. Our Architecture Copilot will
-                        not replace but make it smooth and efficient.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- faq -->
-        <!-- COOKIES -->
-        <div class="cookies">
-          <p class="cookies__text">Are you using cookies?</p>
-          <button class="cookies__btn btn-transparent" id="btn-ok">Ok</button>
-          <button class="cookies__btn btn-transparent" id="btn-yes">Yes</button>
-        </div>
-        <!-- /COOKIES -->
+						<div class="team__item">
+							<div class="team__item-img">
+								<img src="img/team/Roman.png" alt="image-team-member" />
+							</div>
+							<p class="team__name">Roman Voronin</p>
+							<p class="team__subname">Co-Founder</p>
+							<p class="team__text">
+								Software and Solution Architect with over 18 years of experience in IT. Strong experience with
+								system architecture with a special
+								focus on AWS Technologies, Kubernetes, and Python. Adept of System Engineering approach.
+								Certified AWS specialist. Leader and events
+								organizer of Minsk AWS Community
+							</p>
+							<div class="team__social">
+								<p class="team__social-title">Social media</p>
+								<div class="team__social-links">
+									<div class="team__social-item">
+										<a href="#" class="team__social-link" target="_blank">
+											<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_4283)">
+													<rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4283)"
+														fill-opacity="0.2" />
+													<rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+													<g filter="url(#filter0_f_433_4283)">
+														<rect x="15" y="13" width="24" height="23" rx="11.5" fill="#34C21C" />
+													</g>
+													<path
+														d="M14.3868 18.9648H19.3627V35H14.3868V18.9648ZM16.8835 11C18.4835 11 19.7671 12.2863 19.7671 13.8899C19.7671 15.4934 18.4835 16.7797 16.8835 16.7797C15.2835 16.7797 14 15.4758 14 13.8899C14 12.304 15.2835 11 16.8835 11Z"
+														fill="white" />
+													<path
+														d="M22.4922 18.9629H27.2571V21.1479H27.3274C27.9956 19.8792 29.6131 18.5576 32.0395 18.5576C37.0681 18.5576 38 21.8704 38 26.1876V34.9805H33.0242V27.192C33.0242 25.3241 32.989 22.9453 30.4395 22.9453C27.8901 22.9453 27.4505 24.9717 27.4505 27.0686V34.9981H22.4747V18.9629H22.4922Z"
+														fill="white" />
+												</g>
+												<rect x="0.5" y="0.5" width="49" height="49" rx="24.5"
+													stroke="url(#paint1_linear_433_4283)" />
+												<defs>
+													<filter id="filter0_f_433_4283" x="-5" y="-7" width="64" height="63"
+														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+														<feFlood flood-opacity="0" result="BackgroundImageFix" />
+														<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+															result="shape" />
+														<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4283" />
+													</filter>
+													<radialGradient id="paint0_radial_433_4283" cx="0" cy="0" r="1"
+														gradientUnits="userSpaceOnUse"
+														gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+														<stop stop-color="white" stop-opacity="0.4" />
+														<stop offset="1" stop-color="white" stop-opacity="0" />
+													</radialGradient>
+													<linearGradient id="paint1_linear_433_4283" x1="0" y1="0" x2="60.3093"
+														y2="26.8041" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" />
+														<stop offset="0.335851" stop-color="#006FFD" />
+														<stop offset="0.62839" stop-color="#006FFD" />
+														<stop offset="1" stop-color="white" />
+													</linearGradient>
+													<clipPath id="clip0_433_4283">
+														<rect width="50" height="50" rx="25" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<p class="team__social-name">Linkedin</p>
+									</div>
+									<div class="team__social-item">
+										<a href="#" class="team__social-link" target="_blank">
+											<svg width="51" height="50" viewBox="0 0 51 50" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_4286)">
+													<rect x="0.5" width="50" height="50" rx="25" fill="url(#paint0_radial_433_4286)"
+														fill-opacity="0.2" />
+													<rect x="0.5" width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+													<g filter="url(#filter0_f_433_4286)">
+														<rect x="11.5" y="13" width="24" height="23" rx="11.5" fill="#34C21C" />
+													</g>
+													<g filter="url(#filter1_d_433_4286)">
+														<path
+															d="M12.2161 24.0386L12.216 24.0385C11.6854 24.2549 11.2865 24.4668 11.0154 24.6732C10.7424 24.8811 10.6122 25.0733 10.5909 25.2472L10.5059 25.2368L10.5909 25.2472C10.5693 25.4238 10.6143 25.5665 10.7139 25.692C10.8161 25.8208 10.9785 25.9348 11.1963 26.0429C11.5285 26.2079 11.9673 26.3494 12.4711 26.5119C12.6313 26.5635 12.7981 26.6173 12.9701 26.6746L12.943 26.7559L12.9701 26.6746C13.5446 26.8661 14.2177 27.0737 14.847 27.2355C15.4783 27.3978 16.0586 27.5122 16.4506 27.5209C17.1555 27.5365 17.9528 27.2384 18.8451 26.6102L18.8456 26.6098C21.917 24.4839 24.2457 22.8836 25.8315 21.8089C26.6244 21.2716 27.2319 20.8654 27.6538 20.5905C27.8647 20.4532 28.0297 20.3482 28.1486 20.276C28.208 20.24 28.2567 20.2116 28.2941 20.1913C28.3276 20.1732 28.3619 20.1559 28.3876 20.1499C28.4573 20.1337 28.5503 20.1128 28.6444 20.1136C28.74 20.1144 28.8449 20.1374 28.9316 20.2164C29.0183 20.2954 29.053 20.4049 29.0659 20.494C29.0788 20.5834 29.0719 20.6662 29.0624 20.7077C29.0624 20.7077 29.0624 20.7077 29.0624 20.7077L12.2161 24.0386ZM12.2161 24.0386L12.2186 24.0374M12.2161 24.0386L12.2186 24.0374M12.2186 24.0374C18.7932 21.1004 23.1766 19.1644 25.3693 18.2293M12.2186 24.0374L25.3693 18.2293M30.8846 35.8012L30.8765 35.7159C31.4167 35.665 32.0266 35.1412 32.3415 33.4151C33.0887 29.3195 34.5566 20.4498 34.8956 16.7976C34.9176 16.5612 34.9275 16.2686 34.884 15.9962C34.8403 15.7222 34.7446 15.4823 34.5675 15.3349L34.6222 15.2691L34.5675 15.3349C34.446 15.2338 34.2878 15.17 34.1336 15.1322C33.9798 15.0945 33.8363 15.0842 33.7499 15.0858L30.8846 35.8012ZM30.8846 35.8012L30.8765 35.7159C30.2476 35.7753 29.6905 35.5633 29.127 35.2239M30.8846 35.8012L29.127 35.2239M25.3693 18.2293C28.5011 16.8937 30.3904 16.1107 31.6025 15.6597M25.3693 18.2293L31.6025 15.6597M31.6025 15.6597C32.816 15.2082 33.3416 15.0932 33.7499 15.0858L31.6025 15.6597ZM29.127 35.2239C28.8451 35.0541 28.5636 34.8536 28.2716 34.6409M29.127 35.2239L28.2716 34.6409M28.2716 34.6409C28.2229 34.6055 28.1739 34.5697 28.1246 34.5336M28.2716 34.6409L28.1246 34.5336M28.1246 34.5336C27.879 34.3541 27.6253 34.1686 27.3597 33.9901M28.1246 34.5336L27.3597 33.9901M27.3597 33.9901C26.3679 33.3235 25.5919 32.7827 24.8227 32.2457M27.3597 33.9901L24.8227 32.2457M24.8227 32.2457L24.7224 32.1756M24.8227 32.2457L24.7224 32.1756M24.7224 32.1756C23.9868 31.662 23.249 31.1468 22.3269 30.5238M24.7224 32.1756L22.3269 30.5238M22.3269 30.5238C21.7749 30.1508 21.4617 29.827 21.3134 29.5358M22.3269 30.5238L21.3134 29.5358M21.3134 29.5358C21.1681 29.2505 21.1781 28.9907 21.2898 28.7297M21.3134 29.5358L21.2898 28.7297M21.2898 28.7297C21.4038 28.4631 21.624 28.1956 21.9022 27.9053M21.2898 28.7297L21.9022 27.9053M21.9022 27.9053C22.0248 27.7774 22.157 27.6467 22.2947 27.5106M21.9022 27.9053L22.2947 27.5106M22.2947 27.5106C22.3125 27.493 22.3304 27.4753 22.3484 27.4575M22.2947 27.5106L22.3484 27.4575M22.3484 27.4575C22.505 27.3025 22.6674 27.1408 22.8272 26.9707L22.3484 27.4575Z"
+															fill="white" stroke="url(#paint1_linear_433_4286)"
+															stroke-width="0.171268" />
+													</g>
+												</g>
+												<rect x="1" y="0.5" width="49" height="49" rx="24.5"
+													stroke="url(#paint2_linear_433_4286)" />
+												<defs>
+													<filter id="filter0_f_433_4286" x="-8.5" y="-7" width="64" height="63"
+														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+														<feFlood flood-opacity="0" result="BackgroundImageFix" />
+														<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+															result="shape" />
+														<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4286" />
+													</filter>
+													<filter id="filter1_d_433_4286" x="-9.5" y="-1" width="64.5" height="60.8115"
+														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+														<feFlood flood-opacity="0" result="BackgroundImageFix" />
+														<feColorMatrix in="SourceAlpha" type="matrix"
+															values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+														<feOffset dy="4" />
+														<feGaussianBlur stdDeviation="10" />
+														<feComposite in2="hardAlpha" operator="out" />
+														<feColorMatrix type="matrix"
+															values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+														<feBlend mode="normal" in2="BackgroundImageFix"
+															result="effect1_dropShadow_433_4286" />
+														<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_433_4286"
+															result="shape" />
+													</filter>
+													<radialGradient id="paint0_radial_433_4286" cx="0" cy="0" r="1"
+														gradientUnits="userSpaceOnUse"
+														gradientTransform="translate(24.0931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+														<stop stop-color="white" stop-opacity="0.4" />
+														<stop offset="1" stop-color="white" stop-opacity="0" />
+													</radialGradient>
+													<linearGradient id="paint1_linear_433_4286" x1="15.5256" y1="33.9438"
+														x2="26.7837" y2="15.3892" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" stop-opacity="0.25" />
+														<stop offset="1" stop-color="white" stop-opacity="0" />
+													</linearGradient>
+													<linearGradient id="paint2_linear_433_4286" x1="0.5" y1="0" x2="60.8093"
+														y2="26.8041" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" />
+														<stop offset="0.335851" stop-color="#006FFD" />
+														<stop offset="0.62839" stop-color="#006FFD" />
+														<stop offset="1" stop-color="white" />
+													</linearGradient>
+													<clipPath id="clip0_433_4286">
+														<rect x="0.5" width="50" height="50" rx="25" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
 
-        <!-- MODAL -->
-        <div class="modal micromodal-slide" id="modal" aria-hidden="true">
-          <div class="modal__overlay" tabindex="-1" data-custom-close="modal">
-            <div class="modal__container" role="dialog" aria-modal="true">
-              <div class="modal__content">
-                <button class="modal__close" title="close" data-custom-close>
-                  <img src="img/icons/icon-cancel.svg" alt="" />
-                </button>
+										</a>
+										<p class="team__social-name">Telegram</p>
+									</div>
+									<div class="team__social-item">
+										<a href="#" class="team__social-link" target="_blank">
+											<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_433_4289)">
+													<rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4289)"
+														fill-opacity="0.2" />
+													<rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+													<g filter="url(#filter0_f_433_4289)">
+														<rect x="13" y="14" width="24" height="23" rx="11.5" fill="#34C21C" />
+													</g>
+													<path
+														d="M33.5344 16.53C31.5204 14.512 28.8458 13.2744 25.993 13.0405C23.1402 12.8066 20.297 13.5917 17.9763 15.2543C15.6557 16.9169 14.0102 19.3475 13.3369 22.1076C12.6635 24.8678 13.0065 27.7758 14.304 30.3071L13.0304 36.4417C13.0171 36.5028 13.0168 36.5659 13.0293 36.6271C13.0417 36.6883 13.0668 36.7463 13.1029 36.7974C13.1558 36.8751 13.2314 36.9348 13.3194 36.9688C13.4075 37.0027 13.5038 37.0092 13.5957 36.9873L19.6561 35.5622C22.2005 36.8169 25.111 37.1353 27.8698 36.4608C30.6287 35.7863 33.0568 34.1627 34.7222 31.8788C36.3876 29.5949 37.1823 26.7989 36.9648 23.9884C36.7473 21.1778 35.5317 18.5349 33.5344 16.53ZM31.6448 31.4922C30.2513 32.8707 28.4569 33.7808 26.5144 34.094C24.572 34.4072 22.5794 34.1078 20.8175 33.238L19.9728 32.8234L16.2574 33.6963L16.2684 33.6505L17.0383 29.9405L16.6248 29.1309C15.7245 27.3769 15.407 25.3852 15.7176 23.4411C16.0282 21.4971 16.951 19.7005 18.3538 18.3086C20.1165 16.5604 22.5069 15.5784 24.9993 15.5784C27.4917 15.5784 29.8821 16.5604 31.6448 18.3086C31.6598 18.3257 31.676 18.3417 31.6932 18.3566C33.4341 20.1093 34.4059 22.4737 34.3968 24.9343C34.3877 27.3949 33.3985 29.7521 31.6448 31.4922Z"
+														fill="white" />
+													<path
+														d="M31.3148 28.7711C30.8595 29.4826 30.1402 30.3533 29.2361 30.5694C27.6522 30.9491 25.2215 30.5825 22.1968 27.7847L22.1594 27.752C19.4999 25.3056 18.8091 23.2694 18.9763 21.6545C19.0687 20.7379 19.8386 19.9086 20.4876 19.3674C20.5902 19.2805 20.7118 19.2187 20.8428 19.1868C20.9738 19.1549 21.1105 19.1539 21.242 19.1838C21.3734 19.2137 21.496 19.2737 21.6 19.359C21.7039 19.4443 21.7862 19.5526 21.8404 19.6751L22.8193 21.8575C22.8829 21.999 22.9065 22.155 22.8875 22.3088C22.8685 22.4626 22.8077 22.6083 22.7115 22.7304L22.2166 23.3676C22.1104 23.4992 22.0463 23.6593 22.0326 23.8273C22.0188 23.9953 22.0561 24.1636 22.1396 24.3104C22.4168 24.7927 23.0811 25.502 23.818 26.1589C24.6451 26.9009 25.5624 27.5796 26.1432 27.8109C26.2986 27.8739 26.4694 27.8892 26.6337 27.855C26.798 27.8208 26.9482 27.7385 27.0649 27.6188L27.639 27.0449C27.7498 26.9365 27.8876 26.8592 28.0383 26.8209C28.189 26.7825 28.3472 26.7845 28.4969 26.8267L30.8221 27.4814C30.9503 27.5204 31.0679 27.588 31.1658 27.679C31.2637 27.7701 31.3393 27.8821 31.3868 28.0065C31.4344 28.131 31.4526 28.2646 31.4401 28.3971C31.4277 28.5296 31.3848 28.6576 31.3148 28.7711Z"
+														fill="white" />
+												</g>
+												<rect x="0.5" y="0.5" width="49" height="49" rx="24.5"
+													stroke="url(#paint1_linear_433_4289)" />
+												<defs>
+													<filter id="filter0_f_433_4289" x="-7" y="-6" width="64" height="63"
+														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+														<feFlood flood-opacity="0" result="BackgroundImageFix" />
+														<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+															result="shape" />
+														<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4289" />
+													</filter>
+													<radialGradient id="paint0_radial_433_4289" cx="0" cy="0" r="1"
+														gradientUnits="userSpaceOnUse"
+														gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+														<stop stop-color="white" stop-opacity="0.4" />
+														<stop offset="1" stop-color="white" stop-opacity="0" />
+													</radialGradient>
+													<linearGradient id="paint1_linear_433_4289" x1="0" y1="0" x2="60.3093"
+														y2="26.8041" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" />
+														<stop offset="0.335851" stop-color="#006FFD" />
+														<stop offset="0.62839" stop-color="#006FFD" />
+														<stop offset="1" stop-color="white" />
+													</linearGradient>
+													<clipPath id="clip0_433_4289">
+														<rect width="50" height="50" rx="25" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
 
-                <header class="modal__header">
-                  <p class="modal__title title">Join Our Waitlist</p>
-                  <div class="modal__logo">
-                    <img src="img/icons/logo.svg" alt="logo" />
-                  </div>
-                </header>
+										</a>
+										<p class="team__social-name">Whats Up</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- team -->
 
-                <form action="external-link">
-                  <h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
-                  <label class="custom-radio">
-                    <input type="radio" name="customRadio" id="personalRadio" />
-                    <span class="radio-button"></span>
-                    Personal
-                  </label>
-                  <label class="custom-radio">
-                    <input type="radio" name="customRadio" id="organizationRadio" />
-                    <span class="radio-button"></span>
-                    Organisation
-                  </label>
-                  <div class="modal__link">
-                    <a href="#" class="modal__btn btn-green" id="nextButton">Next</a>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /MODAL -->
-      </main>
+			<!-- faq -->
+			<section id="faq" class="faq">
+				<div class="faq__container container">
+					<h6 class="faq__title title"><span>FAQ</span></h6>
+					<div class="faq__row">
+						<div class="faq__robot">
+							<img src="img/faq/neon-chatbot-assistant-answering-questions-online.svg" alt="" />
+						</div>
+						<div class="accordion">
+							<div class="accordion-container">
+								<div class="ac accordion__item">
+									<div class="ac-header accordion__header">
+										<div class="ac-trigger accordion__trigger">
+											<img src="img/faq/accordion-img1.svg" alt="img which description this question" />
+											<span>So it is one more diagramming tool?</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+												fill="none">
+												<path d="M0 10.2861H24V13.7147H0V10.2861Z" fill="white" />
+												<path d="M10 24L10 0H13.4286L13.4286 24H10Z" fill="white" />
+											</svg>
+										</div>
+									</div>
+									<div class="ac-panel accordion__panel">
+										<p class="ac-text accordion__text">
+											Not even close. We are strong believers of textual models (LLMs approve!) so diagrams
+											will be our side benefit. The core and
+											the main idea of the product is a “one system - one model” principle also known as a
+											“digital thread”. We can collect and
+											organise all the contextual information according to inner metamodel structure to
+											effectively use it as a basis for
+											evolutional engineering processes.
+										</p>
+									</div>
+								</div>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__inner">
-            <div class="footer__about">
-              <a class="footer__logo" href="#">
-                <img src="img/icons/logo.svg" alt="logo" />
-              </a>
-              <p class="footer__text">
-                Our mission is to elevate engineering of evolving complex multi-domain systems to achieve a manyfold increase in development
-                <span>velocity</span>, newcomers <span>time-to-productivity</span>, and make everyone able to <span>understand</span> and
-                <span>contribute</span> - even without programming background.
-              </p>
-            </div>
-            <div class="footer__navigation">
-              <div class="footer__name">Navigation</div>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#">Home</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Benefits</a>
-                </li>
-                <li class="footer__item">
-                  <a href="">Features</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">How it works</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__signup">
-              <div class="footer__name">Sign Up</div>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#">Log in</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">Registration</a>
-                </li>
-                <li class="footer__item">
-                  <a href="">Team</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#">FAQ</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__social">
-              <div class="footer__name">Social <span>networks</span></div>
-              <div class="footer__box">
-                <a class="footer__social-item" href="#" target="_blank">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_433_4283)">
-                    <rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4283)" fill-opacity="0.2"/>
-                    <rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1"/>
-                    <g filter="url(#filter0_f_433_4283)">
-                    <rect x="15" y="13" width="24" height="23" rx="11.5" fill="#34C21C"/>
-                    </g>
-                    <path d="M14.3868 18.9648H19.3627V35H14.3868V18.9648ZM16.8835 11C18.4835 11 19.7671 12.2863 19.7671 13.8899C19.7671 15.4934 18.4835 16.7797 16.8835 16.7797C15.2835 16.7797 14 15.4758 14 13.8899C14 12.304 15.2835 11 16.8835 11Z" fill="white"/>
-                    <path d="M22.4922 18.9629H27.2571V21.1479H27.3274C27.9956 19.8792 29.6131 18.5576 32.0395 18.5576C37.0681 18.5576 38 21.8704 38 26.1876V34.9805H33.0242V27.192C33.0242 25.3241 32.989 22.9453 30.4395 22.9453C27.8901 22.9453 27.4505 24.9717 27.4505 27.0686V34.9981H22.4747V18.9629H22.4922Z" fill="white"/>
-                    </g>
-                    <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint1_linear_433_4283)"/>
-                    <defs>
-                    <filter id="filter0_f_433_4283" x="-5" y="-7" width="64" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4283"/>
-                    </filter>
-                    <radialGradient id="paint0_radial_433_4283" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
-                    <stop stop-color="white" stop-opacity="0.4"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
-                    </radialGradient>
-                    <linearGradient id="paint1_linear_433_4283" x1="0" y1="0" x2="60.3093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="0.335851" stop-color="#006FFD"/>
-                    <stop offset="0.62839" stop-color="#006FFD"/>
-                    <stop offset="1" stop-color="white"/>
-                    </linearGradient>
-                    <clipPath id="clip0_433_4283">
-                    <rect width="50" height="50" rx="25" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                    
-                </a>
-                <a class="footer__social-item" href="#" target="_blank">
-                  <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_433_4286)">
-                    <rect x="0.5" width="50" height="50" rx="25" fill="url(#paint0_radial_433_4286)" fill-opacity="0.2"/>
-                    <rect x="0.5" width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1"/>
-                    <g filter="url(#filter0_f_433_4286)">
-                    <rect x="11.5" y="13" width="24" height="23" rx="11.5" fill="#34C21C"/>
-                    </g>
-                    <g filter="url(#filter1_d_433_4286)">
-                    <path d="M12.2161 24.0386L12.216 24.0385C11.6854 24.2549 11.2865 24.4668 11.0154 24.6732C10.7424 24.8811 10.6122 25.0733 10.5909 25.2472L10.5059 25.2368L10.5909 25.2472C10.5693 25.4238 10.6143 25.5665 10.7139 25.692C10.8161 25.8208 10.9785 25.9348 11.1963 26.0429C11.5285 26.2079 11.9673 26.3494 12.4711 26.5119C12.6313 26.5635 12.7981 26.6173 12.9701 26.6746L12.943 26.7559L12.9701 26.6746C13.5446 26.8661 14.2177 27.0737 14.847 27.2355C15.4783 27.3978 16.0586 27.5122 16.4506 27.5209C17.1555 27.5365 17.9528 27.2384 18.8451 26.6102L18.8456 26.6098C21.917 24.4839 24.2457 22.8836 25.8315 21.8089C26.6244 21.2716 27.2319 20.8654 27.6538 20.5905C27.8647 20.4532 28.0297 20.3482 28.1486 20.276C28.208 20.24 28.2567 20.2116 28.2941 20.1913C28.3276 20.1732 28.3619 20.1559 28.3876 20.1499C28.4573 20.1337 28.5503 20.1128 28.6444 20.1136C28.74 20.1144 28.8449 20.1374 28.9316 20.2164C29.0183 20.2954 29.053 20.4049 29.0659 20.494C29.0788 20.5834 29.0719 20.6662 29.0624 20.7077C29.0624 20.7077 29.0624 20.7077 29.0624 20.7077L12.2161 24.0386ZM12.2161 24.0386L12.2186 24.0374M12.2161 24.0386L12.2186 24.0374M12.2186 24.0374C18.7932 21.1004 23.1766 19.1644 25.3693 18.2293M12.2186 24.0374L25.3693 18.2293M30.8846 35.8012L30.8765 35.7159C31.4167 35.665 32.0266 35.1412 32.3415 33.4151C33.0887 29.3195 34.5566 20.4498 34.8956 16.7976C34.9176 16.5612 34.9275 16.2686 34.884 15.9962C34.8403 15.7222 34.7446 15.4823 34.5675 15.3349L34.6222 15.2691L34.5675 15.3349C34.446 15.2338 34.2878 15.17 34.1336 15.1322C33.9798 15.0945 33.8363 15.0842 33.7499 15.0858L30.8846 35.8012ZM30.8846 35.8012L30.8765 35.7159C30.2476 35.7753 29.6905 35.5633 29.127 35.2239M30.8846 35.8012L29.127 35.2239M25.3693 18.2293C28.5011 16.8937 30.3904 16.1107 31.6025 15.6597M25.3693 18.2293L31.6025 15.6597M31.6025 15.6597C32.816 15.2082 33.3416 15.0932 33.7499 15.0858L31.6025 15.6597ZM29.127 35.2239C28.8451 35.0541 28.5636 34.8536 28.2716 34.6409M29.127 35.2239L28.2716 34.6409M28.2716 34.6409C28.2229 34.6055 28.1739 34.5697 28.1246 34.5336M28.2716 34.6409L28.1246 34.5336M28.1246 34.5336C27.879 34.3541 27.6253 34.1686 27.3597 33.9901M28.1246 34.5336L27.3597 33.9901M27.3597 33.9901C26.3679 33.3235 25.5919 32.7827 24.8227 32.2457M27.3597 33.9901L24.8227 32.2457M24.8227 32.2457L24.7224 32.1756M24.8227 32.2457L24.7224 32.1756M24.7224 32.1756C23.9868 31.662 23.249 31.1468 22.3269 30.5238M24.7224 32.1756L22.3269 30.5238M22.3269 30.5238C21.7749 30.1508 21.4617 29.827 21.3134 29.5358M22.3269 30.5238L21.3134 29.5358M21.3134 29.5358C21.1681 29.2505 21.1781 28.9907 21.2898 28.7297M21.3134 29.5358L21.2898 28.7297M21.2898 28.7297C21.4038 28.4631 21.624 28.1956 21.9022 27.9053M21.2898 28.7297L21.9022 27.9053M21.9022 27.9053C22.0248 27.7774 22.157 27.6467 22.2947 27.5106M21.9022 27.9053L22.2947 27.5106M22.2947 27.5106C22.3125 27.493 22.3304 27.4753 22.3484 27.4575M22.2947 27.5106L22.3484 27.4575M22.3484 27.4575C22.505 27.3025 22.6674 27.1408 22.8272 26.9707L22.3484 27.4575Z" fill="white" stroke="url(#paint1_linear_433_4286)" stroke-width="0.171268"/>
-                    </g>
-                    </g>
-                    <rect x="1" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint2_linear_433_4286)"/>
-                    <defs>
-                    <filter id="filter0_f_433_4286" x="-8.5" y="-7" width="64" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4286"/>
-                    </filter>
-                    <filter id="filter1_d_433_4286" x="-9.5" y="-1" width="64.5" height="60.8115" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset dy="4"/>
-                    <feGaussianBlur stdDeviation="10"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_433_4286"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_433_4286" result="shape"/>
-                    </filter>
-                    <radialGradient id="paint0_radial_433_4286" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24.0931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
-                    <stop stop-color="white" stop-opacity="0.4"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
-                    </radialGradient>
-                    <linearGradient id="paint1_linear_433_4286" x1="15.5256" y1="33.9438" x2="26.7837" y2="15.3892" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white" stop-opacity="0.25"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
-                    </linearGradient>
-                    <linearGradient id="paint2_linear_433_4286" x1="0.5" y1="0" x2="60.8093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="0.335851" stop-color="#006FFD"/>
-                    <stop offset="0.62839" stop-color="#006FFD"/>
-                    <stop offset="1" stop-color="white"/>
-                    </linearGradient>
-                    <clipPath id="clip0_433_4286">
-                    <rect x="0.5" width="50" height="50" rx="25" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                    
-                </a>
-                <a class="footer__social-item" href="#" target="_blank">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_433_4289)">
-                    <rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4289)" fill-opacity="0.2"/>
-                    <rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1"/>
-                    <g filter="url(#filter0_f_433_4289)">
-                    <rect x="13" y="14" width="24" height="23" rx="11.5" fill="#34C21C"/>
-                    </g>
-                    <path d="M33.5344 16.53C31.5204 14.512 28.8458 13.2744 25.993 13.0405C23.1402 12.8066 20.297 13.5917 17.9763 15.2543C15.6557 16.9169 14.0102 19.3475 13.3369 22.1076C12.6635 24.8678 13.0065 27.7758 14.304 30.3071L13.0304 36.4417C13.0171 36.5028 13.0168 36.5659 13.0293 36.6271C13.0417 36.6883 13.0668 36.7463 13.1029 36.7974C13.1558 36.8751 13.2314 36.9348 13.3194 36.9688C13.4075 37.0027 13.5038 37.0092 13.5957 36.9873L19.6561 35.5622C22.2005 36.8169 25.111 37.1353 27.8698 36.4608C30.6287 35.7863 33.0568 34.1627 34.7222 31.8788C36.3876 29.5949 37.1823 26.7989 36.9648 23.9884C36.7473 21.1778 35.5317 18.5349 33.5344 16.53ZM31.6448 31.4922C30.2513 32.8707 28.4569 33.7808 26.5144 34.094C24.572 34.4072 22.5794 34.1078 20.8175 33.238L19.9728 32.8234L16.2574 33.6963L16.2684 33.6505L17.0383 29.9405L16.6248 29.1309C15.7245 27.3769 15.407 25.3852 15.7176 23.4411C16.0282 21.4971 16.951 19.7005 18.3538 18.3086C20.1165 16.5604 22.5069 15.5784 24.9993 15.5784C27.4917 15.5784 29.8821 16.5604 31.6448 18.3086C31.6598 18.3257 31.676 18.3417 31.6932 18.3566C33.4341 20.1093 34.4059 22.4737 34.3968 24.9343C34.3877 27.3949 33.3985 29.7521 31.6448 31.4922Z" fill="white"/>
-                    <path d="M31.3148 28.7711C30.8595 29.4826 30.1402 30.3533 29.2361 30.5694C27.6522 30.9491 25.2215 30.5825 22.1968 27.7847L22.1594 27.752C19.4999 25.3056 18.8091 23.2694 18.9763 21.6545C19.0687 20.7379 19.8386 19.9086 20.4876 19.3674C20.5902 19.2805 20.7118 19.2187 20.8428 19.1868C20.9738 19.1549 21.1105 19.1539 21.242 19.1838C21.3734 19.2137 21.496 19.2737 21.6 19.359C21.7039 19.4443 21.7862 19.5526 21.8404 19.6751L22.8193 21.8575C22.8829 21.999 22.9065 22.155 22.8875 22.3088C22.8685 22.4626 22.8077 22.6083 22.7115 22.7304L22.2166 23.3676C22.1104 23.4992 22.0463 23.6593 22.0326 23.8273C22.0188 23.9953 22.0561 24.1636 22.1396 24.3104C22.4168 24.7927 23.0811 25.502 23.818 26.1589C24.6451 26.9009 25.5624 27.5796 26.1432 27.8109C26.2986 27.8739 26.4694 27.8892 26.6337 27.855C26.798 27.8208 26.9482 27.7385 27.0649 27.6188L27.639 27.0449C27.7498 26.9365 27.8876 26.8592 28.0383 26.8209C28.189 26.7825 28.3472 26.7845 28.4969 26.8267L30.8221 27.4814C30.9503 27.5204 31.0679 27.588 31.1658 27.679C31.2637 27.7701 31.3393 27.8821 31.3868 28.0065C31.4344 28.131 31.4526 28.2646 31.4401 28.3971C31.4277 28.5296 31.3848 28.6576 31.3148 28.7711Z" fill="white"/>
-                    </g>
-                    <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint1_linear_433_4289)"/>
-                    <defs>
-                    <filter id="filter0_f_433_4289" x="-7" y="-6" width="64" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4289"/>
-                    </filter>
-                    <radialGradient id="paint0_radial_433_4289" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
-                    <stop stop-color="white" stop-opacity="0.4"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
-                    </radialGradient>
-                    <linearGradient id="paint1_linear_433_4289" x1="0" y1="0" x2="60.3093" y2="26.8041" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="0.335851" stop-color="#006FFD"/>
-                    <stop offset="0.62839" stop-color="#006FFD"/>
-                    <stop offset="1" stop-color="white"/>
-                    </linearGradient>
-                    <clipPath id="clip0_433_4289">
-                    <rect width="50" height="50" rx="25" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                    
-                </a>
-                <a class="footer__social-item" href="#" target="_blank">
-                  <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_499_1689)">
-                    <rect x="0.5" width="40" height="40" rx="20" fill="url(#paint0_radial_499_1689)" fill-opacity="0.2"/>
-                    <rect x="0.5" width="40" height="40" rx="20" fill="#4CBC0B" fill-opacity="0.1"/>
-                    <g filter="url(#filter0_f_499_1689)">
-                    <rect x="8.5" y="9" width="24" height="23" rx="11.5" fill="#34C21C"/>
-                    </g>
-                    <g filter="url(#filter1_d_499_1689)">
-                    <path d="M24.268 14.4941C23.7599 14.4941 23.3442 14.9098 23.3442 15.4271C23.3442 15.9445 23.7599 16.3601 24.268 16.3601C24.7761 16.3601 25.201 15.9445 25.201 15.4271C25.201 14.9098 24.7853 14.4941 24.268 14.4941Z" fill="white"/>
-                    <path d="M20.1479 15.6855C17.9955 15.6855 16.2496 17.4315 16.2496 19.5838C16.2496 21.7362 17.9955 23.4821 20.1479 23.4821C22.3003 23.4821 24.0462 21.7362 24.0462 19.5838C24.0462 17.4315 22.3003 15.6855 20.1479 15.6855ZM20.1479 22.0872C18.7715 22.0872 17.6537 20.9695 17.6537 19.5931C17.6537 18.2167 18.7715 17.0989 20.1479 17.0989C21.5243 17.0989 22.6421 18.2167 22.6421 19.5931C22.6421 20.9695 21.5243 22.0872 20.1479 22.0872Z" fill="white"/>
-                    <path d="M23.2426 27.5003H16.924C14.3005 27.5003 12.1666 25.3664 12.1666 22.7429V16.4244C12.1666 13.8009 14.3005 11.667 16.924 11.667H23.2426C25.8661 11.667 28 13.8009 28 16.4244V22.7429C28 25.3664 25.8661 27.5003 23.2426 27.5003ZM16.924 13.1543C15.1227 13.1543 13.6539 14.623 13.6539 16.4244V22.7429C13.6539 24.5443 15.1227 26.0131 16.924 26.0131H23.2426C25.0439 26.0131 26.5127 24.5443 26.5127 22.7429V16.4244C26.5127 14.623 25.0439 13.1543 23.2426 13.1543H16.924Z" fill="white"/>
-                    </g>
-                    </g>
-                    <rect x="1" y="0.5" width="39" height="39" rx="19.5" stroke="url(#paint1_linear_499_1689)"/>
-                    <defs>
-                    <filter id="filter0_f_499_1689" x="-11.5" y="-11" width="64" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_499_1689"/>
-                    </filter>
-                    <filter id="filter1_d_499_1689" x="-7.83337" y="-4.33301" width="55.8334" height="55.833" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset dy="4"/>
-                    <feGaussianBlur stdDeviation="10"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_499_1689"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_499_1689" result="shape"/>
-                    </filter>
-                    <radialGradient id="paint0_radial_499_1689" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19.3745 -0.25) rotate(77.6251) scale(49.288 62.8106)">
-                    <stop stop-color="white" stop-opacity="0.4"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
-                    </radialGradient>
-                    <linearGradient id="paint1_linear_499_1689" x1="0.5" y1="0" x2="48.7474" y2="21.4433" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="0.335851" stop-color="#006FFD"/>
-                    <stop offset="0.62839" stop-color="#006FFD"/>
-                    <stop offset="1" stop-color="white"/>
-                    </linearGradient>
-                    <clipPath id="clip0_499_1689">
-                    <rect x="0.5" width="40" height="40" rx="20" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                    
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="footer__copy">
-            <p class="footer__copy-text">Copyright © 2024. System5.dev</p>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.js"
-      integrity="sha512-qcwcAul7d7yUcoz3MmQABiaGDa+gVkaDWgZX6wEd/z3I6z62nQCDW3EqioQG+O+QlGCpxmJLdH5snh4IaDPiPA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script defer src="js/script.js"></script>
-  </body>
+								<div class="ac accordion__item">
+									<div class="ac-header accordion__header">
+										<div class="ac-trigger accordion__trigger">
+											<img src="img/faq/whywearebetter.svg" alt="why we are better" />
+											<span>Why we are better than other tools ?</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+												fill="none">
+												<path d="M0 10.2861H24V13.7147H0V10.2861Z" fill="white" />
+												<path d="M10 24L10 0H13.4286L13.4286 24H10Z" fill="white" />
+											</svg>
+										</div>
+									</div>
+									<div class="ac-panel accordion__panel">
+										<p class="ac-text accordion__text">
+											We are better just because there are no similar tools on the market now. Closest match
+											might be a combination of multiple
+											products like Jira, Confluence, Compass, Fibery, GitHub, Cortex, PlantUML etc. But any
+											combined flow will have similar
+											problems: reinventing the SotA, integration problems, high maintenance cost, cognitive
+											load, UX. Our Architecture Copilot will
+											not replace but make it smooth and efficient.
+										</p>
+									</div>
+								</div>
+
+								<div class="ac accordion__item">
+									<div class="ac-header accordion__header">
+										<div class="ac-trigger accordion__trigger">
+											<img src="img/faq/whyshouldilearn.svg" alt="why should i learn" />
+											<span>Why should I learn it as engineer?</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+												fill="none">
+												<path d="M0 10.2861H24V13.7147H0V10.2861Z" fill="white" />
+												<path d="M10 24L10 0H13.4286L13.4286 24H10Z" fill="white" />
+											</svg>
+										</div>
+									</div>
+									<div class="ac-panel accordion__panel">
+										<p class="ac-text accordion__text">
+											We are better just because there are no similar tools on the market now. Closest match
+											might be a combination of multiple
+											products like Jira, Confluence, Compass, Fibery, GitHub, Cortex, PlantUML etc. But any
+											combined flow will have similar
+											problems: reinventing the SotA, integration problems, high maintenance cost, cognitive
+											load, UX. Our Architecture Copilot will
+											not replace but make it smooth and efficient.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- faq -->
+			<!-- COOKIES -->
+			<div class="cookies">
+				<p class="cookies__text">Are you using cookies?</p>
+				<button class="cookies__btn btn-transparent" id="btn-ok">Ok</button>
+				<button class="cookies__btn btn-transparent" id="btn-yes">Yes</button>
+			</div>
+			<!-- /COOKIES -->
+
+			<!-- MODAL -->
+			<div class="modal micromodal-slide" id="modal" aria-hidden="true">
+				<div class="modal__overlay" tabindex="-1" data-custom-close="modal">
+					<div class="modal__container" role="dialog" aria-modal="true">
+						<div class="modal__content">
+							<button class="modal__close" title="close" data-custom-close>
+								<img src="img/icons/icon-cancel.svg" alt="" />
+							</button>
+
+							<header class="modal__header">
+								<p class="modal__title title">Join Our Waitlist</p>
+								<div class="modal__logo">
+									<img src="img/icons/logo.svg" alt="logo" />
+								</div>
+							</header>
+
+							<form action="external-link">
+								<h2 class="modal__subtitle">What will you use system5.dev for ?</h2>
+								<label class="custom-radio">
+									<input type="radio" name="customRadio" id="personalRadio" />
+									<span class="radio-button"></span>
+									Personal
+								</label>
+								<label class="custom-radio">
+									<input type="radio" name="customRadio" id="organizationRadio" />
+									<span class="radio-button"></span>
+									Organisation
+								</label>
+								<div class="modal__link">
+									<a href="#" class="modal__btn btn-green" id="nextButton">Next</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /MODAL -->
+		</main>
+
+		<footer id="contacts" class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__about">
+						<a class="footer__logo" href="#">
+							<img src="img/icons/logo.svg" alt="logo" />
+						</a>
+						<p class="footer__text">
+							Our mission is to elevate engineering of evolving complex multi-domain systems to achieve a
+							manyfold increase in development
+							<span>velocity</span>, newcomers <span>time-to-productivity</span>, and make everyone able to
+							<span>understand</span> and
+							<span>contribute</span> - even without programming background.
+						</p>
+					</div>
+					<div class="footer__navigation">
+						<div class="footer__name">Navigation</div>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#">Home</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Benefits</a>
+							</li>
+							<li class="footer__item">
+								<a href="">Features</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">How it works</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__signup">
+						<div class="footer__name">Sign Up</div>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#">Log in</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Registration</a>
+							</li>
+							<li class="footer__item">
+								<a href="">Team</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">FAQ</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__social">
+						<div class="footer__name">Social <span>networks</span></div>
+						<div class="footer__box">
+							<a class="footer__social-item" href="#" target="_blank">
+								<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_433_4283)">
+										<rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4283)"
+											fill-opacity="0.2" />
+										<rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+										<g filter="url(#filter0_f_433_4283)">
+											<rect x="15" y="13" width="24" height="23" rx="11.5" fill="#34C21C" />
+										</g>
+										<path
+											d="M14.3868 18.9648H19.3627V35H14.3868V18.9648ZM16.8835 11C18.4835 11 19.7671 12.2863 19.7671 13.8899C19.7671 15.4934 18.4835 16.7797 16.8835 16.7797C15.2835 16.7797 14 15.4758 14 13.8899C14 12.304 15.2835 11 16.8835 11Z"
+											fill="white" />
+										<path
+											d="M22.4922 18.9629H27.2571V21.1479H27.3274C27.9956 19.8792 29.6131 18.5576 32.0395 18.5576C37.0681 18.5576 38 21.8704 38 26.1876V34.9805H33.0242V27.192C33.0242 25.3241 32.989 22.9453 30.4395 22.9453C27.8901 22.9453 27.4505 24.9717 27.4505 27.0686V34.9981H22.4747V18.9629H22.4922Z"
+											fill="white" />
+									</g>
+									<rect x="0.5" y="0.5" width="49" height="49" rx="24.5"
+										stroke="url(#paint1_linear_433_4283)" />
+									<defs>
+										<filter id="filter0_f_433_4283" x="-5" y="-7" width="64" height="63"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4283" />
+										</filter>
+										<radialGradient id="paint0_radial_433_4283" cx="0" cy="0" r="1"
+											gradientUnits="userSpaceOnUse"
+											gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+											<stop stop-color="white" stop-opacity="0.4" />
+											<stop offset="1" stop-color="white" stop-opacity="0" />
+										</radialGradient>
+										<linearGradient id="paint1_linear_433_4283" x1="0" y1="0" x2="60.3093" y2="26.8041"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" />
+											<stop offset="0.335851" stop-color="#006FFD" />
+											<stop offset="0.62839" stop-color="#006FFD" />
+											<stop offset="1" stop-color="white" />
+										</linearGradient>
+										<clipPath id="clip0_433_4283">
+											<rect width="50" height="50" rx="25" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</a>
+							<a class="footer__social-item" href="#" target="_blank">
+								<svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_433_4286)">
+										<rect x="0.5" width="50" height="50" rx="25" fill="url(#paint0_radial_433_4286)"
+											fill-opacity="0.2" />
+										<rect x="0.5" width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+										<g filter="url(#filter0_f_433_4286)">
+											<rect x="11.5" y="13" width="24" height="23" rx="11.5" fill="#34C21C" />
+										</g>
+										<g filter="url(#filter1_d_433_4286)">
+											<path
+												d="M12.2161 24.0386L12.216 24.0385C11.6854 24.2549 11.2865 24.4668 11.0154 24.6732C10.7424 24.8811 10.6122 25.0733 10.5909 25.2472L10.5059 25.2368L10.5909 25.2472C10.5693 25.4238 10.6143 25.5665 10.7139 25.692C10.8161 25.8208 10.9785 25.9348 11.1963 26.0429C11.5285 26.2079 11.9673 26.3494 12.4711 26.5119C12.6313 26.5635 12.7981 26.6173 12.9701 26.6746L12.943 26.7559L12.9701 26.6746C13.5446 26.8661 14.2177 27.0737 14.847 27.2355C15.4783 27.3978 16.0586 27.5122 16.4506 27.5209C17.1555 27.5365 17.9528 27.2384 18.8451 26.6102L18.8456 26.6098C21.917 24.4839 24.2457 22.8836 25.8315 21.8089C26.6244 21.2716 27.2319 20.8654 27.6538 20.5905C27.8647 20.4532 28.0297 20.3482 28.1486 20.276C28.208 20.24 28.2567 20.2116 28.2941 20.1913C28.3276 20.1732 28.3619 20.1559 28.3876 20.1499C28.4573 20.1337 28.5503 20.1128 28.6444 20.1136C28.74 20.1144 28.8449 20.1374 28.9316 20.2164C29.0183 20.2954 29.053 20.4049 29.0659 20.494C29.0788 20.5834 29.0719 20.6662 29.0624 20.7077C29.0624 20.7077 29.0624 20.7077 29.0624 20.7077L12.2161 24.0386ZM12.2161 24.0386L12.2186 24.0374M12.2161 24.0386L12.2186 24.0374M12.2186 24.0374C18.7932 21.1004 23.1766 19.1644 25.3693 18.2293M12.2186 24.0374L25.3693 18.2293M30.8846 35.8012L30.8765 35.7159C31.4167 35.665 32.0266 35.1412 32.3415 33.4151C33.0887 29.3195 34.5566 20.4498 34.8956 16.7976C34.9176 16.5612 34.9275 16.2686 34.884 15.9962C34.8403 15.7222 34.7446 15.4823 34.5675 15.3349L34.6222 15.2691L34.5675 15.3349C34.446 15.2338 34.2878 15.17 34.1336 15.1322C33.9798 15.0945 33.8363 15.0842 33.7499 15.0858L30.8846 35.8012ZM30.8846 35.8012L30.8765 35.7159C30.2476 35.7753 29.6905 35.5633 29.127 35.2239M30.8846 35.8012L29.127 35.2239M25.3693 18.2293C28.5011 16.8937 30.3904 16.1107 31.6025 15.6597M25.3693 18.2293L31.6025 15.6597M31.6025 15.6597C32.816 15.2082 33.3416 15.0932 33.7499 15.0858L31.6025 15.6597ZM29.127 35.2239C28.8451 35.0541 28.5636 34.8536 28.2716 34.6409M29.127 35.2239L28.2716 34.6409M28.2716 34.6409C28.2229 34.6055 28.1739 34.5697 28.1246 34.5336M28.2716 34.6409L28.1246 34.5336M28.1246 34.5336C27.879 34.3541 27.6253 34.1686 27.3597 33.9901M28.1246 34.5336L27.3597 33.9901M27.3597 33.9901C26.3679 33.3235 25.5919 32.7827 24.8227 32.2457M27.3597 33.9901L24.8227 32.2457M24.8227 32.2457L24.7224 32.1756M24.8227 32.2457L24.7224 32.1756M24.7224 32.1756C23.9868 31.662 23.249 31.1468 22.3269 30.5238M24.7224 32.1756L22.3269 30.5238M22.3269 30.5238C21.7749 30.1508 21.4617 29.827 21.3134 29.5358M22.3269 30.5238L21.3134 29.5358M21.3134 29.5358C21.1681 29.2505 21.1781 28.9907 21.2898 28.7297M21.3134 29.5358L21.2898 28.7297M21.2898 28.7297C21.4038 28.4631 21.624 28.1956 21.9022 27.9053M21.2898 28.7297L21.9022 27.9053M21.9022 27.9053C22.0248 27.7774 22.157 27.6467 22.2947 27.5106M21.9022 27.9053L22.2947 27.5106M22.2947 27.5106C22.3125 27.493 22.3304 27.4753 22.3484 27.4575M22.2947 27.5106L22.3484 27.4575M22.3484 27.4575C22.505 27.3025 22.6674 27.1408 22.8272 26.9707L22.3484 27.4575Z"
+												fill="white" stroke="url(#paint1_linear_433_4286)" stroke-width="0.171268" />
+										</g>
+									</g>
+									<rect x="1" y="0.5" width="49" height="49" rx="24.5" stroke="url(#paint2_linear_433_4286)" />
+									<defs>
+										<filter id="filter0_f_433_4286" x="-8.5" y="-7" width="64" height="63"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4286" />
+										</filter>
+										<filter id="filter1_d_433_4286" x="-9.5" y="-1" width="64.5" height="60.8115"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="4" />
+											<feGaussianBlur stdDeviation="10" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_433_4286" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_433_4286"
+												result="shape" />
+										</filter>
+										<radialGradient id="paint0_radial_433_4286" cx="0" cy="0" r="1"
+											gradientUnits="userSpaceOnUse"
+											gradientTransform="translate(24.0931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+											<stop stop-color="white" stop-opacity="0.4" />
+											<stop offset="1" stop-color="white" stop-opacity="0" />
+										</radialGradient>
+										<linearGradient id="paint1_linear_433_4286" x1="15.5256" y1="33.9438" x2="26.7837"
+											y2="15.3892" gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" stop-opacity="0.25" />
+											<stop offset="1" stop-color="white" stop-opacity="0" />
+										</linearGradient>
+										<linearGradient id="paint2_linear_433_4286" x1="0.5" y1="0" x2="60.8093" y2="26.8041"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" />
+											<stop offset="0.335851" stop-color="#006FFD" />
+											<stop offset="0.62839" stop-color="#006FFD" />
+											<stop offset="1" stop-color="white" />
+										</linearGradient>
+										<clipPath id="clip0_433_4286">
+											<rect x="0.5" width="50" height="50" rx="25" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</a>
+							<a class="footer__social-item" href="#" target="_blank">
+								<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_433_4289)">
+										<rect width="50" height="50" rx="25" fill="url(#paint0_radial_433_4289)"
+											fill-opacity="0.2" />
+										<rect width="50" height="50" rx="25" fill="#4CBC0B" fill-opacity="0.1" />
+										<g filter="url(#filter0_f_433_4289)">
+											<rect x="13" y="14" width="24" height="23" rx="11.5" fill="#34C21C" />
+										</g>
+										<path
+											d="M33.5344 16.53C31.5204 14.512 28.8458 13.2744 25.993 13.0405C23.1402 12.8066 20.297 13.5917 17.9763 15.2543C15.6557 16.9169 14.0102 19.3475 13.3369 22.1076C12.6635 24.8678 13.0065 27.7758 14.304 30.3071L13.0304 36.4417C13.0171 36.5028 13.0168 36.5659 13.0293 36.6271C13.0417 36.6883 13.0668 36.7463 13.1029 36.7974C13.1558 36.8751 13.2314 36.9348 13.3194 36.9688C13.4075 37.0027 13.5038 37.0092 13.5957 36.9873L19.6561 35.5622C22.2005 36.8169 25.111 37.1353 27.8698 36.4608C30.6287 35.7863 33.0568 34.1627 34.7222 31.8788C36.3876 29.5949 37.1823 26.7989 36.9648 23.9884C36.7473 21.1778 35.5317 18.5349 33.5344 16.53ZM31.6448 31.4922C30.2513 32.8707 28.4569 33.7808 26.5144 34.094C24.572 34.4072 22.5794 34.1078 20.8175 33.238L19.9728 32.8234L16.2574 33.6963L16.2684 33.6505L17.0383 29.9405L16.6248 29.1309C15.7245 27.3769 15.407 25.3852 15.7176 23.4411C16.0282 21.4971 16.951 19.7005 18.3538 18.3086C20.1165 16.5604 22.5069 15.5784 24.9993 15.5784C27.4917 15.5784 29.8821 16.5604 31.6448 18.3086C31.6598 18.3257 31.676 18.3417 31.6932 18.3566C33.4341 20.1093 34.4059 22.4737 34.3968 24.9343C34.3877 27.3949 33.3985 29.7521 31.6448 31.4922Z"
+											fill="white" />
+										<path
+											d="M31.3148 28.7711C30.8595 29.4826 30.1402 30.3533 29.2361 30.5694C27.6522 30.9491 25.2215 30.5825 22.1968 27.7847L22.1594 27.752C19.4999 25.3056 18.8091 23.2694 18.9763 21.6545C19.0687 20.7379 19.8386 19.9086 20.4876 19.3674C20.5902 19.2805 20.7118 19.2187 20.8428 19.1868C20.9738 19.1549 21.1105 19.1539 21.242 19.1838C21.3734 19.2137 21.496 19.2737 21.6 19.359C21.7039 19.4443 21.7862 19.5526 21.8404 19.6751L22.8193 21.8575C22.8829 21.999 22.9065 22.155 22.8875 22.3088C22.8685 22.4626 22.8077 22.6083 22.7115 22.7304L22.2166 23.3676C22.1104 23.4992 22.0463 23.6593 22.0326 23.8273C22.0188 23.9953 22.0561 24.1636 22.1396 24.3104C22.4168 24.7927 23.0811 25.502 23.818 26.1589C24.6451 26.9009 25.5624 27.5796 26.1432 27.8109C26.2986 27.8739 26.4694 27.8892 26.6337 27.855C26.798 27.8208 26.9482 27.7385 27.0649 27.6188L27.639 27.0449C27.7498 26.9365 27.8876 26.8592 28.0383 26.8209C28.189 26.7825 28.3472 26.7845 28.4969 26.8267L30.8221 27.4814C30.9503 27.5204 31.0679 27.588 31.1658 27.679C31.2637 27.7701 31.3393 27.8821 31.3868 28.0065C31.4344 28.131 31.4526 28.2646 31.4401 28.3971C31.4277 28.5296 31.3848 28.6576 31.3148 28.7711Z"
+											fill="white" />
+									</g>
+									<rect x="0.5" y="0.5" width="49" height="49" rx="24.5"
+										stroke="url(#paint1_linear_433_4289)" />
+									<defs>
+										<filter id="filter0_f_433_4289" x="-7" y="-6" width="64" height="63"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_433_4289" />
+										</filter>
+										<radialGradient id="paint0_radial_433_4289" cx="0" cy="0" r="1"
+											gradientUnits="userSpaceOnUse"
+											gradientTransform="translate(23.5931 -0.3125) rotate(77.6251) scale(61.61 78.5133)">
+											<stop stop-color="white" stop-opacity="0.4" />
+											<stop offset="1" stop-color="white" stop-opacity="0" />
+										</radialGradient>
+										<linearGradient id="paint1_linear_433_4289" x1="0" y1="0" x2="60.3093" y2="26.8041"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" />
+											<stop offset="0.335851" stop-color="#006FFD" />
+											<stop offset="0.62839" stop-color="#006FFD" />
+											<stop offset="1" stop-color="white" />
+										</linearGradient>
+										<clipPath id="clip0_433_4289">
+											<rect width="50" height="50" rx="25" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</a>
+							<a class="footer__social-item" href="#" target="_blank">
+								<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_499_1689)">
+										<rect x="0.5" width="40" height="40" rx="20" fill="url(#paint0_radial_499_1689)"
+											fill-opacity="0.2" />
+										<rect x="0.5" width="40" height="40" rx="20" fill="#4CBC0B" fill-opacity="0.1" />
+										<g filter="url(#filter0_f_499_1689)">
+											<rect x="8.5" y="9" width="24" height="23" rx="11.5" fill="#34C21C" />
+										</g>
+										<g filter="url(#filter1_d_499_1689)">
+											<path
+												d="M24.268 14.4941C23.7599 14.4941 23.3442 14.9098 23.3442 15.4271C23.3442 15.9445 23.7599 16.3601 24.268 16.3601C24.7761 16.3601 25.201 15.9445 25.201 15.4271C25.201 14.9098 24.7853 14.4941 24.268 14.4941Z"
+												fill="white" />
+											<path
+												d="M20.1479 15.6855C17.9955 15.6855 16.2496 17.4315 16.2496 19.5838C16.2496 21.7362 17.9955 23.4821 20.1479 23.4821C22.3003 23.4821 24.0462 21.7362 24.0462 19.5838C24.0462 17.4315 22.3003 15.6855 20.1479 15.6855ZM20.1479 22.0872C18.7715 22.0872 17.6537 20.9695 17.6537 19.5931C17.6537 18.2167 18.7715 17.0989 20.1479 17.0989C21.5243 17.0989 22.6421 18.2167 22.6421 19.5931C22.6421 20.9695 21.5243 22.0872 20.1479 22.0872Z"
+												fill="white" />
+											<path
+												d="M23.2426 27.5003H16.924C14.3005 27.5003 12.1666 25.3664 12.1666 22.7429V16.4244C12.1666 13.8009 14.3005 11.667 16.924 11.667H23.2426C25.8661 11.667 28 13.8009 28 16.4244V22.7429C28 25.3664 25.8661 27.5003 23.2426 27.5003ZM16.924 13.1543C15.1227 13.1543 13.6539 14.623 13.6539 16.4244V22.7429C13.6539 24.5443 15.1227 26.0131 16.924 26.0131H23.2426C25.0439 26.0131 26.5127 24.5443 26.5127 22.7429V16.4244C26.5127 14.623 25.0439 13.1543 23.2426 13.1543H16.924Z"
+												fill="white" />
+										</g>
+									</g>
+									<rect x="1" y="0.5" width="39" height="39" rx="19.5" stroke="url(#paint1_linear_499_1689)" />
+									<defs>
+										<filter id="filter0_f_499_1689" x="-11.5" y="-11" width="64" height="63"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_499_1689" />
+										</filter>
+										<filter id="filter1_d_499_1689" x="-7.83337" y="-4.33301" width="55.8334" height="55.833"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="4" />
+											<feGaussianBlur stdDeviation="10" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_499_1689" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_499_1689"
+												result="shape" />
+										</filter>
+										<radialGradient id="paint0_radial_499_1689" cx="0" cy="0" r="1"
+											gradientUnits="userSpaceOnUse"
+											gradientTransform="translate(19.3745 -0.25) rotate(77.6251) scale(49.288 62.8106)">
+											<stop stop-color="white" stop-opacity="0.4" />
+											<stop offset="1" stop-color="white" stop-opacity="0" />
+										</radialGradient>
+										<linearGradient id="paint1_linear_499_1689" x1="0.5" y1="0" x2="48.7474" y2="21.4433"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="white" />
+											<stop offset="0.335851" stop-color="#006FFD" />
+											<stop offset="0.62839" stop-color="#006FFD" />
+											<stop offset="1" stop-color="white" />
+										</linearGradient>
+										<clipPath id="clip0_499_1689">
+											<rect x="0.5" width="40" height="40" rx="20" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<p class="footer__copy-text">Copyright © 2024. System5.dev</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.js"
+		integrity="sha512-qcwcAul7d7yUcoz3MmQABiaGDa+gVkaDWgZX6wEd/z3I6z62nQCDW3EqioQG+O+QlGCpxmJLdH5snh4IaDPiPA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script defer src="js/script.js"></script>
+</body>
+
 </html>
