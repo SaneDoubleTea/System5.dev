@@ -353,7 +353,7 @@ body {
     line-height: 150%;
   }
   .header__link:hover, .header__link:active, .header__link:focus {
-    color: red;
+    color: #fff;
   }
   .header__link:last-child {
     display: block;
