@@ -1,3 +1,90 @@
+//!====== Burger Menu =========
+document.addEventListener('DOMContentLoaded', function burgerMenu() {
+    //!BURGER MENU
+    const navBtn = document.querySelector('.nav-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const body = document.body;
+
+    //Клик по кнопке
+    navBtn.addEventListener('click', function (event) {
+        event.stopPropagation();
+        toggleMobilenav();
+    });
+
+    //Клик по окну за пределами навигации
+    window.addEventListener('click', function () {
+        if (body.classList.contains('no-scroll')) {
+            toggleMobilenav();
+        }
+    });
+    //останавливаем клик внутри открытой мобильной навигации
+    mobileNav.addEventListener('click', function (event) {
+        event.stopPropagation();
+    });
+
+    function toggleMobilenav() {
+        mobileNav.classList.toggle('mobile-nav-active');
+        navBtn.classList.toggle('nav-btn-close');
+        body.classList.toggle('no-scroll');
+    }
+
+    //!статичный хедер при скролле
+    (function () {
+        const header = document.querySelector('.header');
+        window.onscroll = () => {
+            if (window.pageYOffset > 400) {
+                header.classList.add('header--active');
+            } else {
+                header.classList.remove('header--active');
+            }
+        };
+    })();
+});
+
+// !=== Функция для обработки якорных ссылок ===
+document.addEventListener('DOMContentLoaded', function () {
+    function scrollToSection(event) {
+        event.preventDefault();
+
+        const targetId = event.target.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth',
+            });
+        }
+    }
+
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach((link) => {
+        link.addEventListener('click', scrollToSection);
+    });
+
+    // Функция для обновления активного класса на ссылках при скролле
+    function updateActiveLink() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.header__link');
+
+        sections.forEach((section, index) => {
+            const sectionTop = section.offsetTop;
+            const sectionBottom = sectionTop + section.clientHeight;
+
+            // Если текущая секция видима на экране
+            if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+                navLinks.forEach((link) => {
+                    link.classList.remove('header__link--active');
+                });
+                navLinks[index].classList.add('header__link--active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveLink);
+    window.addEventListener('load', updateActiveLink);
+});
+
 //!======Cookies=========
 document.addEventListener('DOMContentLoaded', function cookies() {
     const cookiesPopup = document.querySelector('.cookies');
@@ -372,91 +459,4 @@ document.addEventListener('DOMContentLoaded', function dynamicAdapt() {
     }
 
     DynamicAdapt();
-});
-
-//!====== Burger Menu =========
-document.addEventListener('DOMContentLoaded', function burgerMenu() {
-    //!BURGER MENU
-    const navBtn = document.querySelector('.nav-btn');
-    const mobileNav = document.querySelector('.mobile-nav');
-    const body = document.body;
-
-    //Клик по кнопке
-    navBtn.addEventListener('click', function (event) {
-        event.stopPropagation();
-        toggleMobilenav();
-    });
-
-    //Клик по окну за пределами навигации
-    window.addEventListener('click', function () {
-        if (body.classList.contains('no-scroll')) {
-            toggleMobilenav();
-        }
-    });
-    //останавливаем клик внутри открытой мобильной навигации
-    mobileNav.addEventListener('click', function (event) {
-        event.stopPropagation();
-    });
-
-    function toggleMobilenav() {
-        mobileNav.classList.toggle('mobile-nav-active');
-        navBtn.classList.toggle('nav-btn-close');
-        body.classList.toggle('no-scroll');
-    }
-
-    //!статичный хедер при скролле
-    (function () {
-        const header = document.querySelector('.header');
-        window.onscroll = () => {
-            if (window.pageYOffset > 400) {
-                header.classList.add('header--active');
-            } else {
-                header.classList.remove('header--active');
-            }
-        };
-    })();
-});
-
-// !=== Функция для обработки якорных ссылок ===
-document.addEventListener('DOMContentLoaded', function () {
-    function scrollToSection(event) {
-        event.preventDefault();
-
-        const targetId = event.target.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth',
-            });
-        }
-    }
-
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    anchorLinks.forEach((link) => {
-        link.addEventListener('click', scrollToSection);
-    });
-
-    // Функция для обновления активного класса на ссылках при скролле
-    function updateActiveLink() {
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.header__link');
-
-        sections.forEach((section, index) => {
-            const sectionTop = section.offsetTop;
-            const sectionBottom = sectionTop + section.clientHeight;
-
-            // Если текущая секция видима на экране
-            if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-                navLinks.forEach((link) => {
-                    link.classList.remove('header__link--active');
-                });
-                navLinks[index].classList.add('header__link--active');
-            }
-        });
-    }
-
-    window.addEventListener('scroll', updateActiveLink);
-    window.addEventListener('load', updateActiveLink);
 });
