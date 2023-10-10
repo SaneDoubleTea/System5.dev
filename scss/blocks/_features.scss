@@ -65,11 +65,16 @@
 @media (max-width: 1024px) {
     .features {
         &__slide-img {
-            max-width: 120px;
+            max-width: 100px;
             max-height: 50px;
             img {
-                max-width: 120px;
+                width: auto;
                 max-height: 50px;
+            }
+            &--gif {
+                img {
+                    margin-left: -10px;
+                }
             }
         }
     }
