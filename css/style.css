@@ -1242,6 +1242,7 @@ body {
 }
 .features__slide-text {
   font-size: 18px;
+  line-height: normal;
 }
 .features__slider-prev, .features__slider-next {
   width: 48px;
