@@ -152,8 +152,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const organizationRadio = document.getElementById('organizationRadio');
     const nextButton = document.getElementById('nextButton');
 
-    const personalLink = 'http://system5.dev/org';
-    const organizationLink = 'http://system5.dev/personal';
+	 const organizationLink = 'http://system5.dev/org';
+    const personalLink = 'http://system5.dev/personal';
 
     let selectedOption = null;
 
