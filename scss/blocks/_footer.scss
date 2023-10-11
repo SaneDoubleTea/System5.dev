@@ -50,9 +50,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 144px;
-    height: 152px;
-    padding: 24px;
+    padding: 24px 6px;
     gap: 14px;
     margin-top: 47px;
   }
@@ -83,10 +81,22 @@
   &__copy {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   &__copy-text {
     opacity: 0.5;
     text-align: center;
+    margin-left: auto;
+  }
+  &__designed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 188px;
+    opacity: 0.5;
+  }
+  &__designed-link {
+    margin-left: 16px;
   }
   &__signup-btn {
     display: none;
@@ -132,8 +142,6 @@
     &__box {
       flex-direction: column;
       flex-wrap: nowrap;
-      width: 69px;
-      height: 200px;
       padding: 8px 14px;
       gap: 8px;
       margin-top: 16px;
@@ -146,6 +154,15 @@
     &__copy {
       justify-content: space-between;
       align-items: center;
+    }
+    &__copy-text {
+      margin-left: 0;
+    }
+    &__designed {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
     }
     &__signup-btn {
       display: block;
@@ -168,12 +185,19 @@
     &__text {
       display: none;
     }
-
-    &__copy {
-      justify-content: center;
-    }
     &__signup-btn {
       display: none;
+    }
+    &__copy-text,
+    &__designed {
+      font-size: 14px;
+    }
+    &__designed-link {
+      margin-left: 8px;
+      img {
+        width: 16px;
+        height: 16px;
+      }
     }
     &__box {
       background: none;
@@ -183,11 +207,6 @@
       margin-top: 0;
       padding: 0;
       align-items: flex-start;
-    }
-    &__social-item {
-      &:last-child {
-        display: none;
-      }
     }
   }
 }
@@ -213,7 +232,8 @@
         height: 24px;
       }
     }
-    &__copy-text {
+    &__copy-text,
+    &__designed {
       font-size: 9px;
     }
   }
