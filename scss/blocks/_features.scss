@@ -1,133 +1,137 @@
 .features {
-    padding-top: 150px;
-    &__inner {
-        position: relative;
-    }
-    &__title {
-        margin-bottom: 32px;
-    }
+  padding-top: 150px;
+  &__inner {
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
 
-    &__slide {
-        max-width: 570px;
-        width: 100%;
-        height: 300px;
-        padding: 8px 40px 22px;
-        border-radius: 10px;
-        border: 2px solid #34c21c;
-        background: rgba(48, 50, 104, 0.3);
-        backdrop-filter: blur(175px);
-    }
+  &__slide {
+    max-width: 570px;
+    width: 100%;
+    height: 300px;
+    padding: 8px 40px 22px;
+    border-radius: 10px;
+    border: 2px solid #34c21c;
+    background: rgba(48, 50, 104, 0.3);
+    backdrop-filter: blur(175px);
+  }
 
-    &__slide-title {
-        margin-bottom: 16px;
-        font-size: 24px;
-    }
+  &__slide-title {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
 
-    &__slide-img {
-        margin-bottom: 8px;
+  &__slide-img {
+    margin-bottom: 8px;
+    max-width: 100px;
+    max-height: 100px;
+    img {
+      max-width: 100px;
+      width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+    }
+    &--gif {
+      max-width: 240px;
+      img {
         max-width: 240px;
-        max-height: 100px;
-        img {
-            max-width: 240px;
-            width: 100%;
-            max-height: 100px;
-            object-fit: contain;
-        }
-        &--gif {
-        }
+      }
     }
+  }
 
-    &__slide-text {
-        font-size: 18px;
-        line-height: normal;
-    }
-    &__slider-prev,
-    &__slider-next {
-        width: 48px;
-        height: 48px;
-    }
-    &__slider-prev {
-        left: -62px;
-    }
-    &__slider-next {
-        right: -40px;
-    }
+  &__slide-text {
+    font-size: 18px;
+    line-height: normal;
+  }
+  &__slider-prev,
+  &__slider-next {
+    width: 48px;
+    height: 48px;
+  }
+  &__slider-prev {
+    left: -62px;
+  }
+  &__slider-next {
+    right: -40px;
+  }
 }
 
 @media (max-width: 1060px) {
-    .features {
-        &__slide {
-            padding: 8px 24px 22px;
-        }
+  .features {
+    &__slide {
+      padding: 8px 24px 22px;
     }
+  }
 }
 
 @media (max-width: 1024px) {
-    .features {
-        &__slide-img {
-            max-width: 100px;
-            max-height: 50px;
-            img {
-                width: auto;
-                max-height: 50px;
-            }
-            &--gif {
-                img {
-                    margin-left: -10px;
-                }
-            }
+  .features {
+    &__slide-img {
+      max-width: 100px;
+      max-height: 50px;
+      img {
+        width: auto;
+        max-height: 50px;
+      }
+      &--gif {
+        img {
+          margin-left: -10px;
         }
+      }
     }
+  }
 }
 
 @media (max-width: 768px) {
-    .features {
-        &__slider-prev,
-        &__slider-next {
-            width: 30px;
-            height: 30px;
-        }
-        &__slider-prev {
-            left: 0;
-        }
-        &__slider-next {
-            right: 0;
-        }
+  .features {
+    &__slider-prev,
+    &__slider-next {
+      width: 30px;
+      height: 30px;
     }
+    &__slider-prev {
+      left: 0;
+    }
+    &__slider-next {
+      right: 0;
+    }
+  }
 }
 
 @media (max-width: 540px) {
-    .features {
-        padding-top: 80px;
-        &__title {
-            margin-bottom: 16px;
-        }
-        &__slide-title {
-            font-size: 18px;
-        }
-        &__slide-text {
-            font-size: 15px;
-        }
+  .features {
+    padding-top: 80px;
+    &__title {
+      margin-bottom: 16px;
     }
+    &__slide-title {
+      font-size: 18px;
+    }
+    &__slide-text {
+      font-size: 15px;
+    }
+  }
 }
 
 @media (max-width: 450px) {
-    .features {
-        &__slider {
-            .swiper-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-            }
-        }
-        &__slide {
-            max-height: fit-content;
-            min-height: 268px;
-            height: auto;
-        }
-        &__pagination-slider,
-        .slider-buttons {
-            display: none;
-        }
+  .features {
+    &__slider {
+      .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
     }
+    &__slide {
+      max-height: fit-content;
+      min-height: 268px;
+      height: auto;
+    }
+    &__pagination-slider,
+    .slider-buttons {
+      display: none;
+    }
+  }
 }

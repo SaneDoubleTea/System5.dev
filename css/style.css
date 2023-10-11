@@ -1253,15 +1253,21 @@ body {
 }
 .features__slide-img {
   margin-bottom: 8px;
-  max-width: 240px;
+  max-width: 100px;
   max-height: 100px;
 }
 .features__slide-img img {
-  max-width: 240px;
+  max-width: 100px;
   width: 100%;
   max-height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.features__slide-img--gif {
+  max-width: 240px;
+}
+.features__slide-img--gif img {
+  max-width: 240px;
 }
 .features__slide-text {
   font-size: 18px;
