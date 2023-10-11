@@ -54,7 +54,9 @@
     gap: 14px;
     margin-top: 47px;
   }
-
+  &__social{
+    display: none;
+  }
   &__social-item {
     width: 40px;
     height: 40px;
