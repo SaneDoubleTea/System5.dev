@@ -447,37 +447,38 @@ document.addEventListener("DOMContentLoaded", function dynamicAdapt() {
 
   DynamicAdapt();
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const fullscreenButton = document.getElementById("fullscreen-button");
-  const videoPlayer = document.getElementById("video-player");
 
-  function fullScreenVideo() {
-    fullscreenButton.addEventListener("click", function () {
-      if (videoPlayer.requestFullscreen) {
-        videoPlayer.requestFullscreen().then(() => {
-          videoPlayer.play();
-        });
-      } else if (videoPlayer.mozRequestFullScreen) {
-        videoPlayer.mozRequestFullScreen().then(() => {
-          videoPlayer.play();
-        });
-      } else if (videoPlayer.webkitRequestFullscreen) {
-        videoPlayer.webkitRequestFullscreen().then(() => {
-          videoPlayer.play();
-        });
-      }
-    });
+// document.addEventListener("DOMContentLoaded", function () {
+//   const fullscreenButton = document.getElementById("fullscreen-button");
+//   const videoPlayer = document.getElementById("video-player");
 
-    document.addEventListener("fullscreenchange", function () {
-      if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
-        videoPlayer.pause();
-      }
-    });
-  }
+//   function fullScreenVideo() {
+//     fullscreenButton.addEventListener("click", function () {
+//       if (videoPlayer.requestFullscreen) {
+//         videoPlayer.requestFullscreen().then(() => {
+//           videoPlayer.play();
+//         });
+//       } else if (videoPlayer.mozRequestFullScreen) {
+//         videoPlayer.mozRequestFullScreen().then(() => {
+//           videoPlayer.play();
+//         });
+//       } else if (videoPlayer.webkitRequestFullscreen) {
+//         videoPlayer.webkitRequestFullscreen().then(() => {
+//           videoPlayer.play();
+//         });
+//       }
+//     });
 
-  if (window.innerWidth <= 450) {
-    videoPlayer.setAttribute('controls', 'controls');
-  } else {
-    fullScreenVideo();
-  }
-});
+//     document.addEventListener("fullscreenchange", function () {
+//       if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
+//         videoPlayer.pause();
+//       }
+//     });
+//   }
+
+//   if (window.innerWidth <= 450) {
+//     videoPlayer.setAttribute('controls', 'controls');
+//   } else {
+//     fullScreenVideo();
+//   }
+// });
