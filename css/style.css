@@ -321,6 +321,7 @@ body {
 .header__btns .btn-signup {
   margin-right: 8px;
 }
+
 @media (max-width: 1160px) {
   .header {
     width: auto;
@@ -495,7 +496,6 @@ body {
   left: 0px;
 }
 
-/* //BTN NAV  STYLES*/
 /* burger menu */
 .mobile-nav {
   position: fixed;
@@ -1354,7 +1354,6 @@ body {
   }
 }
 .howItWorks {
-  /* .howItWorks__video */
   padding-top: 160px;
   padding-bottom: 60px;
   -o-object-fit: contain;
@@ -1725,6 +1724,7 @@ body {
 .ac.is-active .ac-panel {
   visibility: visible;
 }
+
 @media (max-width: 600px) {
   .accordion {
     padding-bottom: 88px;

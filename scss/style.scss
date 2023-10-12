@@ -130,32 +130,9 @@ body {
 }
 
 .wrapper {
-    //  height: 100vh;
     position: relative;
-    //  overflow: auto;
-    //  scroll-snap-type: y mandatory;
-    //  scroll-behavior: smooth;
-    //  -webkit-scroll-behavior: smooth;
-    //  -moz-scroll-behavior: smooth;
-    //  -ms-scroll-behavior: smooth;
 }
 
-section {
-    //  width: 100%;
-    //  height: 100vh;
-    //  scroll-snap-align: center;
-}
-//
-@media (max-width: 1024px) {
-    .wrapper {
-        //   scroll-snap-type: none;
-    }
-    section {
-        //   width: 100%;
-        //   height: auto;
-        //   scroll-snap-align: unset;
-    }
-}
 
 @import 'blocks/header';
 @import 'blocks/burger-menu';
@@ -312,5 +289,3 @@ section {
 @import 'blocks/faq';
 @import 'blocks/accordion';
 @import 'blocks/footer';
-
-
